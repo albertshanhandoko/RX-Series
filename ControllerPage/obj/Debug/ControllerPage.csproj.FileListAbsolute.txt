@@ -1,0 +1,899 @@
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\ControllerPage.exe.config
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\ControllerPage.exe
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\ControllerPage.pdb
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\EntityFramework.dll
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Google.Protobuf.dll
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\MySql.Data.dll
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\mysql.data.entity.EF6.dll
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\System.Buffers.dll
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\System.Memory.dll
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Zstandard.Net.dll
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\EntityFramework.xml
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Google.Protobuf.pdb
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Google.Protobuf.xml
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\MySql.Data.xml
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\System.Buffers.xml
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\System.Memory.xml
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.csprojAssemblyReference.cache
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.Form1.resources
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.Form2.resources
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormNumberinterval.resources
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormNumberpcsinterval.resources
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormProductselection.resources
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.Properties.Resources.resources
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormWaitinginterval.resources
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.csproj.GenerateResource.cache
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.csproj.CoreCompileInputs.cache
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.csproj.CopyComplete
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.exe
+C:\Users\Ignatius Albert\Source\Repos\Jayfetra\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.pdb
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\ControllerPage.exe.config
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\ControllerPage.exe
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\ControllerPage.pdb
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\BouncyCastle.Crypto.dll
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\EntityFramework.dll
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\EntityFramework.SqlServer.dll
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Google.Protobuf.dll
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\K4os.Compression.LZ4.dll
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\K4os.Hash.xxHash.dll
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\MySql.Data.dll
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\mysql.data.entity.EF6.dll
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\System.Buffers.dll
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\System.Memory.dll
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Ubiety.Dns.Core.dll
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Zstandard.Net.dll
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\EntityFramework.xml
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\EntityFramework.SqlServer.xml
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Google.Protobuf.pdb
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Google.Protobuf.xml
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\K4os.Compression.LZ4.xml
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\K4os.Hash.xxHash.xml
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\MySql.Data.xml
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\System.Buffers.xml
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\System.Memory.xml
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.Form1.resources
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.Form2.resources
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormNumberinterval.resources
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormNumberpcsinterval.resources
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormProductselection.resources
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.Properties.Resources.resources
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormWaitinginterval.resources
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.csproj.GenerateResource.cache
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.csproj.CoreCompileInputs.cache
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.csproj.CopyComplete
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.exe
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.pdb
+D:\Job\Kirim_Anydek_SCONROO\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.csprojAssemblyReference.cache
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.Form1.resources
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.Form2.resources
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormNumberinterval.resources
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormNumberpcsinterval.resources
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormProductselection.resources
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.Properties.Resources.resources
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.csproj.GenerateResource.cache
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.csproj.CoreCompileInputs.cache
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.exe
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.pdb
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\ControllerPage.exe.config
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\ControllerPage.exe
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\ControllerPage.pdb
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\BouncyCastle.Crypto.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\EntityFramework.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\EntityFramework.SqlServer.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Google.Protobuf.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\K4os.Compression.LZ4.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\K4os.Hash.xxHash.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\MySql.Data.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\mysql.data.entity.EF6.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\System.Buffers.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\System.Memory.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Ubiety.Dns.Core.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Zstandard.Net.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\EntityFramework.xml
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\EntityFramework.SqlServer.xml
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Google.Protobuf.pdb
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Google.Protobuf.xml
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\K4os.Compression.LZ4.xml
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\K4os.Hash.xxHash.xml
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\MySql.Data.xml
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\System.Buffers.xml
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\System.Memory.xml
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.csproj.CopyComplete
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.Form2_old.resources
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormBIAS.resources
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormBIASPassword.resources
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormLanguage.resources
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormOptions.resources
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormThreshold.resources
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormNumpad_min.resources
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormNumpad_max.resources
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormNumpadBPassword.resources
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormIntervalTime.resources
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.FormFixedTime.resources
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\IronPython.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\IronPython.Modules.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\IronPython.SQLite.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\IronPython.Wpf.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Microsoft.Dynamic.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Microsoft.Scripting.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.dll
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\IronPython.xml
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\IronPython.Modules.xml
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\IronPython.SQLite.xml
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\IronPython.Wpf.xml
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Microsoft.Dynamic.xml
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Microsoft.Scripting.xml
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.xml
+D:\Job\Kirim_Anydek_SCONROO\backup\ControllerPage_Baiz_Jay_18June\ControllerPage\obj\Debug\ControllerPage.csprojAssemblyReference.cache
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.csprojAssemblyReference.cache
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.Form1.resources
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.Form2.resources
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.Form2_old.resources
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.FormBIAS.resources
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.FormBIASPassword.resources
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.FormLanguage.resources
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.FormNumberinterval.resources
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.FormNumberpcsinterval.resources
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.FormNumpadBPassword.resources
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.FormNumpad_min.resources
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.FormNumpad_max.resources
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.FormOptions.resources
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.FormProductselection.resources
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.FormThreshold.resources
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.FormIntervalTime.resources
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.Properties.Resources.resources
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.FormFixedTime.resources
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.csproj.GenerateResource.cache
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.csproj.CoreCompileInputs.cache
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.exe
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.pdb
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\ControllerPage.exe.config
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\ControllerPage.exe
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\ControllerPage.pdb
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\EntityFramework.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\Google.Protobuf.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\IronPython.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\IronPython.Modules.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\IronPython.SQLite.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\IronPython.Wpf.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\Microsoft.Scripting.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\MySql.Data.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\mysql.data.entity.EF6.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\System.Buffers.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\System.Memory.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\Zstandard.Net.dll
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\EntityFramework.xml
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\Google.Protobuf.pdb
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\Google.Protobuf.xml
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\IronPython.xml
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\IronPython.Modules.xml
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\IronPython.SQLite.xml
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\IronPython.Wpf.xml
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\Microsoft.Dynamic.xml
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\Microsoft.Scripting.xml
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.xml
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\MySql.Data.xml
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\System.Buffers.xml
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\System.Memory.xml
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.csproj.CopyComplete
+C:\Users\Ignatius Albert\Source\Repos\Controller_comfilepi\ControllerPage\obj\Debug\ControllerPage.FormIPSet.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.Form1.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.Form2.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.Form2_old.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.FormBIAS.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.FormBIASPassword.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.FormIPSet.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.FormLanguage.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.FormNumberinterval.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.FormNumberpcsinterval.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.FormNumpadBPassword.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.FormNumpad_min.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.FormNumpad_max.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.FormOptions.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.FormProductselection.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.FormThreshold.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.FormIntervalTime.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.Properties.Resources.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.FormFixedTime.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.csproj.GenerateResource.cache
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.csproj.CoreCompileInputs.cache
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.exe
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.pdb
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\ControllerPage.exe.config
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\ControllerPage.exe
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\ControllerPage.pdb
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\BouncyCastle.Crypto.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\EntityFramework.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\Google.Protobuf.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\IronPython.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\IronPython.Modules.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\IronPython.SQLite.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\IronPython.Wpf.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\K4os.Compression.LZ4.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\K4os.Hash.xxHash.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\Microsoft.Dynamic.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\Microsoft.Scripting.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\MySql.Data.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\mysql.data.entity.EF6.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\System.Buffers.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\System.Memory.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\Ubiety.Dns.Core.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\Zstandard.Net.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\EntityFramework.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\Google.Protobuf.pdb
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\Google.Protobuf.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\IronPython.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\IronPython.Modules.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\IronPython.SQLite.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\IronPython.Wpf.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\K4os.Compression.LZ4.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\K4os.Hash.xxHash.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\Microsoft.Dynamic.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\Microsoft.Scripting.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\MySql.Data.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\System.Buffers.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\System.Memory.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.csproj.CopyComplete
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.FormBIAS_New.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\ControllerPage\obj\Debug\ControllerPage.csprojAssemblyReference.cache
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\ControllerPage.exe.config
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\ControllerPage.exe
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\ControllerPage.pdb
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\BouncyCastle.Crypto.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\EntityFramework.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Google.Protobuf.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\IronPython.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\IronPython.Modules.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\IronPython.SQLite.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\IronPython.Wpf.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\K4os.Compression.LZ4.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\K4os.Hash.xxHash.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Microsoft.Dynamic.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Microsoft.Scripting.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\MySql.Data.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\mysql.data.entity.EF6.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\System.Buffers.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\System.Memory.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Ubiety.Dns.Core.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Zstandard.Net.dll
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\EntityFramework.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Google.Protobuf.pdb
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Google.Protobuf.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\IronPython.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\IronPython.Modules.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\IronPython.SQLite.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\IronPython.Wpf.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\K4os.Compression.LZ4.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\K4os.Hash.xxHash.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Microsoft.Dynamic.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Microsoft.Scripting.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\MySql.Data.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\System.Buffers.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\System.Memory.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.Form1.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.Form2.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.Form2_old.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormBIAS_New.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormBIAS.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormBIASPassword.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormIPSet.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormLanguage.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormNumberinterval.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormNumberpcsinterval.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormNumpadBPassword.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormNumpad_min.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormNumpad_max.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormOptions.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormProductselection.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormThreshold.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormIntervalTime.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.Properties.Resources.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormFixedTime.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.csproj.GenerateResource.cache
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.csproj.CoreCompileInputs.cache
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.csproj.CopyComplete
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.exe
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.pdb
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormMode.resources
+D:\Git Project\Final_UI_Controller\comfilepicontroller-080821\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormInterface.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\ControllerPage.exe.config
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\ControllerPage.exe
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\ControllerPage.pdb
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\EntityFramework.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Google.Protobuf.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\IronPython.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\IronPython.Modules.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\IronPython.SQLite.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\IronPython.Wpf.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Microsoft.Scripting.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\MySql.Data.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\mysql.data.entity.EF6.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\System.Buffers.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\System.Memory.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Zstandard.Net.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\EntityFramework.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Google.Protobuf.pdb
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Google.Protobuf.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\IronPython.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\IronPython.Modules.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\IronPython.SQLite.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\IronPython.Wpf.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Microsoft.Dynamic.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Microsoft.Scripting.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\MySql.Data.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\System.Buffers.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\System.Memory.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.csprojAssemblyReference.cache
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.Form1.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.Form2.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.Form2_old.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormBIAS_New.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormBIAS.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormBIASPassword.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormMode.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormIPSet.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormLanguage.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormInterface.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormNumberinterval.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormNumberpcsinterval.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormNumpadBPassword.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormNumpad_min.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormNumpad_max.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormOptions.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormProductselection.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormThreshold.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormIntervalTime.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.Properties.Resources.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.FormFixedTime.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.csproj.GenerateResource.cache
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.csproj.CoreCompileInputs.cache
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.csproj.CopyComplete
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.exe
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI\ControllerPage\obj\Debug\ControllerPage.pdb
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\ControllerPage.exe.config
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\ControllerPage.exe
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\ControllerPage.pdb
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\EntityFramework.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\Google.Protobuf.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\IronPython.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\IronPython.Modules.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\IronPython.SQLite.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\IronPython.Wpf.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\Microsoft.Scripting.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\MySql.Data.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\mysql.data.entity.EF6.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\System.Buffers.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\System.Memory.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\Zstandard.Net.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\EntityFramework.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\Google.Protobuf.pdb
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\Google.Protobuf.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\IronPython.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\IronPython.Modules.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\IronPython.SQLite.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\IronPython.Wpf.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\Microsoft.Dynamic.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\Microsoft.Scripting.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\MySql.Data.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\System.Buffers.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\System.Memory.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.csprojAssemblyReference.cache
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.Form1.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.Form2.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.Form2_old.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.FormBIAS_New.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.FormBIAS.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.FormBIASPassword.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.FormMode.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.FormIPSet.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.FormLanguage.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.FormInterface.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.FormNumberinterval.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.FormNumberpcsinterval.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.FormNumpadBPassword.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.FormNumpad_min.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.FormNumpad_max.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.FormOptions.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.FormProductselection.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.FormThreshold.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.FormIntervalTime.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.Properties.Resources.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.FormFixedTime.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.csproj.GenerateResource.cache
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.csproj.CoreCompileInputs.cache
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.csproj.CopyComplete
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.exe
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_Ver1.10\ControllerPage\obj\Debug\ControllerPage.pdb
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\ControllerPage.exe.config
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\ControllerPage.exe
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\ControllerPage.pdb
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\EntityFramework.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\Google.Protobuf.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\IronPython.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\IronPython.Modules.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\IronPython.SQLite.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\IronPython.Wpf.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\Microsoft.Scripting.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\MySql.Data.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\mysql.data.entity.EF6.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\System.Buffers.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\System.Memory.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\Zstandard.Net.dll
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\EntityFramework.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\Google.Protobuf.pdb
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\Google.Protobuf.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\IronPython.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\IronPython.Modules.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\IronPython.SQLite.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\IronPython.Wpf.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\Microsoft.Dynamic.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\Microsoft.Scripting.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\MySql.Data.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\System.Buffers.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\System.Memory.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.csprojAssemblyReference.cache
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.Form1.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.Form2.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.Form2_old.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.FormBIAS_New.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.FormBIAS.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.FormBIASPassword.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.FormMode.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.FormIPSet.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.FormLanguage.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.FormInterface.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.FormNumberinterval.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.FormNumberpcsinterval.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.FormNumpadBPassword.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.FormNumpad_min.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.FormNumpad_max.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.FormOptions.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.FormProductselection.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.FormThreshold.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.FormIntervalTime.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.Properties.Resources.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.FormFixedTime.resources
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.csproj.GenerateResource.cache
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.csproj.CoreCompileInputs.cache
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.csproj.CopyComplete
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.exe
+C:\Users\Ignatius Albert\Source\Repos\Final_Controller_ComfilePI_0901\ControllerPage\obj\Debug\ControllerPage.pdb
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\ControllerPage.exe.config
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\ControllerPage.exe
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\ControllerPage.pdb
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\BouncyCastle.Crypto.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\EntityFramework.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\Google.Protobuf.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\IronPython.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\IronPython.Modules.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\IronPython.SQLite.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\IronPython.Wpf.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\K4os.Compression.LZ4.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\K4os.Hash.xxHash.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\Microsoft.Dynamic.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\Microsoft.Scripting.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\MySql.Data.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\mysql.data.entity.EF6.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\System.Buffers.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\System.Memory.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\Ubiety.Dns.Core.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\Zstandard.Net.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\EntityFramework.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\Google.Protobuf.pdb
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\Google.Protobuf.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\IronPython.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\IronPython.Modules.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\IronPython.SQLite.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\IronPython.Wpf.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\K4os.Compression.LZ4.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\K4os.Hash.xxHash.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\Microsoft.Dynamic.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\Microsoft.Scripting.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\MySql.Data.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\System.Buffers.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\System.Memory.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.Form1.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.Form2.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.Form2_old.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.FormBIAS_New.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.FormBIAS.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.FormBIASPassword.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.FormMode.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.FormIPSet.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.FormLanguage.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.FormInterface.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.FormNumberinterval.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.FormNumberpcsinterval.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.FormNumpadBPassword.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.FormNumpad_min.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.FormNumpad_max.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.FormOptions.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.FormProductselection.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.FormThreshold.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.FormIntervalTime.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.Properties.Resources.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.FormFixedTime.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.csproj.GenerateResource.cache
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.csproj.CoreCompileInputs.cache
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.csproj.CopyComplete
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.exe
+D:\Git Project\Manual_controller_ComfilePI1Sept\Final_Controller_ComfilePI-Update01Sept\ControllerPage\obj\Debug\ControllerPage.pdb
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\ControllerPage.exe.config
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\ControllerPage.exe
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\ControllerPage.pdb
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\BouncyCastle.Crypto.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\EntityFramework.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\Google.Protobuf.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\IronPython.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\IronPython.Modules.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\IronPython.SQLite.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\IronPython.Wpf.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\K4os.Compression.LZ4.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\K4os.Hash.xxHash.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\Microsoft.Dynamic.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\Microsoft.Scripting.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\MySql.Data.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\mysql.data.entity.EF6.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\System.Buffers.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\System.Memory.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\Ubiety.Dns.Core.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\Zstandard.Net.dll
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\EntityFramework.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\Google.Protobuf.pdb
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\Google.Protobuf.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\IronPython.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\IronPython.Modules.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\IronPython.SQLite.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\IronPython.Wpf.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\K4os.Compression.LZ4.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\K4os.Hash.xxHash.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\Microsoft.Dynamic.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\Microsoft.Scripting.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\MySql.Data.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\System.Buffers.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\System.Memory.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.csprojAssemblyReference.cache
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.Form1.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.Form2.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.Form2_old.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormBIAS_New.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormBIAS.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormBIASPassword.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormMode.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormIPSet.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormLanguage.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormInterface.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormNumberinterval.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormNumberpcsinterval.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormNumpadBPassword.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormNumpad_min.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormNumpad_max.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormOptions.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormProductselection.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormThreshold.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormIntervalTime.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.Properties.Resources.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormFixedTime.resources
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.csproj.GenerateResource.cache
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.csproj.CoreCompileInputs.cache
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.csproj.CopyComplete
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.exe
+D:\Git Project\Manual_controller_ComfilePI1Sept\Gii_RX_30_V_101\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.pdb
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\ControllerPage.exe.config
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\ControllerPage.exe
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\ControllerPage.pdb
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\EntityFramework.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\Google.Protobuf.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\IronPython.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\IronPython.Modules.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\IronPython.SQLite.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\IronPython.Wpf.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\Microsoft.Scripting.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\MySql.Data.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\mysql.data.entity.EF6.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\System.Buffers.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\System.Memory.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\Zstandard.Net.dll
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\EntityFramework.xml
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\Google.Protobuf.pdb
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\Google.Protobuf.xml
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\IronPython.xml
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\IronPython.Modules.xml
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\IronPython.SQLite.xml
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\IronPython.Wpf.xml
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\Microsoft.Dynamic.xml
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\Microsoft.Scripting.xml
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.xml
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\MySql.Data.xml
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\System.Buffers.xml
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\System.Memory.xml
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.csprojAssemblyReference.cache
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.Form1.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.Form2.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.Form2_old.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormBIAS_New.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormBIAS.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormBIASPassword.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormMode.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormIPSet.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormLanguage.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormInterface.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormNumberinterval.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormNumberpcsinterval.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormNumpadBPassword.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormNumpad_min.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormNumpad_max.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormOptions.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormProductselection.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormThreshold.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormIntervalTime.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.Properties.Resources.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.FormFixedTime.resources
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.csproj.GenerateResource.cache
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.csproj.CoreCompileInputs.cache
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.csproj.CopyComplete
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.exe
+C:\Users\Ignatius Albert\Source\Repos\Gii_RX_30_V_101\ControllerPage\obj\Debug\ControllerPage.pdb
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\ControllerPage.exe.config
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\ControllerPage.exe
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\ControllerPage.pdb
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\BouncyCastle.Crypto.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\EntityFramework.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\Google.Protobuf.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\IronPython.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\IronPython.Modules.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\IronPython.SQLite.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\IronPython.Wpf.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\K4os.Compression.LZ4.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\K4os.Hash.xxHash.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\Microsoft.Dynamic.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\Microsoft.Scripting.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\MySql.Data.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\mysql.data.entity.EF6.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\System.Buffers.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\System.Memory.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\Ubiety.Dns.Core.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\Zstandard.Net.dll
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\EntityFramework.xml
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\Google.Protobuf.pdb
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\Google.Protobuf.xml
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\IronPython.xml
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\IronPython.Modules.xml
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\IronPython.SQLite.xml
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\IronPython.Wpf.xml
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\K4os.Compression.LZ4.xml
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\K4os.Hash.xxHash.xml
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\Microsoft.Dynamic.xml
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\Microsoft.Scripting.xml
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.xml
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\MySql.Data.xml
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\System.Buffers.xml
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\System.Memory.xml
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.Form1.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.Form2.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.Form2_old.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.FormBIAS_V010.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.FormBIAS_New.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.FormMode.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.FormIPSet.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.FormLanguage.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.FormInterface.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.FormNumberinterval.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.FormNumberpcsinterval.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.FormNumpadBPassword.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.FormNumpad_min.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.FormNumpad_max.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.FormOptions.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.FormProductselection.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.FormProductselection_V010.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.FormThreshold.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.FormIntervalTime.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.Properties.Resources.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.FormFixedTime.resources
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.csproj.GenerateResource.cache
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.csproj.CoreCompileInputs.cache
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.csproj.CopyComplete
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.exe
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.pdb
+D:\Git Project\RX_20\Gii-RX--30-V-1.10\ControllerPage\obj\Debug\ControllerPage.csprojAssemblyReference.cache
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.Form1.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.Form2.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.Form2_old.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.FormBIAS_V010.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.FormBIAS_New.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.FormMode.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.FormIPSet.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.FormLanguage.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.FormInterface.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.FormNumberinterval.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.FormNumberpcsinterval.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.FormNumpadBPassword.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.FormNumpad_min.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.FormNumpad_max.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.FormOptions.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.FormProductselection.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.FormProductselection_V010.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.FormThreshold.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.FormIntervalTime.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.Properties.Resources.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.FormFixedTime.resources
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.csproj.GenerateResource.cache
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.csproj.CoreCompileInputs.cache
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\ControllerPage.exe.config
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\ControllerPage.exe
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\ControllerPage.pdb
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\BouncyCastle.Crypto.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\EntityFramework.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\Google.Protobuf.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\IronPython.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\IronPython.Modules.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\IronPython.SQLite.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\IronPython.Wpf.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\K4os.Compression.LZ4.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\K4os.Hash.xxHash.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\Microsoft.Dynamic.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\Microsoft.Scripting.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\MySql.Data.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\mysql.data.entity.EF6.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\System.Buffers.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\System.Memory.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\Ubiety.Dns.Core.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\Zstandard.Net.dll
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\EntityFramework.xml
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\Google.Protobuf.pdb
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\Google.Protobuf.xml
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\IronPython.xml
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\IronPython.Modules.xml
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\IronPython.SQLite.xml
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\IronPython.Wpf.xml
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\K4os.Compression.LZ4.xml
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\K4os.Hash.xxHash.xml
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\Microsoft.Dynamic.xml
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\Microsoft.Scripting.xml
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\Microsoft.Scripting.Metadata.xml
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\MySql.Data.xml
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\System.Buffers.xml
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\System.Memory.xml
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.csproj.CopyComplete
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.exe
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.pdb
+D:\Git Project\Latest_Rx_Combine\Rx_gabung_Project2\ControllerPage\obj\Debug\ControllerPage.csprojAssemblyReference.cache
