@@ -713,8 +713,6 @@ namespace ControllerPage
             Current_Avg_TextBox.Text = "";
             Curr_Measure_TextBox.Text = "";
             Temp_TextBox.Text = "";
-            textBox_theresholdmax.Text = "";
-            textBox_theresholdmin.Text = "";
 
             // Parameter Input
             delay = 0;
