@@ -174,7 +174,7 @@ namespace ControllerPage
                 textBox9.Text = "Running Time";
 
             }
-            else if (Button_Mode.Text.ToLower() == "fixed pcs")
+            else if (Button_Mode.Text.ToLower() == "fixed pieces")
             {
 
                 Console.WriteLine("Time mode");
@@ -1661,7 +1661,8 @@ namespace ControllerPage
                                                 
 
                                             }
-                                            else if(double.Parse(Result_Parsing) < thereshold_min)
+                                            
+                                            if(double.Parse(Result_Parsing) < thereshold_min)
                                             {
                                                 thereshold_min_counter = thereshold_min_counter + 1;
 
@@ -1671,10 +1672,6 @@ namespace ControllerPage
                                                     textBox_theresholdmin.Text = (thereshold_min_counter).ToString();
                                                 });
                                                 
-                                            }
-                                            else
-                                            {
-                                                Console.WriteLine("did not reach thershold");
                                             }
 
                                         }
@@ -2187,7 +2184,7 @@ namespace ControllerPage
 
 
                                             }
-                                            else if (double.Parse(Result_Parsing) < thereshold_min)
+                                            if (double.Parse(Result_Parsing) < thereshold_min)
                                             {
                                                 thereshold_min_counter = thereshold_min_counter + 1;
 
@@ -2651,7 +2648,7 @@ namespace ControllerPage
 
 
                                             }
-                                            else if (double.Parse(Result_Parsing) < thereshold_min)
+                                            if (double.Parse(Result_Parsing) < thereshold_min)
                                             {
                                                 thereshold_min_counter = thereshold_min_counter + 1;
 
@@ -3002,6 +2999,11 @@ namespace ControllerPage
         }
 
         private void textBox_theresholdmin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Curr_Interval_TextBox_TextChanged(object sender, EventArgs e)
         {
 
         }
