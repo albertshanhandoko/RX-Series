@@ -716,6 +716,7 @@ namespace ControllerPage
             textBox_theresholdmax.Text = "";
             textBox_theresholdmin.Text = "";
 
+
             // Parameter Input
             delay = 0;
             TotalInterval = 0;
@@ -3003,9 +3004,5 @@ namespace ControllerPage
 
         }
 
-        private void Curr_Interval_TextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

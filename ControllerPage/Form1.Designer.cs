@@ -157,7 +157,6 @@ namespace ControllerPage
             this.textBox_theresholdmax.Name = "textBox_theresholdmax";
             this.textBox_theresholdmax.Size = new System.Drawing.Size(62, 28);
             this.textBox_theresholdmax.TabIndex = 69;
-            this.textBox_theresholdmax.Text = "100";
             // 
             // Button_Interface
             // 
@@ -483,7 +482,7 @@ namespace ControllerPage
             this.Curr_Interval_TextBox.Name = "Curr_Interval_TextBox";
             this.Curr_Interval_TextBox.Size = new System.Drawing.Size(59, 28);
             this.Curr_Interval_TextBox.TabIndex = 25;
-            this.Curr_Interval_TextBox.Text = "999";
+            //this.Curr_Interval_TextBox.TextChanged += new System.EventHandler(this.Curr_Interval_TextBox_TextChanged);
             // 
             // Btn_Start
             // 
@@ -603,7 +602,6 @@ namespace ControllerPage
             this.Current_Avg_TextBox.Name = "Current_Avg_TextBox";
             this.Current_Avg_TextBox.Size = new System.Drawing.Size(59, 28);
             this.Current_Avg_TextBox.TabIndex = 27;
-            this.Current_Avg_TextBox.Text = "99";
             // 
             // Curr_Kernel_TextBox
             // 
@@ -615,7 +613,6 @@ namespace ControllerPage
             this.Curr_Kernel_TextBox.Name = "Curr_Kernel_TextBox";
             this.Curr_Kernel_TextBox.Size = new System.Drawing.Size(59, 28);
             this.Curr_Kernel_TextBox.TabIndex = 26;
-            this.Curr_Kernel_TextBox.Text = "999";
             // 
             // label2
             // 
