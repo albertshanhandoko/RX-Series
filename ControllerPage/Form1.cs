@@ -1218,6 +1218,7 @@ namespace ControllerPage
                 {
                     //Curr_Kernel_TextBox.Text = (counter_data + 1).ToString();
                     textBox_Sensor_Status.Text = "Error";
+                    textBox_Sensor_Status.ForeColor = Color.Red;
 
                 });
 

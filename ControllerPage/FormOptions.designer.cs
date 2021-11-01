@@ -38,6 +38,7 @@ namespace ControllerPage
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +48,7 @@ namespace ControllerPage
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.41177F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.58823F));
+            this.tableLayoutPanel1.Controls.Add(this.button5, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.button4, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.button3, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.button2, 1, 2);
@@ -57,24 +59,25 @@ namespace ControllerPage
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(8, 9);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 74F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(492, 359);
+            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(523, 414);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // button4
             // 
             this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(270, 290);
+            this.button4.Location = new System.Drawing.Point(289, 279);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(219, 63);
+            this.button4.Size = new System.Drawing.Size(229, 63);
             this.button4.TabIndex = 9;
-            this.button4.Text = "Close";
+            this.button4.Text = "Shutdown";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -82,9 +85,9 @@ namespace ControllerPage
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(270, 217);
+            this.button3.Location = new System.Drawing.Point(291, 210);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(219, 63);
+            this.button3.Size = new System.Drawing.Size(224, 63);
             this.button3.TabIndex = 8;
             this.button3.Text = "Update";
             this.button3.UseVisualStyleBackColor = true;
@@ -94,9 +97,9 @@ namespace ControllerPage
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(270, 146);
+            this.button2.Location = new System.Drawing.Point(289, 141);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(219, 63);
+            this.button2.Size = new System.Drawing.Size(229, 63);
             this.button2.TabIndex = 7;
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = true;
@@ -106,9 +109,9 @@ namespace ControllerPage
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(270, 75);
+            this.button1.Location = new System.Drawing.Point(289, 72);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(219, 63);
+            this.button1.Size = new System.Drawing.Size(229, 63);
             this.button1.TabIndex = 6;
             this.button1.Text = "English";
             this.button1.UseVisualStyleBackColor = true;
@@ -120,7 +123,7 @@ namespace ControllerPage
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label3.Location = new System.Drawing.Point(95, 233);
+            this.label3.Location = new System.Drawing.Point(104, 226);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 31);
             this.label3.TabIndex = 5;
@@ -132,7 +135,7 @@ namespace ControllerPage
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label2.Location = new System.Drawing.Point(3, 162);
+            this.label2.Location = new System.Drawing.Point(11, 157);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(261, 31);
             this.label2.TabIndex = 4;
@@ -145,7 +148,7 @@ namespace ControllerPage
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label1.Location = new System.Drawing.Point(66, 91);
+            this.label1.Location = new System.Drawing.Point(75, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(134, 31);
             this.label1.TabIndex = 1;
@@ -159,18 +162,31 @@ namespace ControllerPage
             this.tableLayoutPanel1.SetColumnSpan(this.label4, 2);
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label4.Location = new System.Drawing.Point(182, 17);
+            this.label4.Location = new System.Drawing.Point(197, 16);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(128, 37);
             this.label4.TabIndex = 10;
             this.label4.Text = "Options";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button5
+            // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanel1.SetColumnSpan(this.button5, 2);
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(152, 348);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(219, 63);
+            this.button5.TabIndex = 11;
+            this.button5.Text = "Close";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // FormOptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 372);
+            this.ClientSize = new System.Drawing.Size(543, 428);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FormOptions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -193,5 +209,6 @@ namespace ControllerPage
         public System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Button button5;
     }
 }

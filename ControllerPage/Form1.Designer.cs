@@ -33,8 +33,10 @@ namespace ControllerPage
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox_theresholdmax = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.Button_Interface = new System.Windows.Forms.Button();
             this.Button_Mode = new System.Windows.Forms.Button();
             this.ButtonIPSet = new System.Windows.Forms.Button();
@@ -68,15 +70,15 @@ namespace ControllerPage
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.Current_Avg_TextBox = new System.Windows.Forms.TextBox();
             this.Curr_Kernel_TextBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.textBox_theresholdmin = new System.Windows.Forms.TextBox();
+            this.textBox_theresholdmax = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableLayoutPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tableLayoutPanel1.BackgroundImage")));
             this.tableLayoutPanel1.ColumnCount = 10;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.00514F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.00514F));
@@ -88,7 +90,8 @@ namespace ControllerPage
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.671158F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.25729F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.00514F));
-            this.tableLayoutPanel1.Controls.Add(this.textBox_theresholdmax, 5, 6);
+            this.tableLayoutPanel1.Controls.Add(this.textBox11, 4, 8);
+            this.tableLayoutPanel1.Controls.Add(this.textBox4, 4, 7);
             this.tableLayoutPanel1.Controls.Add(this.Button_Interface, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.Button_Mode, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.ButtonIPSet, 8, 1);
@@ -122,9 +125,8 @@ namespace ControllerPage
             this.tableLayoutPanel1.Controls.Add(this.textBox15, 4, 5);
             this.tableLayoutPanel1.Controls.Add(this.Current_Avg_TextBox, 5, 5);
             this.tableLayoutPanel1.Controls.Add(this.Curr_Kernel_TextBox, 5, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 4, 6);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 4, 7);
-            this.tableLayoutPanel1.Controls.Add(this.textBox_theresholdmin, 5, 7);
+            this.tableLayoutPanel1.Controls.Add(this.textBox_theresholdmin, 5, 8);
+            this.tableLayoutPanel1.Controls.Add(this.textBox_theresholdmax, 5, 7);
             this.tableLayoutPanel1.ForeColor = System.Drawing.SystemColors.InfoText;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -147,16 +149,31 @@ namespace ControllerPage
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // textBox_theresholdmax
+            // textBox11
             // 
-            this.textBox_theresholdmax.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox_theresholdmax.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox_theresholdmax.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_theresholdmax.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_theresholdmax.Location = new System.Drawing.Point(343, 213);
-            this.textBox_theresholdmax.Name = "textBox_theresholdmax";
-            this.textBox_theresholdmax.Size = new System.Drawing.Size(62, 28);
-            this.textBox_theresholdmax.TabIndex = 69;
+            this.textBox11.AcceptsReturn = true;
+            this.textBox11.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.Location = new System.Drawing.Point(275, 283);
+            this.textBox11.Multiline = true;
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(62, 29);
+            this.textBox11.TabIndex = 73;
+            this.textBox11.Text = "Threshold Min";
+            // 
+            // textBox4
+            // 
+            this.textBox4.AcceptsReturn = true;
+            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(275, 248);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(62, 29);
+            this.textBox4.TabIndex = 72;
+            this.textBox4.Text = "Threshold Max";
             // 
             // Button_Interface
             // 
@@ -482,7 +499,6 @@ namespace ControllerPage
             this.Curr_Interval_TextBox.Name = "Curr_Interval_TextBox";
             this.Curr_Interval_TextBox.Size = new System.Drawing.Size(59, 28);
             this.Curr_Interval_TextBox.TabIndex = 25;
-            //this.Curr_Interval_TextBox.TextChanged += new System.EventHandler(this.Curr_Interval_TextBox_TextChanged);
             // 
             // Btn_Start
             // 
@@ -614,38 +630,33 @@ namespace ControllerPage
             this.Curr_Kernel_TextBox.Size = new System.Drawing.Size(59, 28);
             this.Curr_Kernel_TextBox.TabIndex = 26;
             // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(275, 210);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 35);
-            this.label2.TabIndex = 67;
-            this.label2.Text = "Thereshold Max";
-            // 
-            // label3
-            // 
-            this.label3.Location = new System.Drawing.Point(275, 245);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 35);
-            this.label3.TabIndex = 68;
-            this.label3.Text = "Thereshold Min";
-            // 
             // textBox_theresholdmin
             // 
             this.textBox_theresholdmin.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBox_theresholdmin.BackColor = System.Drawing.SystemColors.Control;
             this.textBox_theresholdmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_theresholdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_theresholdmin.Location = new System.Drawing.Point(343, 248);
+            this.textBox_theresholdmin.Location = new System.Drawing.Point(343, 283);
             this.textBox_theresholdmin.Name = "textBox_theresholdmin";
             this.textBox_theresholdmin.Size = new System.Drawing.Size(62, 28);
             this.textBox_theresholdmin.TabIndex = 70;
+            // 
+            // textBox_theresholdmax
+            // 
+            this.textBox_theresholdmax.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox_theresholdmax.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox_theresholdmax.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_theresholdmax.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_theresholdmax.Location = new System.Drawing.Point(343, 248);
+            this.textBox_theresholdmax.Name = "textBox_theresholdmax";
+            this.textBox_theresholdmax.Size = new System.Drawing.Size(62, 28);
+            this.textBox_theresholdmax.TabIndex = 69;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 428);
+            this.ClientSize = new System.Drawing.Size(685, 428);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
@@ -700,9 +711,9 @@ namespace ControllerPage
         private System.Windows.Forms.Button Button_Interface;
         private System.Windows.Forms.Button Button_Mode;
         private TextBox textBox_theresholdmax;
-        private Label label2;
-        private Label label3;
         private TextBox textBox_theresholdmin;
+        private TextBox textBox11;
+        private TextBox textBox4;
     }
 }
 

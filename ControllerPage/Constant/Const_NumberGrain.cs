@@ -599,31 +599,31 @@ namespace ControllerPage.Constant
         */
 
         // Temp
-        [Description("Error 020 - Temperature less than -20 celc. Please reset with stop key")]
+        [Description("Error 020 - Temperature less than -20 celc")]
         error1000, // 1000 ga mungkin penilaian 
-        [Description("Error 022 - Temperature more than 70 celc. Please reset with stop key")]
+        [Description("Error 022 - Temperature more than 70 celc")]
         error1200, // 1200 ga mungkin nilai
-        [Description("Error 024 - Temperature more than 70 celc. Please reset with stop key")]
+        [Description("Error 024 - Temperature more than 70 celc")]
         error1400, // 1400 ga mungkin nilai
-        [Description("Error 021 - Temperature more than 70 celc. Please reset with stop key")]
+        [Description("Error 021 - Temperature more than 70 celc")]
         error1600, // 1699
 
-        [Description("Error 020 - Temperature less than -20 celc. Please reset with stop key")]
+        [Description("Error 020 - Temperature less than -20 celc")]
         error020, // STX 020 ETX CheckSUM CR
-        [Description("Error 021 - Temperature more than 70 celc. Please reset with stop key")]
+        [Description("Error 021 - Temperature more than 70 celc")]
         error021, // STX 070 ETX CheckSUM CR
-        [Description("Error 000 - Motor Lock. Please reset with stop key")]
+        [Description("Error 104 - Motor lock or Overheating of sensor")]
         error000, // STX 000 ETX CheckSUM CR
 
 
         // Check Command
-        [Description("Error 101 - Abnormal PU-359 circuits 1. Reset with Stop key")]
+        [Description("Error 101 - Abnormal PU-359 circuits 1")]
         error00191,
-        [Description("Error 102 - Abnormal PU-359 circuits 2. Reset with Stop key")]
+        [Description("Error 102 - Abnormal PU-359 circuits 2")]
         error00292,
-        [Description("Error 103 - Abnormal PU-359 circuits 3. Reset with Stop key")]
+        [Description("Error 103 - Abnormal PU-359 circuits 3")]
         error00393,
-        [Description("Error 104 - Reset with Stop key")]
+        [Description("Error 104 - Motor lock or Overheating of sensor")]
         error00494,
 
     };
@@ -650,7 +650,7 @@ namespace ControllerPage.Constant
         Error102,
         [Description("Abnormal PU-359 circuits 3. Reset with Stop key")]
         Error103,
-        [Description("Motor Lock. Reset with Stop key")]
+        [Description("Motor lock or Overheating of sensor")]
         Error104,
     };
 
@@ -677,7 +677,7 @@ namespace ControllerPage.Constant
         Error102,
         [Description("Abnormal PU-359 circuits 3.")]
         Error103,
-        [Description("Motor Lock.")]
+        [Description("Motor lock or Overheating of sensor")]
         Error104,
     };
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -61,9 +62,14 @@ namespace ControllerPage
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Form1 OpenForm1 = new Form1();
-            OpenForm1.ShowDialog();
+            ProcessStartInfo procStartInfo3 = new ProcessStartInfo("/usr/bin/sudo", "halt");
+            procStartInfo3.RedirectStandardOutput = true;
+            procStartInfo3.UseShellExecute = false;
+            procStartInfo3.CreateNoWindow = true;
+
+            System.Diagnostics.Process proc3 = new System.Diagnostics.Process();
+            proc3.StartInfo = procStartInfo3;
+            proc3.Start();
         }
 
         private void FormOptions_Load(object sender, EventArgs e)
@@ -86,6 +92,13 @@ namespace ControllerPage
                 button3.Text = "Update";
                 button4.Text = "Close";
             }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form1 OpenForm1 = new Form1();
+            OpenForm1.ShowDialog();
         }
     }
 }
