@@ -599,31 +599,31 @@ namespace ControllerPage.Constant
         */
 
         // Temp
-        [Description("Error 020 - Temperature less than -20 celc")]
+        [Description("Error 020")]
         error1000, // 1000 ga mungkin penilaian 
-        [Description("Error 022 - Temperature more than 70 celc")]
+        [Description("Error 022")]
         error1200, // 1200 ga mungkin nilai
-        [Description("Error 024 - Temperature more than 70 celc")]
+        [Description("Error 024")]
         error1400, // 1400 ga mungkin nilai
-        [Description("Error 021 - Temperature more than 70 celc")]
+        [Description("Error 021")]
         error1600, // 1699
 
-        [Description("Error 020 - Temperature less than -20 celc")]
+        [Description("Error 020")]
         error020, // STX 020 ETX CheckSUM CR
-        [Description("Error 021 - Temperature more than 70 celc")]
+        [Description("Error 021")]
         error021, // STX 070 ETX CheckSUM CR
-        [Description("Error 104 - Motor lock or Overheating of sensor")]
+        [Description("Error 104")]
         error000, // STX 000 ETX CheckSUM CR
 
 
         // Check Command
-        [Description("Error 101 - Abnormal PU-359 circuits 1")]
+        [Description("Error 101")]
         error00191,
-        [Description("Error 102 - Abnormal PU-359 circuits 2")]
+        [Description("Error 102")]
         error00292,
-        [Description("Error 103 - Abnormal PU-359 circuits 3")]
+        [Description("Error 103")]
         error00393,
-        [Description("Error 104 - Motor lock or Overheating of sensor")]
+        [Description("Error 104")]
         error00494,
 
     };

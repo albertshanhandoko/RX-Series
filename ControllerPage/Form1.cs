@@ -391,6 +391,9 @@ namespace ControllerPage
                 }
                 catch (Exception ex)
                 {
+                    int batch_id_001;
+                    batch_id_001 = Sensor_input_Helper.MySql_Insert_Batch(Sensor_input_Helper.GetLocalIPAddress(),"Paddy",1,"1",10,"20");
+                    Sensor_input_Helper.Update_ErrorCode(Sensor_input_Helper.GetLocalIPAddress(), batch_id_001, "001");
                     MessageBox.Show("Error 001 - Connection to sensor failed");
                     Console.WriteLine(ex.Message);
                 }
@@ -408,6 +411,9 @@ namespace ControllerPage
             
             catch (Exception ex)
             {
+                int batch_id_002;
+                batch_id_002 = Sensor_input_Helper.MySql_Insert_Batch(Sensor_input_Helper.GetLocalIPAddress(), "Paddy", 1, "1", 10, "20");
+                Sensor_input_Helper.Update_ErrorCode(Sensor_input_Helper.GetLocalIPAddress(), batch_id_002, "001");
                 MessageBox.Show("Error 001 - Connection to sensor failed");
                 Console.WriteLine(ex.Message);
             }
@@ -510,7 +516,6 @@ namespace ControllerPage
                     , jumlahpieces
                     , Temp_TextBox.Text)
                     ;
-
 
 
                 Console.WriteLine(ResultGrain);
@@ -688,7 +693,10 @@ namespace ControllerPage
             {
                 next_action_button(true);
                 Thread.Sleep(2000);
-                MessageBox.Show("Error 001 - Failed to connect to sensor.");
+                int batch_id_003;
+                batch_id_003 = Sensor_input_Helper.MySql_Insert_Batch(Sensor_input_Helper.GetLocalIPAddress(), "Paddy", 1, "1", 10, "20");
+                Sensor_input_Helper.Update_ErrorCode(Sensor_input_Helper.GetLocalIPAddress(), batch_id_003, "001");
+                MessageBox.Show("Error 001");
                 Console.WriteLine(ex.Message);
             }
             return check_result;
@@ -1105,7 +1113,7 @@ namespace ControllerPage
                 }
                 catch (TimeoutException ex)
                 {
-                    MessageBox.Show(this, "Error 011 - no message during checking for 5 mins");
+                    MessageBox.Show(this, "Error 011");
                     //bool error = true;
                     next_action_button(true);
                     Console.WriteLine(ex.Message);
@@ -1261,7 +1269,9 @@ namespace ControllerPage
             if (bool_check_error)
             {
                 Console.WriteLine("Match Error adalah: " + check_string);
-                //Sensor_input_Helper.Update_ErrorCode(Sensor_input_Helper.GetLocalIPAddress(), batch_id_check, check_string);
+                int batch_id_error;
+                batch_id_error = Sensor_input_Helper.MySql_Insert_Batch(Sensor_input_Helper.GetLocalIPAddress(), "Paddy", 1, "1", 10, "20");
+                Sensor_input_Helper.Update_ErrorCode(Sensor_input_Helper.GetLocalIPAddress(), batch_id_error, check_string);
                 Error_Sensor_Controller enum_ErrorCode = (Error_Sensor_Controller)Enum.Parse(typeof(Error_Sensor_Controller), "error" + check_string);
                 string Error_Message = Sensor_input_Helper.GetDescription(enum_ErrorCode);
                 MessageBox.Show(this, Error_Message, application_name);
@@ -1307,7 +1317,7 @@ namespace ControllerPage
             if (Time_dif_check_5min.TotalSeconds > 70) // aslinya 300, sekrang tssting dlu
                                                        //if (Time_dif_check_5min.TotalMinutes > 1) // aslinya 300, sekrang tssting dlu
             {
-                MessageBox.Show(this, "Error 011 - no message during checking for 5 mins");
+                MessageBox.Show(this, "Error 011");
 
                 checkcommand = false;
                 Console.WriteLine("Check Thread Aborted");
@@ -1430,7 +1440,7 @@ namespace ControllerPage
                 }
                 catch (TimeoutException ex)
                 {
-                    MessageBox.Show(this, "Error 011 - no message during checking for 5 mins");
+                    MessageBox.Show(this, "Error 011");
                     bool error = true;
                     next_action_button(error);
 
@@ -1512,7 +1522,7 @@ namespace ControllerPage
                     {
                         Thread.Sleep(8000);
                         Console.WriteLine("Sensor Normal");
-                        //MessageBox.Show(this, "Connection Succeed");
+                        MessageBox.Show(this, "Connection Succeed");
                         checkcommand = false;
                         data_cleansing();
                         next_action_button(false);
@@ -1532,7 +1542,7 @@ namespace ControllerPage
 
                 Thread.Sleep(10000);
 
-                MessageBox.Show(this, "Error 011 - No message return during checking");
+                MessageBox.Show(this, "Error 011");
 
                 checkcommand = false;
                 //Console.WriteLine("Check Thread Aborted");
@@ -1812,7 +1822,7 @@ namespace ControllerPage
                                     Console.WriteLine("MyTimerStop");
 
                                     Sensor_input_Helper.Update_ErrorCode(Sensor_input_Helper.GetLocalIPAddress(), batch_id, "030");
-                                    MessageBox.Show(this, "Error-030, Error during checksum ", application_name);
+                                    MessageBox.Show(this, "Error 030 ", application_name);
 
 
                                 }
@@ -2047,7 +2057,7 @@ namespace ControllerPage
                     aggregate_cond = false;
                     Console.WriteLine(ex.Message);
                     Sensor_input_Helper.Update_ErrorCode(Sensor_input_Helper.GetLocalIPAddress(), batch_id, "011");
-                    MessageBox.Show(this, "Error 011 - no message during checking for 5 mins");
+                    MessageBox.Show(this, "Error 011");
                 }
 
                 catch (Exception ex)
@@ -2518,7 +2528,7 @@ namespace ControllerPage
                     next_action_button(error);
                     Thread.Sleep(10000);
                     Sensor_input_Helper.Update_ErrorCode(Sensor_input_Helper.GetLocalIPAddress(), batch_id, "011");
-                    MessageBox.Show(this, "Error 011 - no message during checking for 5 mins");
+                    MessageBox.Show(this, "Error 011");
                     Console.WriteLine(ex.Message);
 
                 }
@@ -2971,7 +2981,7 @@ namespace ControllerPage
                     next_action_button(error);
                     Thread.Sleep(10000);
                     Sensor_input_Helper.Update_ErrorCode(Sensor_input_Helper.GetLocalIPAddress(), batch_id, "011");
-                    MessageBox.Show(this, "Error 011 - no message during checking for 5 mins");
+                    MessageBox.Show(this, "Error 011");
                     Console.WriteLine(ex.Message);
                 }
                 catch (Exception ex)
