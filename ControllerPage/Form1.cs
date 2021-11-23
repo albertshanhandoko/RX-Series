@@ -347,6 +347,46 @@ namespace ControllerPage
         private void Btn_Check_Click(object sender, EventArgs e)
         {
             Btn_Check.Enabled = false;
+            if (Button_Interface.Text == "RS-232")
+            {
+                ProcessStartInfo procStartInfo1 = new ProcessStartInfo("/usr/bin/sudo", "systemctl stop modbusserver.service");
+                procStartInfo1.RedirectStandardOutput = true;
+                procStartInfo1.UseShellExecute = false;
+                procStartInfo1.CreateNoWindow = true;
+
+                System.Diagnostics.Process proc1 = new System.Diagnostics.Process();
+                proc1.StartInfo = procStartInfo1;
+                proc1.Start();
+
+                ProcessStartInfo procStartInfo2 = new ProcessStartInfo("/usr/bin/sudo", "systemctl start modbusserver485.service");
+                procStartInfo2.RedirectStandardOutput = true;
+                procStartInfo2.UseShellExecute = false;
+                procStartInfo2.CreateNoWindow = true;
+
+                System.Diagnostics.Process proc2 = new System.Diagnostics.Process();
+                proc2.StartInfo = procStartInfo2;
+                proc2.Start();
+            }
+            else
+            {
+                ProcessStartInfo procStartInfo3 = new ProcessStartInfo("/usr/bin/sudo", "systemctl stop modbusserver485.service");
+                procStartInfo3.RedirectStandardOutput = true;
+                procStartInfo3.UseShellExecute = false;
+                procStartInfo3.CreateNoWindow = true;
+
+                System.Diagnostics.Process proc3 = new System.Diagnostics.Process();
+                proc3.StartInfo = procStartInfo3;
+                proc3.Start();
+
+                ProcessStartInfo procStartInfo4 = new ProcessStartInfo("/usr/bin/sudo", "systemctl start modbusserver.service");
+                procStartInfo4.RedirectStandardOutput = true;
+                procStartInfo4.UseShellExecute = false;
+                procStartInfo4.CreateNoWindow = true;
+
+                System.Diagnostics.Process proc4 = new System.Diagnostics.Process();
+                proc4.StartInfo = procStartInfo4;
+                proc4.Start();
+            }
             if (Button_Interface.Text != "RS-232" && Button_Interface.Text != "RS-485")
             {
                 MessageBox.Show("Please Pick Interface " + Button_Interface.Text, application_name);
@@ -354,8 +394,6 @@ namespace ControllerPage
             else
             {
                 data_initiation_input();
-                
-
                 #region Reset Sensor Connection
                 if (!mySerialPort.IsOpen)
                 {
@@ -1917,7 +1955,8 @@ namespace ControllerPage
                                 {
                                     //Curr_Measure_TextBox.Text = Result_Parsing.Format("0.0");
                                     Curr_Measure_TextBox.Text = string.Format("{0:F1}", Result_Parsing) + "%";
-                                    
+                                    Console.WriteLine(Result_Parsing.ToString().Replace(",",""));
+                                    SensorHelper_2.writeTextFile("/home/pi/Install_Init/moisture.log", Result_Parsing.ToString().Replace(".", ""));
                                 });
 
                                 total_average = 0;
@@ -2298,8 +2337,7 @@ namespace ControllerPage
                                     {
                                         Result_Parsing = Result_Parsing.Replace(s, "");
                                     }
-                                    Result_Parsing = String.Concat(Result_Parsing.Substring(0, Result_Parsing.Length - 1)
-                                            , ".", Result_Parsing.Substring(Result_Parsing.Length - 1, 1));
+                                    Result_Parsing = String.Concat(Result_Parsing.Substring(0, Result_Parsing.Length - 1),".", Result_Parsing.Substring(Result_Parsing.Length - 1, 1));
 
                                     Result_Parsing = (double.Parse(Result_Parsing) + bias_value).ToString("0.0");
 

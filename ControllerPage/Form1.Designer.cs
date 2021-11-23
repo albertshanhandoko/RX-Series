@@ -661,7 +661,7 @@ namespace ControllerPage
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Gii RX-20 Automatic In-line Interval Moisture Measurement System  (Ver 1.01)";
+            this.Text = "Gii RX-20 Automatic In-line Interval Moisture Measurement System  (Ver 1.10)";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

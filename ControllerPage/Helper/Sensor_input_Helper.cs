@@ -36,7 +36,7 @@ namespace ControllerPage.Helper
 
         public static string GetLocalIPAddress()
         {
-            //return "127.0.0.1"; for test
+            //return "127.0.0.1"; //for test
 
             var host = Dns.GetHostEntry(Dns.GetHostName());
 
