@@ -175,7 +175,23 @@ namespace ControllerPage.Helper
             
         }
 
-
+        public static void writeTextFile(string FileLocation, string textfile)
+        {
+            //string urlHistory_data = "D:/Sensor_data/History_data_Sensor1/" + month.ToString().Trim() + ".txt";
+            string url_config = FileLocation;
+            if (File.Exists(url_config))
+            {
+                File.WriteAllText(url_config, String.Empty);
+                //File.Delete(url_config);
+                // write to file
+                File.WriteAllText(url_config, textfile);
+            }
+            else
+            {
+                // Create new file
+                System.IO.File.WriteAllText(url_config, textfile);
+            }
+        }
 
 
     }

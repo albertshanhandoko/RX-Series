@@ -6,6 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ControllerPage.Constant;
+using ControllerPage.Helper;
+using ControllerPage.Library;
 using System.Windows.Forms;
 
 namespace ControllerPage
@@ -24,6 +27,7 @@ namespace ControllerPage
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //Sensor_input_Helper.writeTextFile("/etc/rxseries/config_language.txt", "bahasa");
             Global.GlobalVar = "Bahasa";
             Global.GlobalVar1 = "Pengukuran Kadar Air Aktual";
             Global.GlobalVar2 = "Interval Ke";
@@ -35,11 +39,20 @@ namespace ControllerPage
             Global.GlobalVar8 = "Waktu Tunggu";
             Global.GlobalVar9 = "Opsi";
             Global.GlobalVar10 = "Nomor Sensor";
+            Global.GlobalVar11 = "Status ";
+            Global.GlobalVar12 = "Temp";
+            Global.GlobalVar13 = "Interface";
+            Global.GlobalVar14 = "Mode ";
+            Global.GlobalVar15 = "Threshold Max";
+            Global.GlobalVar16 = "Threshold Min";
+            Global.GlobalVar17 = "Offline";
+            Global.GlobalVar18 = "Padi";
             this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            //Sensor_input_Helper.writeTextFile("/etc/rxseries/config_language.txt", "english");
             Global.GlobalVar = "English";
             Global.GlobalVar1 = "Current Interval Moisture Measurement";
             Global.GlobalVar2 = "Interval Number";
@@ -51,7 +64,45 @@ namespace ControllerPage
             Global.GlobalVar8 = "Int. Waiting Time";
             Global.GlobalVar9 = "Options";
             Global.GlobalVar10 = "Sensor Number";
+            Global.GlobalVar11 = "Status ";
+            Global.GlobalVar12 = "Temp";
+            Global.GlobalVar13 = "Interface";
+            Global.GlobalVar14 = "Mode";
+            Global.GlobalVar15 = "Threshold Max";
+            Global.GlobalVar16 = "Threshold Min";
+            Global.GlobalVar17 = "Offline";
+            Global.GlobalVar18 = "Paddy";
             this.Close();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            //Sensor_input_Helper.writeTextFile("/etc/rxseries/config_language.txt", "thai");
+            Global.GlobalVar = "Thai";
+            Global.GlobalVar1 = "ความชื้นที่วัดได้";
+            Global.GlobalVar2 = "จำนวนครั้งที่วัด";
+            Global.GlobalVar3 = "จำนวนเมล็ด";
+            Global.GlobalVar4 = "ค่าเฉลี่ยความชื้น";
+            Global.GlobalVar5 = "ชนิดข้าว";
+            Global.GlobalVar6 = "จำนวนครั้ง";
+            Global.GlobalVar7 = "จำนวนเมล็ด";
+            Global.GlobalVar8 = "ระยะห่างในการวัด";
+            Global.GlobalVar9 = "ตัวเลือก";
+            Global.GlobalVar10 = "เซ็นเซอร์";
+            Global.GlobalVar11 = "สถานะ";
+            Global.GlobalVar12 = "อุณหภูมิ";
+            Global.GlobalVar13 = "ระบบการเชื่อมต่อ";
+            Global.GlobalVar14 = "โหม"+"ด";
+            Global.GlobalVar15 = "ขอบเขตความชื้นสูงสุด";
+            Global.GlobalVar16 = "ขอบเขตความชื้นต่ำสุด";
+            Global.GlobalVar17 = "สถานะ";
+            Global.GlobalVar18 = "สถานะ";
+            this.Close();
+        }
+
+        private void FormLanguage_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

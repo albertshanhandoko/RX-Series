@@ -36,7 +36,7 @@ namespace ControllerPage.Helper
 
         public static string GetLocalIPAddress()
         {
-            //return "127.0.0.1"; for test
+            //return "127.0.0.1"; //for test
 
             var host = Dns.GetHostEntry(Dns.GetHostName());
 
@@ -599,6 +599,84 @@ namespace ControllerPage.Helper
 
         }
 
+        public static void Update_Event(string IP_Address_varinput, DateTime timing, string event_type, string value)
+        {
+            string database = "sensor_database";
+            string user = "root";
+            //string password = "admin";
+            string password = "raspberry";
+            string port = "3306";
+            string sslM = "none";
+            string connectionString;
+            connectionString = String.Format("server={0};port={1};user id={2}; password={3}; database={4}; SslMode={5}", IP_Address_varinput, port, user, password, database, sslM);
+
+            //Sql_Measure_Batch query_batch = new Sql_Measure_Batch();
+
+            List<SQL_Data_Config> List_Data_Config = new List<SQL_Data_Config> { };
+
+
+            using (var connection = new MySqlConnection(connectionString))
+            {
+                MySqlCommand command = new MySqlCommand("Update_Event", connection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.Add(new MySqlParameter("Timing_var", timing));
+                command.Parameters.Add(new MySqlParameter("Event_Type_var", event_type));
+                command.Parameters.Add(new MySqlParameter("Value_var", value));
+
+                command.Connection.Open();
+                command.ExecuteReader();
+
+            }
+
+        }
+
+        public static void Update_Duration(string IP_Address_varinput, int Batch_ID, float duration)
+        {
+            string database = "sensor_database";
+            string user = "root";
+            //string password = "admin";
+            string password = "raspberry";
+            string port = "3306";
+            string sslM = "none";
+            string connectionString;
+            connectionString = String.Format("server={0};port={1};user id={2}; password={3}; database={4}; SslMode={5}", IP_Address_varinput, port, user, password, database, sslM);
+
+            using (var connection = new MySqlConnection(connectionString))
+            {
+                MySqlCommand command = new MySqlCommand("Update_Duration", connection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.Add(new MySqlParameter("Batch_id", Batch_ID));
+                command.Parameters.Add(new MySqlParameter("Duration", duration));
+
+                command.Connection.Open();
+                command.ExecuteReader();
+
+            }
+
+        }
+
+        public static void DeleteBatch(string IP_Address_varinput)
+        {
+            string database = "sensor_database";
+            string user = "root";
+            //string password = "admin";
+            string password = "raspberry";
+            string port = "3306";
+            string sslM = "none";
+            string connectionString;
+            connectionString = String.Format("server={0};port={1};user id={2}; password={3}; database={4}; SslMode={5}", IP_Address_varinput, port, user, password, database, sslM);
+
+            using (var connection = new MySqlConnection(connectionString))
+            {
+                MySqlCommand command = new MySqlCommand("Delete_Batch", connection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Connection.Open();
+                command.ExecuteReader();
+
+            }
+
+        }
+
 
         public static void Update_ErrorCode(string IP_Address_varinput, int Batch_ID, string Error_Code)
         {
@@ -688,6 +766,32 @@ namespace ControllerPage.Helper
             */
         }
 
-        
+        public static string read_config_language()
+        {
+            string url_name_config = "/etc/rxseries/config_language.txt";
+            string name_text = "";
+            if (File.Exists(url_name_config))
+            {
+                name_text = File.ReadLines(url_name_config).First();
+            }
+            return name_text;
+        }
+        public static void writeTextFile(string FileLocation, string textfile)
+        {
+            //string urlHistory_data = "D:/Sensor_data/History_data_Sensor1/" + month.ToString().Trim() + ".txt";
+            string url_config = FileLocation;
+            if (File.Exists(url_config))
+            {
+                File.WriteAllText(url_config, String.Empty);
+                //File.Delete(url_config);
+                // write to file
+                File.WriteAllText(url_config, textfile);
+            }
+            else
+            {
+                // Create new file
+                System.IO.File.WriteAllText(url_config, textfile);
+            }
+        }
     }
 }

@@ -74,5 +74,53 @@ namespace ControllerPage
             get { return _globalVar10; }
             set { _globalVar10 = value; }
         }
+        private static string _globalVar11 = "Status";
+        public static string GlobalVar11
+        {
+            get { return _globalVar11; }
+            set { _globalVar11 = value; }
+        }
+        private static string _globalVar12 = "Temp";
+        public static string GlobalVar12
+        {
+            get { return _globalVar12; }
+            set { _globalVar12 = value; }
+        }
+        private static string _globalVar13 = "Interface";
+        public static string GlobalVar13
+        {
+            get { return _globalVar13; }
+            set { _globalVar13 = value; }
+        }
+        private static string _globalVar14 = "Mode";
+        public static string GlobalVar14
+        {
+            get { return _globalVar14; }
+            set { _globalVar14 = value; }
+        }
+        private static string _globalVar15 = "Threshold Max";
+        public static string GlobalVar15
+        {
+            get { return _globalVar15; }
+            set { _globalVar15 = value; }
+        }
+        private static string _globalVar16 = "Threshold Min";
+        public static string GlobalVar16
+        {
+            get { return _globalVar16; }
+            set { _globalVar16 = value; }
+        }
+        private static string _globalVar17 = "Offline";
+        public static string GlobalVar17
+        {
+            get { return _globalVar17; }
+            set { _globalVar17 = value; }
+        }
+        private static string _globalVar18 = "Paddy";
+        public static string GlobalVar18
+        {
+            get { return _globalVar18; }
+            set { _globalVar18 = value; }
+        }
     }
 }

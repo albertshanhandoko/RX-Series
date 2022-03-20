@@ -3,6 +3,7 @@ using ControllerPage.Library;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
@@ -131,7 +132,6 @@ namespace ControllerPage
                 button8_minus.Visible = false;
                 button8_plus.Visible = false;
                 textBox_Bias_longmilledrice.Visible = false;
-
                 label_9.Visible = false;
                 button9_minus.Visible = false;
                 button9_plus.Visible = false;
@@ -175,8 +175,35 @@ namespace ControllerPage
                     label_8.Text = "Padi Panjang Milled";
                     label_9.Text = "Padi Panjang Merah";
                     button_bias_apply.Text = "Simpan";
-                    BIAS_New_Close.Text = "Tutup";
-                    
+                    BIAS_New_Close.Text = "Tutup"; 
+                }
+                if (Global.GlobalVar == "Thai")
+                {
+                    label_title.Font = new Font("Noto Sans Thai", 18);
+                    label_1.Font = new Font("Noto Sans Thai", 14);
+                    label_2.Font = new Font("Noto Sans Thai", 14);
+                    label_3.Font = new Font("Noto Sans Thai", 14);
+                    label_4.Font = new Font("Noto Sans Thai", 14);
+                    label_5.Font = new Font("Noto Sans Thai", 14);
+                    //label_6.Font = new Font("Noto Sans Thai", 14);
+                    label_7.Font = new Font("Noto Sans Thai", 14);
+                    label_8.Font = new Font("Noto Sans Thai", 14);
+                    label_9.Font = new Font("Noto Sans Thai", 14);
+                    button_bias_apply.Font = new Font("Noto Sans Thai", 14);
+                    BIAS_New_Close.Font = new Font("Noto Sans Thai", 14);
+
+                    label_title.Text = "ข้าวเปลือกหอมมะลิ";
+                    label_1.Text = "ข้าวเปลือกเมล็ดสั้น ";
+                    label_2.Text = "ข้าวเปลือกเมล็ดสั้น ";
+                    label_3.Text = "ข้าวเปลือกหอมมะลิ ";
+                    label_4.Text = "ข้าวเปลือกเหนียว ";
+                    label_5.Text = "ข้าวเปลือกนึ่ง ";
+                    label_6.Text = "Peak AD Count";
+                    label_7.Text = "ข้าวสาลี ";
+                    label_8.Text = "ข้าวสาร";
+                    label_9.Text = "ข้าวกล้อง ";
+                    button_bias_apply.Text = "ยืนยัน";
+                    BIAS_New_Close.Text = "ปิด";
                 }
 
             }
@@ -185,7 +212,7 @@ namespace ControllerPage
 
 
             List<SQL_Data_Config> current_config = Sensor_input_Helper.MySql_Get_DataConfig(Sensor_input_Helper.GetLocalIPAddress());
-
+            Console.WriteLine(var_label1.ToLower().Replace(" ", "_"));
             var var1 = current_config.Where(config => config.Config_Param == var_label1.ToLower().Replace(" ","_") );
             double var_value1 = (var1.Select(p => p.Config_Value).ToArray()).First();
 
@@ -1248,8 +1275,8 @@ namespace ControllerPage
                 Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), var_label5.ToLower().Replace(" ", "_"), textBox_bias_LongParboiledRice.Text);
                 Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), var_label6.ToLower().Replace(" ", "_"), textBox_bias_PeakADCount.Text);
                 Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), var_label7.ToLower().Replace(" ", "_"), textBox_bias_JasminePaddy.Text);
-                
-                
+
+
                 if (product_type == 3)
                 {
                     if (double.Parse(textBox_Bias_longmilledrice.Text) < -15 || double.Parse(textBox_Bias_longmilledrice.Text) > 15)
@@ -1265,15 +1292,17 @@ namespace ControllerPage
                     {
                         Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), var_label8.ToLower().Replace(" ", "_"), textBox_Bias_longmilledrice.Text);
                         Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), var_label9.ToLower().Replace(" ", "_"), textBox_Bias_shortmilledrice.Text);
-
+                        Console.WriteLine(var_label8.ToLower().Replace(" ", "_"));
+                        Console.WriteLine(textBox_Bias_longmilledrice.Text);
                     }
                 }
 
-
+                Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "BIAS", "1");
                 this.Close();
             }
 
         }
+
 
         private void Button_Close_BiasNew(object sender, EventArgs e)
         {

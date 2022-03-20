@@ -35,6 +35,7 @@ namespace ControllerPage
         int TotalInterval;
         int running_time_fixed;
         TimeSpan Time_Dif;
+        TimeSpan Duration;
         string ResultGrain;
         string ResultMeasure;
         bool temp_cond;
@@ -83,6 +84,7 @@ namespace ControllerPage
         DateTime FixedTime_Finish_timer;
         DateTime start_5min_check;
         DateTime start_5min_Running;
+        DateTime duration_start;
 
         //database parameter
         int batch_id;
@@ -99,6 +101,8 @@ namespace ControllerPage
             InitializeComponent();
             MyTimer.Elapsed += new ElapsedEventHandler(MyTimer_Tick);
             MyTimer.Interval = (1000);
+            //string language = Sensor_input_Helper.read_config_language();
+            string language = Global.GlobalVar;
             label1.Text = Global.GlobalVar1;
             textBox10.Text = Global.GlobalVar2;
             textBox14.Text = Global.GlobalVar3;
@@ -109,6 +113,100 @@ namespace ControllerPage
             textBox9.Text = Global.GlobalVar8;
             label4.Text = Global.GlobalVar9;
             label_ipaddress.Text = Global.GlobalVar10;
+            textBox2.Text = Global.GlobalVar11;
+            textBox3.Text = Global.GlobalVar12;
+            textBox1.Text = Global.GlobalVar13;
+            textBox16.Text = Global.GlobalVar14+ "ด";
+            textBox4.Text = Global.GlobalVar15;
+            textBox11.Text = Global.GlobalVar16;
+            textBox_Sensor_Status.Text = Global.GlobalVar17;
+            ButtonProduct.Text = Global.GlobalVar18;
+            //if (Global.GlobalVar == "Thai")
+            if (language=="Thai")
+            {
+                label1.Font = new Font("Noto Sans Thai",13);
+                textBox10.Font = new Font("Noto Sans Thai", 8);
+                textBox14.Font = new Font("Noto Sans Thai", 8);
+                textBox15.Font = new Font("Noto Sans Thai", 8);
+                textBox6.Font = new Font("Noto Sans Thai", 13);
+                textBox7.Font = new Font("Noto Sans Thai", 13);
+                textBox8.Font = new Font("Noto Sans Thai", 13);
+                textBox9.Font = new Font("Noto Sans Thai", 13);
+                label4.Font = new Font("Noto Sans Thai", 13);
+                label_ipaddress.Font = new Font("Noto Sans Thai", 13);
+                textBox2.Font = new Font("Noto Sans Thai", 13);
+                textBox3.Font = new Font("Noto Sans Thai", 13);
+                textBox1.Font = new Font("Noto Sans Thai", 13);
+                textBox16.Font = new Font("Noto Sans Thai", 13);
+                textBox4.Font = new Font("Noto Sans Thai", 8);
+                textBox11.Font = new Font("Noto Sans Thai", 8);
+                textBox_Sensor_Status.Font = new Font("Noto Sans Thai", 13);
+                ButtonProduct.Font = new Font("Noto Sans Thai", 13);
+                Global.GlobalVar = "Thai";
+                Global.GlobalVar1 = "ความชื้นที่วัดได้";
+                Global.GlobalVar2 = "จำนวนครั้งที่วัด";
+                Global.GlobalVar3 = "จำนวนเมล็ด";
+                Global.GlobalVar4 = "ค่าเฉลี่ยความชื้น";
+                Global.GlobalVar5 = "ชนิดข้าว";
+                Global.GlobalVar6 = "จำนวนครั้ง";
+                Global.GlobalVar7 = "จำนวนเมล็ด";
+                Global.GlobalVar8 = "ระยะห่างในการวัด";
+                Global.GlobalVar9 = "ตัวเลือก";
+                Global.GlobalVar10 = "เซ็นเซอร์";
+                Global.GlobalVar11 = "สถานะ";
+                Global.GlobalVar12 = "อุณหภูมิ";
+                Global.GlobalVar13 = "ระบบการเชื่อมต่อ";
+                Global.GlobalVar14 = "โหมด";
+                Global.GlobalVar15 = "ขอบเขตความชื้นสูงสุด";
+                Global.GlobalVar16 = "ขอบเขตความชื้นต่ำสุด";
+                Global.GlobalVar17 = "สถานะ";
+                Global.GlobalVar18 = "ข้าวเปลือก";
+            }
+            else if (language == "english")
+            {
+                Global.GlobalVar = "English";
+                Global.GlobalVar1 = "Current Interval Moisture Measurement";
+                Global.GlobalVar2 = "Interval Number";
+                Global.GlobalVar3 = "Kernel Counter";
+                Global.GlobalVar4 = "Average Moisture";
+                Global.GlobalVar5 = "Product";
+                Global.GlobalVar6 = "No. of Intervals";
+                Global.GlobalVar7 = "PCS per Interval";
+                Global.GlobalVar8 = "Int. Waiting Time";
+                Global.GlobalVar9 = "Options";
+                Global.GlobalVar10 = "Sensor Number";
+                Global.GlobalVar11 = "Status ";
+                Global.GlobalVar12 = "Temp";
+                Global.GlobalVar13 = "Interface";
+                Global.GlobalVar14 = "Mode";
+                Global.GlobalVar15 = "Threshold Max";
+                Global.GlobalVar16 = "Threshold Min";
+                Global.GlobalVar17 = "Offline";
+                Global.GlobalVar18 = "Paddy";
+            }
+            else if (language == "bahasa")
+            {
+                Global.GlobalVar = "Bahasa";
+                Global.GlobalVar1 = "Pengukuran Kadar Air Aktual";
+                Global.GlobalVar2 = "Interval Ke";
+                Global.GlobalVar3 = "Penghitung Biji";
+                Global.GlobalVar4 = "Rataan Kadar Air";
+                Global.GlobalVar5 = "Produk";
+                Global.GlobalVar6 = "Jumlah Interval";
+                Global.GlobalVar7 = "PCS tiap Interval";
+                Global.GlobalVar7 = "PCS tiap Interval";
+                Global.GlobalVar8 = "Waktu Tunggu";
+                Global.GlobalVar9 = "Opsi";
+                Global.GlobalVar10 = "Nomor Sensor";
+                Global.GlobalVar11 = "Status ";
+                Global.GlobalVar12 = "Temp";
+                Global.GlobalVar13 = "Interface";
+                Global.GlobalVar14 = "Mode ";
+                Global.GlobalVar15 = "Threshold Max";
+                Global.GlobalVar16 = "Threshold Min";
+                Global.GlobalVar17 = "Offline";
+                Global.GlobalVar18 = "Padi";
+            }
             data_initiation_input();
             ButtonProduct.Enabled = true;
 
@@ -171,7 +269,7 @@ namespace ControllerPage
                 ButtonNumPcs.Text = string.Empty;
                 ButtonWaitingTime.Enabled = true;
                 ButtonWaitingTime.Text = string.Empty;
-                textBox9.Text = "Running Time";
+                //textBox9.Text = "Running Time";
 
             }
             else if (Button_Mode.Text.ToLower() == "fixed pieces")
@@ -195,7 +293,7 @@ namespace ControllerPage
                 ButtonNumPcs.Enabled = true;
                 ButtonWaitingTime.Enabled = true;
                 ButtonWaitingTime.Text = string.Empty;
-                textBox9.Text = "Int. Waiting Time";
+                //textBox9.Text = "Int. Waiting Time";
 
             }
             else
@@ -225,7 +323,7 @@ namespace ControllerPage
             if (Button_Interface.Text == "RS-232")
             {
                 mySerialPort = new SerialPort("/dev/ttyAMA0"); //232
-                //mySerialPort = new SerialPort("COM2"); //testing
+                //mySerialPort = new SerialPort("COM15"); //testing
 
             }
             else if (Button_Interface.Text == "RS-485")
@@ -342,11 +440,53 @@ namespace ControllerPage
             Sensor_input_Helper.Command_Stop(mySerialPort);
             bool_stop_click = true;
             MyTimer.Enabled = false;
+            Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus("Online"));
             //MyTimer.Stop();
         }
         private void Btn_Check_Click(object sender, EventArgs e)
         {
             Btn_Check.Enabled = false;
+            /*if (Button_Interface.Text == "RS-232")
+            {
+                ProcessStartInfo procStartInfo1 = new ProcessStartInfo("/usr/bin/sudo", "systemctl stop modbusserver.service");
+                procStartInfo1.RedirectStandardOutput = true;
+                procStartInfo1.UseShellExecute = false;
+                procStartInfo1.CreateNoWindow = true;
+
+                System.Diagnostics.Process proc1 = new System.Diagnostics.Process();
+                proc1.StartInfo = procStartInfo1;
+                proc1.Start();
+
+                ProcessStartInfo procStartInfo2 = new ProcessStartInfo("/usr/bin/sudo", "systemctl start modbusserver485.service");
+                procStartInfo2.RedirectStandardOutput = true;
+                procStartInfo2.UseShellExecute = false;
+                procStartInfo2.CreateNoWindow = true;
+
+                System.Diagnostics.Process proc2 = new System.Diagnostics.Process();
+                proc2.StartInfo = procStartInfo2;
+                proc2.Start();
+            }
+            else
+            {
+                ProcessStartInfo procStartInfo3 = new ProcessStartInfo("/usr/bin/sudo", "systemctl stop modbusserver485.service");
+                procStartInfo3.RedirectStandardOutput = true;
+                procStartInfo3.UseShellExecute = false;
+                procStartInfo3.CreateNoWindow = true;
+
+                System.Diagnostics.Process proc3 = new System.Diagnostics.Process();
+                proc3.StartInfo = procStartInfo3;
+                proc3.Start();
+
+                ProcessStartInfo procStartInfo4 = new ProcessStartInfo("/usr/bin/sudo", "systemctl start modbusserver.service");
+                procStartInfo4.RedirectStandardOutput = true;
+                procStartInfo4.UseShellExecute = false;
+                procStartInfo4.CreateNoWindow = true;
+
+                System.Diagnostics.Process proc4 = new System.Diagnostics.Process();
+                proc4.StartInfo = procStartInfo4;
+                proc4.Start();
+            }
+            */
             if (Button_Interface.Text != "RS-232" && Button_Interface.Text != "RS-485")
             {
                 MessageBox.Show("Please Pick Interface " + Button_Interface.Text, application_name);
@@ -399,10 +539,12 @@ namespace ControllerPage
                 }
 
             }
-
+            Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
         }
         private void button_start_Click(object sender, EventArgs e)
         {
+            Sensor_input_Helper.DeleteBatch(Sensor_input_Helper.GetLocalIPAddress());
+            duration_start = DateTime.Now;
             bool check_connect_result = false;
             try
             {
@@ -416,6 +558,7 @@ namespace ControllerPage
                 Sensor_input_Helper.Update_ErrorCode(Sensor_input_Helper.GetLocalIPAddress(), batch_id_002, "001");
                 MessageBox.Show("Error 001 - Connection to sensor failed");
                 Console.WriteLine(ex.Message);
+                Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
             }
 
             data_cleansing();
@@ -454,6 +597,38 @@ namespace ControllerPage
                 else if (ButtonProduct.Text == "Beras Poles")
                 {
                     product_text = "Polished_Rice";
+                }
+                else if (ButtonProduct.Text == "Padi Pendek" || ButtonProduct.Text == "ข้าวเปลือกเมล็ดสั้น")
+                {
+                    product_text = "Short_Paddy";
+                }
+                else if (ButtonProduct.Text == "Padi Panjang" || ButtonProduct.Text == "ข้าวเปลือกเมล็ดยาว")
+                {
+                    product_text = "Long_Paddy";
+                }
+                else if (ButtonProduct.Text == "Padi Jasmine" || ButtonProduct.Text == "ข้าวเปลือกหอมมะลิ")
+                {
+                    product_text = "Jasmine_Paddy";
+                }
+                else if (ButtonProduct.Text == "Padi Long Sticky" || ButtonProduct.Text == "ข้าวเปลือกเหนียว")
+                {
+                    product_text = "Long_Sticky_Paddy";
+                }
+                else if (ButtonProduct.Text == "Beras Long Parboiled" || ButtonProduct.Text == "ข้าวเปลือกนึ่ง")
+                {
+                    product_text = "Long_Parboiled_Rice";
+                }
+                else if (ButtonProduct.Text == "Gandum" || ButtonProduct.Text == "ข้าวสาลี")
+                {
+                    product_text = "Wheat";
+                }
+                else if (ButtonProduct.Text == "Beras Long Milled" || ButtonProduct.Text == "ข้าวสาร")
+                {
+                    product_text = "Long_Milled_Rice";
+                }
+                else if (ButtonProduct.Text == "Beras Long Brown" || ButtonProduct.Text == "ข้าวกล้อง")
+                {
+                    product_text = "Long_Brown_Rice";
                 }
                 else
                 {
@@ -540,9 +715,20 @@ namespace ControllerPage
 
 
                 Button_Mode.Enabled = false;
-                
-                textBox_Sensor_Status.Text = "Running";
-                textBox_Sensor_Status.ForeColor = Color.Green;
+                if (Global.GlobalVar == "Thai")
+                {
+                    textBox_Sensor_Status.Text = "ออนไลน์";
+                    textBox_Sensor_Status.ForeColor = Color.Green;
+                    Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
+                }
+                else 
+                {
+                    textBox_Sensor_Status.Text = "Running";
+                    textBox_Sensor_Status.ForeColor = Color.Green;
+                    Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
+                }
+
+
                 // check during start
                 mySerialPort.ReadTimeout = 60 * 1000 * 5;// in miliseconds
 
@@ -790,8 +976,19 @@ namespace ControllerPage
             // diaktifan ketika click check
 
             //online and no online
-            textBox_Sensor_Status.Text = "Offline";
-            textBox_Sensor_Status.ForeColor = Color.Red;
+            if (Global.GlobalVar == "Thai")
+            {
+                textBox_Sensor_Status.Text = "ออฟไลน์";
+                textBox_Sensor_Status.ForeColor = Color.Red;
+                Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
+            }
+            else
+            {
+                textBox_Sensor_Status.Text = "Offline";
+                textBox_Sensor_Status.ForeColor = Color.Red;
+                Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
+            }
+
 
             // TImer
 
@@ -870,6 +1067,38 @@ namespace ControllerPage
                     {
                         combox_typemeasure = "Polished_Rice";
                     }
+                    else if (ButtonProduct.Text == "Padi Pendek" || ButtonProduct.Text == "ข้าวเปลือกเมล็ดสั้น")
+                    {
+                        combox_typemeasure = "Short_Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Padi Panjang" || ButtonProduct.Text == "ข้าวเปลือกเมล็ดยาว")
+                    {
+                        combox_typemeasure = "Long_Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Padi Jasmine" || ButtonProduct.Text == "ข้าวเปลือกหอมมะลิ")
+                    {
+                        combox_typemeasure = "Jasmine_Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Padi Long Sticky" || ButtonProduct.Text == "ข้าวเปลือกเหนียว")
+                    {
+                        combox_typemeasure = "Long_Sticky_Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Beras Long Parboiled" || ButtonProduct.Text == "ข้าวเปลือกนึ่ง")
+                    {
+                        combox_typemeasure = "Long_Parboiled_Rice";
+                    }
+                    else if (ButtonProduct.Text == "Gandum" || ButtonProduct.Text == "ข้าวสาลี")
+                    {
+                        combox_typemeasure = "Wheat";
+                    }
+                    else if (ButtonProduct.Text == "Beras Long Milled" || ButtonProduct.Text == "ข้าวสาร")
+                    {
+                        combox_typemeasure = "Long_Milled_Rice";
+                    }
+                    else if (ButtonProduct.Text == "Beras Long Brown" || ButtonProduct.Text == "ข้าวกล้อง")
+                    {
+                        combox_typemeasure = "Long_Brown_Rice";
+                    }
                     else
                     {
                         combox_typemeasure = ButtonProduct.Text.Replace(" ", "_");
@@ -947,6 +1176,38 @@ namespace ControllerPage
                     {
                         combox_typemeasure = "Polished_Rice";
                     }
+                    else if (ButtonProduct.Text == "Padi Pendek" || ButtonProduct.Text == "ข้าวเปลือกเมล็ดสั้น")
+                    {
+                        combox_typemeasure = "Short_Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Padi Panjang" || ButtonProduct.Text == "ข้าวเปลือกเมล็ดยาว")
+                    {
+                        combox_typemeasure = "Long_Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Padi Jasmine" || ButtonProduct.Text == "ข้าวเปลือกหอมมะลิ")
+                    {
+                        combox_typemeasure = "Jasmine_Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Padi Long Sticky" || ButtonProduct.Text == "ข้าวเปลือกเหนียว")
+                    {
+                        combox_typemeasure = "Long_Sticky_Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Beras Long Parboiled" || ButtonProduct.Text == "ข้าวเปลือกนึ่ง")
+                    {
+                        combox_typemeasure = "Long_Parboiled_Rice";
+                    }
+                    else if (ButtonProduct.Text == "Gandum" || ButtonProduct.Text == "ข้าวสาลี")
+                    {
+                        combox_typemeasure = "Wheat";
+                    }
+                    else if (ButtonProduct.Text == "Beras Long Milled" || ButtonProduct.Text == "ข้าวสาร")
+                    {
+                        combox_typemeasure = "Long_Milled_Rice";
+                    }
+                    else if (ButtonProduct.Text == "Beras Long Brown" || ButtonProduct.Text == "ข้าวกล้อง")
+                    {
+                        combox_typemeasure = "Long_Brown_Rice";
+                    }
                     else
                     {
                         combox_typemeasure = ButtonProduct.Text.Replace(" ", "_");
@@ -1013,6 +1274,10 @@ namespace ControllerPage
                     else if (ButtonProduct.Text == "Beras Poles")
                     {
                         combox_typemeasure = "Polished_Rice";
+                    }
+                    else if (ButtonProduct.Text == "Padi Pendek" || ButtonProduct.Text == "ข้าวเปลือกเมล็ดสั้น")
+                    {
+                        combox_typemeasure = "Short_Paddy";
                     }
                     else
                     {
@@ -1188,8 +1453,20 @@ namespace ControllerPage
                 textBox_Sensor_Status.Invoke((Action)delegate
                 {
                     //Curr_Kernel_TextBox.Text = (counter_data + 1).ToString();
-                    textBox_Sensor_Status.Text = "Online";
-                    textBox_Sensor_Status.ForeColor = Color.Green;
+
+                    if (Global.GlobalVar == "Thai")
+                    {
+                        textBox_Sensor_Status.Text = "ออนไลน์";
+                        textBox_Sensor_Status.ForeColor = Color.Green;
+                        Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
+                    }
+                    else
+                    {
+                        textBox_Sensor_Status.Text = "Online";
+                        textBox_Sensor_Status.ForeColor = Color.Green;
+                        Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
+                    }
+
                 });
                 Sensor_input_Helper.Update_FinishBatch(Sensor_input_Helper.GetLocalIPAddress(), batch_id);
 
@@ -1227,6 +1504,7 @@ namespace ControllerPage
                     //Curr_Kernel_TextBox.Text = (counter_data + 1).ToString();
                     textBox_Sensor_Status.Text = "Error";
                     textBox_Sensor_Status.ForeColor = Color.Red;
+                    Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
 
                 });
 
@@ -1917,7 +2195,9 @@ namespace ControllerPage
                                 {
                                     //Curr_Measure_TextBox.Text = Result_Parsing.Format("0.0");
                                     Curr_Measure_TextBox.Text = string.Format("{0:F1}", Result_Parsing) + "%";
-                                    
+                                    Console.WriteLine(Result_Parsing.ToString().Replace(",", ""));
+                                    SensorHelper_2.writeTextFile("/home/pi/Install_Init/moisture.log", Result_Parsing.ToString().Replace(".", ""));
+
                                 });
 
                                 total_average = 0;
@@ -2071,6 +2351,9 @@ namespace ControllerPage
 
             //MessageBox.Show("measurement finsih");
             Console.WriteLine("Measurement Finish");
+            Duration = DateTime.Now - duration_start;
+            Console.WriteLine(Duration.TotalMinutes.ToString());
+            Sensor_input_Helper.Update_Duration(Sensor_input_Helper.GetLocalIPAddress(), batch_id, Convert.ToSingle(Math.Round(Duration.TotalMinutes)));
         }
         public void Read_FixedTime_Thread()
         {
@@ -3012,6 +3295,27 @@ namespace ControllerPage
 
         private void textBox_theresholdmin_TextChanged(object sender, EventArgs e)
         {
+
+        }
+        public string stringtonumcheckstatus(string text_status)
+        {
+            string statuscomfile_string = text_status;
+            if (statuscomfile_string == "Offline")
+            {
+                return "0";
+            }
+            else if (statuscomfile_string == "Online")
+            {
+                return "1";
+            }
+            else if (statuscomfile_string == "Running")
+            {
+                return "2";
+            }
+            else
+            {
+                return "3";
+            }
 
         }
 

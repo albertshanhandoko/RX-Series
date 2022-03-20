@@ -163,6 +163,24 @@ namespace ControllerPage
                 button1.Text = "Save";
                 button_thereshold_apply.Text = "Close";
             }
+            if (Global.GlobalVar == "Thai")
+            {
+                label1.Font = new Font("Noto Sans Thai", 18);
+                radioButton_enable.Font = new Font("Noto Sans Thai", 18);
+                radioButton_disable.Font = new Font("Noto Sans Thai", 18);
+                label2.Font = new Font("Noto Sans Thai", 18);
+                label3.Font = new Font("Noto Sans Thai", 18);
+                button1.Font = new Font("Noto Sans Thai", 18);
+                button_thereshold_apply.Font = new Font("Noto Sans Thai", 18);
+
+                label1.Text = "กำหนดขอบเขตความชื้น";
+                radioButton_enable.Text = "เปิดใช้งาน";
+                radioButton_disable.Text = "ปิดใช้งาน";
+                label2.Text = "ขอบเขตความชื้นต่ำสุด";
+                label3.Text = "ขอบเขตความชื้นสูงสุด";
+                button1.Text = "บันทึก";
+                button_thereshold_apply.Text = "ปิด";
+            }
         }
     }
 }

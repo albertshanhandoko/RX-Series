@@ -72,54 +72,110 @@ namespace ControllerPage
                     button9.Text = "Beras Long Brown";
 
                 }
+            }
+            else if (Global.GlobalVar == "Thai")
+            {
+                if (product_type == 1)
+                {
+                    button1.Text = "Paddy";
+                    button2.Text = "Brown Rice";
+                    button3.Text = "Wheat";
+                    button4.Text = "Barley";
+                    button5.Text = "Soy";
+                    button6.Text = "Corn";
+                    button7.Text = "Polished Rice";
+                    button8.Enabled = false;
+                    button9.Enabled = false;
+                    //button8.Text = "Long Milled Rice";
+                    //button9.Text = "Long Brown Rice";
 
+                }
+                else if (product_type == 2)
+                {
+                    button1.Text = "Paddy";
+                    button2.Text = "Corn High";
+                    button3.Text = "Corn Medium";
+                    button4.Text = "Barley";
+                    button5.Text = "Soy";
+                    button6.Text = "Corn Low";
+                    button7.Text = "Polished Rice";
+                    button8.Enabled = false;
+                    button9.Enabled = false;
+                    button8.Text = "";
+                    button9.Text = "";
+
+                }
+                else //3
+                {
+                    button1.Font = new Font("Noto Sans Thai", 15);
+                    button2.Font = new Font("Noto Sans Thai", 15);
+                    button3.Font = new Font("Noto Sans Thai", 15);
+                    button4.Font = new Font("Noto Sans Thai", 15);
+                    button5.Font = new Font("Noto Sans Thai", 15);
+                    button6.Font = new Font("Noto Sans Thai", 15);
+                    button7.Font = new Font("Noto Sans Thai", 15);
+                    button8.Font = new Font("Noto Sans Thai", 15);
+                    button9.Font = new Font("Noto Sans Thai", 15);
+
+
+                    button1.Text = "ข้าวเปลือกเมล็ดสั้น";
+                    button2.Text = "ข้าวเปลือกเมล็ดยาว";
+                    button3.Text = "ข้าวเปลือกหอมมะลิ";
+                    button4.Text = "ข้าวเปลือกเหนียว";
+                    button5.Text = "ข้าวเปลือกนึ่ง";
+                    button6.Text = "Peak AD Count";
+                    button7.Text = "ข้าวสาลี";
+                    button8.Text = "ข้าวสาร";
+                    button9.Text = "ข้าวกล้อง";
+
+                }
             }
             else
-            { 
+            {
                 if (product_type == 1)
-            {
-                button1.Text = "Paddy";
-                button2.Text = "Brown Rice";
-                button3.Text = "Wheat";
-                button4.Text = "Barley";
-                button5.Text = "Soy";
-                button6.Text = "Corn";
-                button7.Text = "Polished Rice";
-                button8.Enabled = false;
-                button9.Enabled = false;
-                //button8.Text = "Long Milled Rice";
-                //button9.Text = "Long Brown Rice";
+                {
+                    button1.Text = "Paddy";
+                    button2.Text = "Brown Rice";
+                    button3.Text = "Wheat";
+                    button4.Text = "Barley";
+                    button5.Text = "Soy";
+                    button6.Text = "Corn";
+                    button7.Text = "Polished Rice";
+                    button8.Enabled = false;
+                    button9.Enabled = false;
+                    //button8.Text = "Long Milled Rice";
+                    //button9.Text = "Long Brown Rice";
 
-            }
-            else if(product_type == 2)
-            {
-                button1.Text = "Paddy";
-                button2.Text = "Corn High";
-                button3.Text = "Corn Medium";
-                button4.Text = "Barley";
-                button5.Text = "Soy";
-                button6.Text = "Corn Low";
-                button7.Text = "Polished Rice";
-                button8.Enabled = false;
-                button9.Enabled = false;
-                button8.Text = "";
-                button9.Text = "";
+                }
+                else if (product_type == 2)
+                {
+                    button1.Text = "Paddy";
+                    button2.Text = "Corn High";
+                    button3.Text = "Corn Medium";
+                    button4.Text = "Barley";
+                    button5.Text = "Soy";
+                    button6.Text = "Corn Low";
+                    button7.Text = "Polished Rice";
+                    button8.Enabled = false;
+                    button9.Enabled = false;
+                    button8.Text = "";
+                    button9.Text = "";
 
-            }
-            else //3
-            {
-                button1.Text = "Short Paddy";
-                button2.Text = "Long Paddy";
-                button3.Text = "Jasmine Paddy";
-                button4.Text = "Long Sticky Paddy";
-                button5.Text = "Long Parboiled Rice";
-                button6.Text = "Peak AD Count";
-                button7.Text = "Wheat";
-                button8.Text = "Long Milled Rice";
-                button9.Text = "Long Brown Rice";
+                }
+                else //3
+                {
+                    button1.Text = "Short Paddy";
+                    button2.Text = "Long Paddy";
+                    button3.Text = "Jasmine Paddy";
+                    button4.Text = "Long Sticky Paddy";
+                    button5.Text = "Long Parboiled Rice";
+                    button6.Text = "Peak AD Count";
+                    button7.Text = "Wheat";
+                    button8.Text = "Long Milled Rice";
+                    button9.Text = "Long Brown Rice";
 
-            }
-            
+                }
+
             }
         }
         
