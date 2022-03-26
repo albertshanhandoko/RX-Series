@@ -446,7 +446,7 @@ namespace ControllerPage
         private void Btn_Check_Click(object sender, EventArgs e)
         {
             Btn_Check.Enabled = false;
-            /*if (Button_Interface.Text == "RS-232")
+            if (Button_Interface.Text == "RS-232")
             {
                 ProcessStartInfo procStartInfo1 = new ProcessStartInfo("/usr/bin/sudo", "systemctl stop modbusserver.service");
                 procStartInfo1.RedirectStandardOutput = true;
@@ -486,7 +486,7 @@ namespace ControllerPage
                 proc4.StartInfo = procStartInfo4;
                 proc4.Start();
             }
-            */
+            
             if (Button_Interface.Text != "RS-232" && Button_Interface.Text != "RS-485")
             {
                 MessageBox.Show("Please Pick Interface " + Button_Interface.Text, application_name);
