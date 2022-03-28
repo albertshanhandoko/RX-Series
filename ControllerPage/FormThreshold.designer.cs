@@ -29,6 +29,7 @@ namespace ControllerPage
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormThreshold));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.button_thereshold_maxvalue = new System.Windows.Forms.Button();
@@ -70,12 +71,12 @@ namespace ControllerPage
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Noto Sans Thai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(53, 299);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 52);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Save";
+            this.button1.Text = "บันทึก";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button_TheresholdApply_Click);
             // 
@@ -96,39 +97,40 @@ namespace ControllerPage
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.label1, 2);
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Noto Sans Thai", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label1.Location = new System.Drawing.Point(72, 8);
+            this.label1.Location = new System.Drawing.Point(94, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(268, 37);
+            this.label1.Size = new System.Drawing.Size(223, 28);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Threshold Setting";
+            this.label1.Text = "กำหนดขอบเขตความชื้น";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // radioButton_disable
             // 
             this.radioButton_disable.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton_disable.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.radioButton_disable.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton_disable.Font = new System.Drawing.Font("Noto Sans Thai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_disable.Location = new System.Drawing.Point(223, 57);
             this.radioButton_disable.Name = "radioButton_disable";
             this.radioButton_disable.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.radioButton_disable.Size = new System.Drawing.Size(171, 84);
             this.radioButton_disable.TabIndex = 5;
             this.radioButton_disable.TabStop = true;
-            this.radioButton_disable.Text = "Disable";
+            this.radioButton_disable.Text = "ปิดใช้งาน";
             this.radioButton_disable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radioButton_disable.UseVisualStyleBackColor = false;
             // 
             // button_thereshold_apply
             // 
             this.button_thereshold_apply.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_thereshold_apply.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_thereshold_apply.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_thereshold_apply.BackgroundImage")));
+            this.button_thereshold_apply.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_thereshold_apply.Font = new System.Drawing.Font("Noto Sans Thai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_thereshold_apply.Location = new System.Drawing.Point(259, 299);
             this.button_thereshold_apply.Name = "button_thereshold_apply";
             this.button_thereshold_apply.Size = new System.Drawing.Size(100, 52);
             this.button_thereshold_apply.TabIndex = 3;
-            this.button_thereshold_apply.Text = "Close";
             this.button_thereshold_apply.UseVisualStyleBackColor = true;
             this.button_thereshold_apply.Click += new System.EventHandler(this.Btn_close_thereshold_click);
             // 
@@ -136,13 +138,13 @@ namespace ControllerPage
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Noto Sans Thai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(18, 239);
+            this.label3.Location = new System.Drawing.Point(8, 239);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(170, 26);
+            this.label3.Size = new System.Drawing.Size(190, 26);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Maximum Value";
+            this.label3.Text = "ขอบเขตความชื้นสูงสุด";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button_thereshold_minvalue
@@ -161,26 +163,26 @@ namespace ControllerPage
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Noto Sans Thai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(21, 167);
+            this.label2.Location = new System.Drawing.Point(8, 167);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 26);
+            this.label2.Size = new System.Drawing.Size(190, 26);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Minimum Value";
+            this.label2.Text = "ขอบเขตความชื้นต่ำสุด";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // radioButton_enable
             // 
             this.radioButton_enable.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton_enable.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.radioButton_enable.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton_enable.Font = new System.Drawing.Font("Noto Sans Thai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_enable.Location = new System.Drawing.Point(20, 57);
             this.radioButton_enable.Name = "radioButton_enable";
             this.radioButton_enable.Size = new System.Drawing.Size(165, 84);
             this.radioButton_enable.TabIndex = 4;
             this.radioButton_enable.TabStop = true;
-            this.radioButton_enable.Text = "Enable";
+            this.radioButton_enable.Text = "เปิดใช้งาน";
             this.radioButton_enable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radioButton_enable.UseVisualStyleBackColor = false;
             this.radioButton_enable.CheckedChanged += new System.EventHandler(this.radioButton_enable_CheckedChanged);

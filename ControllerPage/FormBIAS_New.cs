@@ -140,7 +140,7 @@ namespace ControllerPage
             }
             else //3
             {
-
+                
                 var_label1 = "Short Paddy";
                 var_label2 = "Long Paddy";
                 var_label3 = "Jasmine Paddy";
@@ -151,7 +151,7 @@ namespace ControllerPage
                 var_label8 = "Long Milled Rice";
                 var_label9 = "Long Brown Rice";
 
-
+                /*
                 label_1.Text = var_label1;
                 label_2.Text = var_label2;
                 label_3.Text = var_label3;
@@ -161,7 +161,7 @@ namespace ControllerPage
                 label_7.Text = var_label7;
                 label_8.Text = var_label8;
                 label_9.Text = var_label9;
-
+                */
                 if (Global.GlobalVar == "Bahasa")
                 {
                     label_title.Text = "Setting BIAS";
@@ -177,7 +177,7 @@ namespace ControllerPage
                     button_bias_apply.Text = "Simpan";
                     BIAS_New_Close.Text = "Tutup"; 
                 }
-                if (Global.GlobalVar == "Thai")
+                if (Global.GlobalVar == "English")
                 {
                     label_title.Font = new Font("Noto Sans Thai", 18);
                     label_1.Font = new Font("Noto Sans Thai", 14);

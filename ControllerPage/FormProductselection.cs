@@ -112,7 +112,7 @@ namespace ControllerPage
                     button3.Font = new Font("Noto Sans Thai", 15);
                     button4.Font = new Font("Noto Sans Thai", 15);
                     button5.Font = new Font("Noto Sans Thai", 15);
-                    button6.Font = new Font("Noto Sans Thai", 15);
+                    //button6.Font = new Font("Noto Sans Thai", 15);
                     button7.Font = new Font("Noto Sans Thai", 15);
                     button8.Font = new Font("Noto Sans Thai", 15);
                     button9.Font = new Font("Noto Sans Thai", 15);
@@ -149,6 +149,7 @@ namespace ControllerPage
                 }
                 else if (product_type == 2)
                 {
+
                     button1.Text = "Paddy";
                     button2.Text = "Corn High";
                     button3.Text = "Corn Medium";
@@ -164,15 +165,25 @@ namespace ControllerPage
                 }
                 else //3
                 {
-                    button1.Text = "Short Paddy";
-                    button2.Text = "Long Paddy";
-                    button3.Text = "Jasmine Paddy";
-                    button4.Text = "Long Sticky Paddy";
-                    button5.Text = "Long Parboiled Rice";
+                    button1.Font = new Font("Noto Sans Thai", 15);
+                    button2.Font = new Font("Noto Sans Thai", 15);
+                    button3.Font = new Font("Noto Sans Thai", 15);
+                    button4.Font = new Font("Noto Sans Thai", 15);
+                    button5.Font = new Font("Noto Sans Thai", 15);
+                    //button6.Font = new Font("Noto Sans Thai", 15);
+                    button7.Font = new Font("Noto Sans Thai", 15);
+                    button8.Font = new Font("Noto Sans Thai", 15);
+                    button9.Font = new Font("Noto Sans Thai", 15);
+
+                    button1.Text = "ข้าวเปลือกเมล็ดสั้น";
+                    button2.Text = "ข้าวเปลือกเมล็ดยาว";
+                    button3.Text = "ข้าวเปลือกหอมมะลิ";
+                    button4.Text = "ข้าวเปลือกเหนียว";
+                    button5.Text = "ข้าวเปลือกนึ่ง";
                     button6.Text = "Peak AD Count";
-                    button7.Text = "Wheat";
-                    button8.Text = "Long Milled Rice";
-                    button9.Text = "Long Brown Rice";
+                    button7.Text = "ข้าวสาลี";
+                    button8.Text = "ข้าวสาร";
+                    button9.Text = "ข้าวกล้อง";
 
                 }
 
@@ -253,6 +264,11 @@ namespace ControllerPage
 
             this.DialogResult = DialogResult.OK;
             this.Close();
+        }
+
+        private void FormProductselection_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

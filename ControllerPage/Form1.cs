@@ -102,111 +102,6 @@ namespace ControllerPage
             MyTimer.Elapsed += new ElapsedEventHandler(MyTimer_Tick);
             MyTimer.Interval = (1000);
             //string language = Sensor_input_Helper.read_config_language();
-            string language = Global.GlobalVar;
-            label1.Text = Global.GlobalVar1;
-            textBox10.Text = Global.GlobalVar2;
-            textBox14.Text = Global.GlobalVar3;
-            textBox15.Text = Global.GlobalVar4;
-            textBox6.Text = Global.GlobalVar5;
-            textBox7.Text = Global.GlobalVar6;
-            textBox8.Text = Global.GlobalVar7;
-            textBox9.Text = Global.GlobalVar8;
-            label4.Text = Global.GlobalVar9;
-            label_ipaddress.Text = Global.GlobalVar10;
-            textBox2.Text = Global.GlobalVar11;
-            textBox3.Text = Global.GlobalVar12;
-            textBox1.Text = Global.GlobalVar13;
-            textBox16.Text = Global.GlobalVar14+ "ด";
-            textBox4.Text = Global.GlobalVar15;
-            textBox11.Text = Global.GlobalVar16;
-            textBox_Sensor_Status.Text = Global.GlobalVar17;
-            ButtonProduct.Text = Global.GlobalVar18;
-            //if (Global.GlobalVar == "Thai")
-            if (language=="Thai")
-            {
-                label1.Font = new Font("Noto Sans Thai",13);
-                textBox10.Font = new Font("Noto Sans Thai", 8);
-                textBox14.Font = new Font("Noto Sans Thai", 8);
-                textBox15.Font = new Font("Noto Sans Thai", 8);
-                textBox6.Font = new Font("Noto Sans Thai", 13);
-                textBox7.Font = new Font("Noto Sans Thai", 13);
-                textBox8.Font = new Font("Noto Sans Thai", 13);
-                textBox9.Font = new Font("Noto Sans Thai", 13);
-                label4.Font = new Font("Noto Sans Thai", 13);
-                label_ipaddress.Font = new Font("Noto Sans Thai", 13);
-                textBox2.Font = new Font("Noto Sans Thai", 13);
-                textBox3.Font = new Font("Noto Sans Thai", 13);
-                textBox1.Font = new Font("Noto Sans Thai", 13);
-                textBox16.Font = new Font("Noto Sans Thai", 13);
-                textBox4.Font = new Font("Noto Sans Thai", 8);
-                textBox11.Font = new Font("Noto Sans Thai", 8);
-                textBox_Sensor_Status.Font = new Font("Noto Sans Thai", 13);
-                ButtonProduct.Font = new Font("Noto Sans Thai", 13);
-                Global.GlobalVar = "Thai";
-                Global.GlobalVar1 = "ความชื้นที่วัดได้";
-                Global.GlobalVar2 = "จำนวนครั้งที่วัด";
-                Global.GlobalVar3 = "จำนวนเมล็ด";
-                Global.GlobalVar4 = "ค่าเฉลี่ยความชื้น";
-                Global.GlobalVar5 = "ชนิดข้าว";
-                Global.GlobalVar6 = "จำนวนครั้ง";
-                Global.GlobalVar7 = "จำนวนเมล็ด";
-                Global.GlobalVar8 = "ระยะห่างในการวัด";
-                Global.GlobalVar9 = "ตัวเลือก";
-                Global.GlobalVar10 = "เซ็นเซอร์";
-                Global.GlobalVar11 = "สถานะ";
-                Global.GlobalVar12 = "อุณหภูมิ";
-                Global.GlobalVar13 = "ระบบการเชื่อมต่อ";
-                Global.GlobalVar14 = "โหมด";
-                Global.GlobalVar15 = "ขอบเขตความชื้นสูงสุด";
-                Global.GlobalVar16 = "ขอบเขตความชื้นต่ำสุด";
-                Global.GlobalVar17 = "สถานะ";
-                Global.GlobalVar18 = "ข้าวเปลือก";
-            }
-            else if (language == "english")
-            {
-                Global.GlobalVar = "English";
-                Global.GlobalVar1 = "Current Interval Moisture Measurement";
-                Global.GlobalVar2 = "Interval Number";
-                Global.GlobalVar3 = "Kernel Counter";
-                Global.GlobalVar4 = "Average Moisture";
-                Global.GlobalVar5 = "Product";
-                Global.GlobalVar6 = "No. of Intervals";
-                Global.GlobalVar7 = "PCS per Interval";
-                Global.GlobalVar8 = "Int. Waiting Time";
-                Global.GlobalVar9 = "Options";
-                Global.GlobalVar10 = "Sensor Number";
-                Global.GlobalVar11 = "Status ";
-                Global.GlobalVar12 = "Temp";
-                Global.GlobalVar13 = "Interface";
-                Global.GlobalVar14 = "Mode";
-                Global.GlobalVar15 = "Threshold Max";
-                Global.GlobalVar16 = "Threshold Min";
-                Global.GlobalVar17 = "Offline";
-                Global.GlobalVar18 = "Paddy";
-            }
-            else if (language == "bahasa")
-            {
-                Global.GlobalVar = "Bahasa";
-                Global.GlobalVar1 = "Pengukuran Kadar Air Aktual";
-                Global.GlobalVar2 = "Interval Ke";
-                Global.GlobalVar3 = "Penghitung Biji";
-                Global.GlobalVar4 = "Rataan Kadar Air";
-                Global.GlobalVar5 = "Produk";
-                Global.GlobalVar6 = "Jumlah Interval";
-                Global.GlobalVar7 = "PCS tiap Interval";
-                Global.GlobalVar7 = "PCS tiap Interval";
-                Global.GlobalVar8 = "Waktu Tunggu";
-                Global.GlobalVar9 = "Opsi";
-                Global.GlobalVar10 = "Nomor Sensor";
-                Global.GlobalVar11 = "Status ";
-                Global.GlobalVar12 = "Temp";
-                Global.GlobalVar13 = "Interface";
-                Global.GlobalVar14 = "Mode ";
-                Global.GlobalVar15 = "Threshold Max";
-                Global.GlobalVar16 = "Threshold Min";
-                Global.GlobalVar17 = "Offline";
-                Global.GlobalVar18 = "Padi";
-            }
             data_initiation_input();
             ButtonProduct.Enabled = true;
 
@@ -723,7 +618,7 @@ namespace ControllerPage
                 }
                 else 
                 {
-                    textBox_Sensor_Status.Text = "Running";
+                    textBox_Sensor_Status.Text = "ออนไลน์";
                     textBox_Sensor_Status.ForeColor = Color.Green;
                     Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
                 }
@@ -984,7 +879,7 @@ namespace ControllerPage
             }
             else
             {
-                textBox_Sensor_Status.Text = "Offline";
+                textBox_Sensor_Status.Text = "ออฟไลน์";
                 textBox_Sensor_Status.ForeColor = Color.Red;
                 Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
             }
@@ -1462,7 +1357,7 @@ namespace ControllerPage
                     }
                     else
                     {
-                        textBox_Sensor_Status.Text = "Online";
+                        textBox_Sensor_Status.Text = "ออนไลน์";
                         textBox_Sensor_Status.ForeColor = Color.Green;
                         Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
                     }

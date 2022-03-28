@@ -30,6 +30,7 @@ namespace ControllerPage
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBIAS_New));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button_plus_bias_barley = new System.Windows.Forms.Button();
             this.button_plus_bias_wheat = new System.Windows.Forms.Button();
@@ -207,25 +208,25 @@ namespace ControllerPage
             // 
             this.label_1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label_1.AutoSize = true;
-            this.label_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_1.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_1.ForeColor = System.Drawing.Color.Black;
-            this.label_1.Location = new System.Drawing.Point(49, 56);
+            this.label_1.Location = new System.Drawing.Point(9, 55);
             this.label_1.Name = "label_1";
-            this.label_1.Size = new System.Drawing.Size(96, 20);
+            this.label_1.Size = new System.Drawing.Size(136, 22);
             this.label_1.TabIndex = 10;
-            this.label_1.Text = "Short Paddy";
+            this.label_1.Text = "ข้าวเปลือกเมล็ดสั้น";
             this.label_1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label_2
             // 
             this.label_2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_2.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_2.ForeColor = System.Drawing.Color.Black;
             this.label_2.Location = new System.Drawing.Point(3, 87);
             this.label_2.Name = "label_2";
             this.label_2.Size = new System.Drawing.Size(142, 42);
             this.label_2.TabIndex = 6;
-            this.label_2.Text = "Long Paddy";
+            this.label_2.Text = "ข้าวเปลือกเมล็ดสั้น";
             this.label_2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label_2.Click += new System.EventHandler(this.label2_Click);
             // 
@@ -234,26 +235,26 @@ namespace ControllerPage
             this.label_title.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_title.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.label_title, 8);
-            this.label_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_title.Font = new System.Drawing.Font("Noto Sans Thai", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_title.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label_title.Location = new System.Drawing.Point(207, 4);
+            this.label_title.Location = new System.Drawing.Point(168, 0);
             this.label_title.Name = "label_title";
-            this.label_title.Size = new System.Drawing.Size(197, 37);
+            this.label_title.Size = new System.Drawing.Size(276, 44);
             this.label_title.TabIndex = 1;
-            this.label_title.Text = "BIAS Setting";
+            this.label_title.Text = "ข้าวเปลือกหอมมะลิ";
             this.label_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label_3
             // 
             this.label_3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label_3.AutoSize = true;
-            this.label_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_3.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_3.ForeColor = System.Drawing.Color.Black;
-            this.label_3.Location = new System.Drawing.Point(89, 140);
+            this.label_3.Location = new System.Drawing.Point(80, 139);
             this.label_3.Name = "label_3";
-            this.label_3.Size = new System.Drawing.Size(56, 20);
+            this.label_3.Size = new System.Drawing.Size(65, 22);
             this.label_3.TabIndex = 7;
-            this.label_3.Text = "Wheat";
+            this.label_3.Text = "ข้าวสาลี";
             this.label_3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // textBox_Bias_ShortPaddy
@@ -333,13 +334,13 @@ namespace ControllerPage
             // label_5
             // 
             this.label_5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_5.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_5.ForeColor = System.Drawing.Color.Black;
             this.label_5.Location = new System.Drawing.Point(295, 45);
             this.label_5.Name = "label_5";
             this.label_5.Size = new System.Drawing.Size(157, 42);
             this.label_5.TabIndex = 17;
-            this.label_5.Text = "Long Parboiled Rice";
+            this.label_5.Text = "ข้าวเปลือกนึ่ง";
             this.label_5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // button_minus_bias_soy
@@ -394,13 +395,13 @@ namespace ControllerPage
             // 
             this.label_7.AllowDrop = true;
             this.label_7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_7.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_7.ForeColor = System.Drawing.Color.Black;
             this.label_7.Location = new System.Drawing.Point(318, 129);
             this.label_7.Name = "label_7";
             this.label_7.Size = new System.Drawing.Size(134, 42);
             this.label_7.TabIndex = 19;
-            this.label_7.Text = "Jasmine Paddy";
+            this.label_7.Text = "ข้าวเปลือกหอมมะลิ";
             this.label_7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label_7.Click += new System.EventHandler(this.label8_Click);
             // 
@@ -479,26 +480,26 @@ namespace ControllerPage
             // 
             this.label_4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label_4.AutoSize = true;
-            this.label_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_4.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_4.ForeColor = System.Drawing.Color.Black;
-            this.label_4.Location = new System.Drawing.Point(6, 182);
+            this.label_4.Location = new System.Drawing.Point(21, 181);
             this.label_4.Name = "label_4";
-            this.label_4.Size = new System.Drawing.Size(139, 20);
+            this.label_4.Size = new System.Drawing.Size(124, 22);
             this.label_4.TabIndex = 16;
-            this.label_4.Text = "Long Sticky Paddy";
+            this.label_4.Text = "ข้าวเปลือกเหนียว";
             this.label_4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label_8
             // 
             this.label_8.AllowDrop = true;
             this.label_8.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_8.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_8.ForeColor = System.Drawing.Color.Black;
             this.label_8.Location = new System.Drawing.Point(318, 171);
             this.label_8.Name = "label_8";
             this.label_8.Size = new System.Drawing.Size(134, 42);
             this.label_8.TabIndex = 44;
-            this.label_8.Text = "Long Milled Rice";
+            this.label_8.Text = "ข้าวสาร";
             this.label_8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label_8.Click += new System.EventHandler(this.label9_Click);
             // 
@@ -506,13 +507,13 @@ namespace ControllerPage
             // 
             this.label_9.AllowDrop = true;
             this.label_9.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_9.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_9.ForeColor = System.Drawing.Color.Black;
             this.label_9.Location = new System.Drawing.Point(318, 213);
             this.label_9.Name = "label_9";
             this.label_9.Size = new System.Drawing.Size(134, 42);
             this.label_9.TabIndex = 45;
-            this.label_9.Text = "Short Milled Rice";
+            this.label_9.Text = "ข้าวกล้อง";
             this.label_9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label_9.Click += new System.EventHandler(this.label10_Click);
             // 
@@ -590,25 +591,26 @@ namespace ControllerPage
             // 
             this.button_bias_apply.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel1.SetColumnSpan(this.button_bias_apply, 2);
-            this.button_bias_apply.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_bias_apply.Font = new System.Drawing.Font("Noto Sans Thai", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bias_apply.Location = new System.Drawing.Point(48, 259);
             this.button_bias_apply.Name = "button_bias_apply";
             this.button_bias_apply.Size = new System.Drawing.Size(100, 30);
             this.button_bias_apply.TabIndex = 42;
-            this.button_bias_apply.Text = "Save";
+            this.button_bias_apply.Text = "ยืนยัน";
             this.button_bias_apply.UseVisualStyleBackColor = true;
             this.button_bias_apply.Click += new System.EventHandler(this.button_bias_apply_Click_1);
             // 
             // BIAS_New_Close
             // 
             this.BIAS_New_Close.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BIAS_New_Close.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BIAS_New_Close.BackgroundImage")));
+            this.BIAS_New_Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tableLayoutPanel1.SetColumnSpan(this.BIAS_New_Close, 2);
             this.BIAS_New_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BIAS_New_Close.Location = new System.Drawing.Point(199, 259);
             this.BIAS_New_Close.Name = "BIAS_New_Close";
             this.BIAS_New_Close.Size = new System.Drawing.Size(90, 30);
             this.BIAS_New_Close.TabIndex = 43;
-            this.BIAS_New_Close.Text = "Close";
             this.BIAS_New_Close.UseVisualStyleBackColor = true;
             this.BIAS_New_Close.Click += new System.EventHandler(this.Button_Close_BiasNew);
             // 

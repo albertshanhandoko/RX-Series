@@ -76,9 +76,9 @@ namespace ControllerPage
         {
             if(Global.GlobalVar=="Bahasa")
             {
-                label1.Text = "Bahasa";
+                //label1.Text = "Bahasa";
                 label2.Text = "Ambang Batas";
-                button1.Text = "Bahasa";
+                //button1.Text = "Bahasa";
                 button2.Text = "Perbaharui";
                 button3.Text = "Perbaharui";
                 button4.Text = "Shutdown";
@@ -86,9 +86,9 @@ namespace ControllerPage
             }
             if (Global.GlobalVar == "English")
             {
-                label1.Text = "Language";
+                //label1.Text = "Language";
                 label2.Text = "Threshold";
-                button1.Text = "English";
+                //button1.Text = "English";
                 button2.Text = "Update";
                 button3.Text = "Update";
                 button4.Text = "Shutdown";
@@ -96,9 +96,9 @@ namespace ControllerPage
             }
             if (Global.GlobalVar == "Thai")
             {
-                label1.Font = new Font("Noto Sans Thai", 25);
+                //label1.Font = new Font("Noto Sans Thai", 25);
                 label2.Font = new Font("Noto Sans Thai", 25);
-                label3.Font = new Font("Noto Sans Thai", 25);
+                //label3.Font = new Font("Noto Sans Thai", 25);
                 label4.Font = new Font("Noto Sans Thai", 25);
                 //button1.Font = new Font("Noto Sans Thai", 25);
                 button2.Font = new Font("Noto Sans Thai", 25);
@@ -106,11 +106,11 @@ namespace ControllerPage
                 button4.Font = new Font("Noto Sans Thai", 25);
                 button5.Font = new Font("Noto Sans Thai", 40);
 
-                label1.Text = "ภาษา";
+                //label1.Text = "ภาษา";
                 label2.Text = "กำหนดขอบเขตความชื้น";
-                label3.Text = "ปรับค่า";
+                //label3.Text = "ปรับค่า";
                 label4.Text = "ตัวเลือก";
-                button1.Text = "Thai";
+                //button1.Text = "Thai";
                 button2.Text = "บันทึก";
                 button3.Text = "บันทึก";
                 button4.Text = "ปิดเครื่อง";

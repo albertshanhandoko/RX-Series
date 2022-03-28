@@ -153,7 +153,7 @@ namespace ControllerPage
                 button1.Text = "Simpan";
                 button_thereshold_apply.Text = "Tutup";
             }
-            if (Global.GlobalVar == "English")
+            if (Global.GlobalVar == "Thai")
             {
                 label1.Text = "Threshold Setting";
                 radioButton_enable.Text = "Enable";
@@ -163,7 +163,7 @@ namespace ControllerPage
                 button1.Text = "Save";
                 button_thereshold_apply.Text = "Close";
             }
-            if (Global.GlobalVar == "Thai")
+            if (Global.GlobalVar == "English")
             {
                 label1.Font = new Font("Noto Sans Thai", 18);
                 radioButton_enable.Font = new Font("Noto Sans Thai", 18);
