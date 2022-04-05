@@ -40,9 +40,7 @@ namespace ControllerPage
             this.ButtonIPSet = new System.Windows.Forms.Button();
             this.Btn_CheckTemp = new System.Windows.Forms.Button();
             this.Temp_TextBox = new System.Windows.Forms.TextBox();
-            this.textBox_Sensor_Status = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.Btn_Check = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -54,7 +52,6 @@ namespace ControllerPage
             this.ButtonOption = new System.Windows.Forms.Button();
             this.Curr_Interval_TextBox = new System.Windows.Forms.TextBox();
             this.Btn_Start = new System.Windows.Forms.Button();
-            this.label_ipaddress = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Curr_Measure_TextBox = new System.Windows.Forms.TextBox();
             this.Btn_Stop = new System.Windows.Forms.Button();
@@ -72,6 +69,9 @@ namespace ControllerPage
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -81,6 +81,9 @@ namespace ControllerPage
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -103,9 +106,7 @@ namespace ControllerPage
             this.tableLayoutPanel1.Controls.Add(this.ButtonIPSet, 8, 1);
             this.tableLayoutPanel1.Controls.Add(this.Btn_CheckTemp, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.Temp_TextBox, 5, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox_Sensor_Status, 7, 0);
             this.tableLayoutPanel1.Controls.Add(this.textBox1, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.Btn_Check, 6, 1);
             this.tableLayoutPanel1.Controls.Add(this.textBox5, 7, 7);
             this.tableLayoutPanel1.Controls.Add(this.textBox7, 2, 9);
@@ -117,7 +118,6 @@ namespace ControllerPage
             this.tableLayoutPanel1.Controls.Add(this.ButtonOption, 8, 10);
             this.tableLayoutPanel1.Controls.Add(this.Curr_Interval_TextBox, 5, 3);
             this.tableLayoutPanel1.Controls.Add(this.Btn_Start, 6, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label_ipaddress, 8, 0);
             this.tableLayoutPanel1.Controls.Add(this.label4, 8, 9);
             this.tableLayoutPanel1.Controls.Add(this.Curr_Measure_TextBox, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.Btn_Stop, 6, 6);
@@ -135,6 +135,9 @@ namespace ControllerPage
             this.tableLayoutPanel1.Controls.Add(this.pictureBox6, 4, 8);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox7, 4, 9);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox8, 6, 9);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox9, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox10, 8, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox11, 7, 0);
             this.tableLayoutPanel1.ForeColor = System.Drawing.SystemColors.InfoText;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -233,19 +236,6 @@ namespace ControllerPage
             this.Temp_TextBox.TabIndex = 4;
             this.Temp_TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox_Sensor_Status
-            // 
-            this.textBox_Sensor_Status.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox_Sensor_Status.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox_Sensor_Status.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_Sensor_Status.Font = new System.Drawing.Font("Noto Sans Thai", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_Sensor_Status.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.textBox_Sensor_Status.Location = new System.Drawing.Point(479, 9);
-            this.textBox_Sensor_Status.Name = "textBox_Sensor_Status";
-            this.textBox_Sensor_Status.Size = new System.Drawing.Size(59, 16);
-            this.textBox_Sensor_Status.TabIndex = 3;
-            this.textBox_Sensor_Status.Text = "Online";
-            // 
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -259,18 +249,6 @@ namespace ControllerPage
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "ระบบการเชื่อมต่อ";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Noto Sans Thai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(275, 7);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(62, 21);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.Text = "อุณหภูมิ";
             // 
             // Btn_Check
             // 
@@ -432,18 +410,6 @@ namespace ControllerPage
             this.Btn_Start.Text = "START";
             this.Btn_Start.UseVisualStyleBackColor = false;
             this.Btn_Start.Click += new System.EventHandler(this.button_start_Click);
-            // 
-            // label_ipaddress
-            // 
-            this.label_ipaddress.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label_ipaddress.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label_ipaddress, 2);
-            this.label_ipaddress.Font = new System.Drawing.Font("Noto Sans Thai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_ipaddress.Location = new System.Drawing.Point(579, 7);
-            this.label_ipaddress.Name = "label_ipaddress";
-            this.label_ipaddress.Size = new System.Drawing.Size(66, 21);
-            this.label_ipaddress.TabIndex = 61;
-            this.label_ipaddress.Text = "เซ็นเซอร์";
             // 
             // label4
             // 
@@ -649,6 +615,39 @@ namespace ControllerPage
             this.pictureBox8.TabIndex = 78;
             this.pictureBox8.TabStop = false;
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox9.Location = new System.Drawing.Point(275, 6);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(72, 23);
+            this.pictureBox9.TabIndex = 79;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.BackgroundImage")));
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.tableLayoutPanel1.SetColumnSpan(this.pictureBox10, 2);
+            this.pictureBox10.Location = new System.Drawing.Point(545, 3);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(135, 29);
+            this.pictureBox10.TabIndex = 80;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox11.BackgroundImage = global::ControllerPage.Resource1.offline;
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox11.Location = new System.Drawing.Point(479, 3);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(60, 29);
+            this.pictureBox11.TabIndex = 81;
+            this.pictureBox11.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -670,6 +669,9 @@ namespace ControllerPage
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -683,8 +685,6 @@ namespace ControllerPage
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button Btn_CheckTemp;
-        private System.Windows.Forms.TextBox textBox_Sensor_Status;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button Btn_Check;
         private System.Windows.Forms.Button Btn_Start;
         private System.Windows.Forms.Button Btn_Stop;
@@ -704,7 +704,6 @@ namespace ControllerPage
         private System.Windows.Forms.Button ButtonOption;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.Button ButtonIPSet;
-        private System.Windows.Forms.Label label_ipaddress;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Button_Interface;
@@ -719,6 +718,9 @@ namespace ControllerPage
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
         private PictureBox pictureBox8;
+        private PictureBox pictureBox9;
+        private PictureBox pictureBox10;
+        private PictureBox pictureBox11;
     }
 }
 

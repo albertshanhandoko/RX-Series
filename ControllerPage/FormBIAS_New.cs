@@ -58,7 +58,7 @@ namespace ControllerPage
 
                 label_1.Text = var_label1;
                 label_2.Text = var_label2;
-                label_3.Text = var_label3;
+                //label_3.Text = var_label3;
                 label_4.Text = var_label4;
                 label_5.Text = var_label5;
                 label_6.Text = var_label6;
@@ -69,7 +69,7 @@ namespace ControllerPage
                     label_title.Text = "Setting BIAS";
                     label_1.Text = "Padi";
                     label_2.Text = "Beras Merah";
-                    label_3.Text = "Gandum";
+                    //label_3.Text = "Gandum";
                     label_4.Text = "Barley";
                     label_5.Text = "Kedelai";
                     label_6.Text = "Jagung";
@@ -107,7 +107,7 @@ namespace ControllerPage
 
                 label_1.Text = var_label1;
                 label_2.Text = var_label2;
-                label_3.Text = var_label3;
+                //label_3.Text = var_label3;
                 label_4.Text = var_label4;
                 label_5.Text = var_label5;
                 label_6.Text = var_label6;
@@ -118,7 +118,7 @@ namespace ControllerPage
                     label_title.Text = "Setting BIAS";
                     label_1.Text = "Padi";
                     label_2.Text = "Jagung Tinggi";
-                    label_3.Text = "Jagung Medium";
+                    //label_3.Text = "Jagung Medium";
                     label_4.Text = "Barley";
                     label_5.Text = "Kedelai";
                     label_6.Text = "Jagung Rendah";
@@ -167,7 +167,7 @@ namespace ControllerPage
                     label_title.Text = "Setting BIAS";
                     label_1.Text = "Padi Pendek";
                     label_2.Text = "Padi Panjang";
-                    label_3.Text = "Padi Jasmine";
+                    //label_3.Text = "Padi Jasmine";
                     label_4.Text = "Padi Long Sticky";
                     label_5.Text = "Padi Long Parboiled";
                     label_6.Text = "Peak AD Count";
@@ -182,7 +182,7 @@ namespace ControllerPage
                     label_title.Font = new Font("Noto Sans Thai", 18);
                     label_1.Font = new Font("Noto Sans Thai", 14);
                     label_2.Font = new Font("Noto Sans Thai", 14);
-                    label_3.Font = new Font("Noto Sans Thai", 14);
+                    //label_3.Font = new Font("Noto Sans Thai", 14);
                     label_4.Font = new Font("Noto Sans Thai", 14);
                     label_5.Font = new Font("Noto Sans Thai", 14);
                     //label_6.Font = new Font("Noto Sans Thai", 14);
@@ -195,7 +195,7 @@ namespace ControllerPage
                     label_title.Text = "ข้าวเปลือกหอมมะลิ";
                     label_1.Text = "ข้าวเปลือกเมล็ดสั้น ";
                     label_2.Text = "ข้าวเปลือกเมล็ดสั้น ";
-                    label_3.Text = "ข้าวเปลือกหอมมะลิ ";
+                    //label_3.Text = "ข้าวเปลือกหอมมะลิ ";
                     label_4.Text = "ข้าวเปลือกเหนียว ";
                     label_5.Text = "ข้าวเปลือกนึ่ง ";
                     label_6.Text = "Peak AD Count";

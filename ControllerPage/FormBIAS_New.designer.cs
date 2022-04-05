@@ -41,7 +41,6 @@ namespace ControllerPage
             this.label_1 = new System.Windows.Forms.Label();
             this.label_2 = new System.Windows.Forms.Label();
             this.label_title = new System.Windows.Forms.Label();
-            this.label_3 = new System.Windows.Forms.Label();
             this.textBox_Bias_ShortPaddy = new System.Windows.Forms.TextBox();
             this.button_minus_bias_paddy = new System.Windows.Forms.Button();
             this.button_minus_bias_brown = new System.Windows.Forms.Button();
@@ -71,14 +70,16 @@ namespace ControllerPage
             this.textBox_Bias_shortmilledrice = new System.Windows.Forms.TextBox();
             this.button_bias_apply = new System.Windows.Forms.Button();
             this.BIAS_New_Close = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 8;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.29194F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.843137F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.65359F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.372549F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.278867F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.625272F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.68845F));
@@ -94,7 +95,6 @@ namespace ControllerPage
             this.tableLayoutPanel1.Controls.Add(this.label_1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label_2, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label_title, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label_3, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.textBox_Bias_ShortPaddy, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.button_minus_bias_paddy, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.button_minus_bias_brown, 1, 2);
@@ -124,6 +124,7 @@ namespace ControllerPage
             this.tableLayoutPanel1.Controls.Add(this.textBox_Bias_shortmilledrice, 6, 5);
             this.tableLayoutPanel1.Controls.Add(this.button_bias_apply, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.BIAS_New_Close, 2, 6);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 3);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(8, 9);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 8;
@@ -206,28 +207,28 @@ namespace ControllerPage
             // 
             // label_1
             // 
-            this.label_1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label_1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_1.AutoSize = true;
             this.label_1.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_1.ForeColor = System.Drawing.Color.Black;
-            this.label_1.Location = new System.Drawing.Point(9, 55);
+            this.label_1.Location = new System.Drawing.Point(10, 55);
             this.label_1.Name = "label_1";
             this.label_1.Size = new System.Drawing.Size(136, 22);
             this.label_1.TabIndex = 10;
             this.label_1.Text = "ข้าวเปลือกเมล็ดสั้น";
-            this.label_1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label_2
             // 
-            this.label_2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label_2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_2.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_2.ForeColor = System.Drawing.Color.Black;
-            this.label_2.Location = new System.Drawing.Point(3, 87);
+            this.label_2.Location = new System.Drawing.Point(7, 87);
             this.label_2.Name = "label_2";
             this.label_2.Size = new System.Drawing.Size(142, 42);
             this.label_2.TabIndex = 6;
-            this.label_2.Text = "ข้าวเปลือกเมล็ดสั้น";
-            this.label_2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label_2.Text = "ข้าวเปลือกเมล็ดยาว";
+            this.label_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label_title
@@ -237,25 +238,12 @@ namespace ControllerPage
             this.tableLayoutPanel1.SetColumnSpan(this.label_title, 8);
             this.label_title.Font = new System.Drawing.Font("Noto Sans Thai", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_title.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label_title.Location = new System.Drawing.Point(168, 0);
+            this.label_title.Location = new System.Drawing.Point(111, 0);
             this.label_title.Name = "label_title";
-            this.label_title.Size = new System.Drawing.Size(276, 44);
+            this.label_title.Size = new System.Drawing.Size(389, 44);
             this.label_title.TabIndex = 1;
-            this.label_title.Text = "ข้าวเปลือกหอมมะลิ";
+            this.label_title.Text = "ตั้งค่าการปรับแก้ค่าความชื้น";
             this.label_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_3
-            // 
-            this.label_3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label_3.AutoSize = true;
-            this.label_3.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_3.ForeColor = System.Drawing.Color.Black;
-            this.label_3.Location = new System.Drawing.Point(80, 139);
-            this.label_3.Name = "label_3";
-            this.label_3.Size = new System.Drawing.Size(65, 22);
-            this.label_3.TabIndex = 7;
-            this.label_3.Text = "ข้าวสาลี";
-            this.label_3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // textBox_Bias_ShortPaddy
             // 
@@ -270,9 +258,9 @@ namespace ControllerPage
             // 
             this.button_minus_bias_paddy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.button_minus_bias_paddy.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_minus_bias_paddy.Location = new System.Drawing.Point(151, 48);
+            this.button_minus_bias_paddy.Location = new System.Drawing.Point(160, 48);
             this.button_minus_bias_paddy.Name = "button_minus_bias_paddy";
-            this.button_minus_bias_paddy.Size = new System.Drawing.Size(42, 36);
+            this.button_minus_bias_paddy.Size = new System.Drawing.Size(33, 36);
             this.button_minus_bias_paddy.TabIndex = 22;
             this.button_minus_bias_paddy.Text = "-";
             this.button_minus_bias_paddy.UseVisualStyleBackColor = true;
@@ -283,9 +271,9 @@ namespace ControllerPage
             // 
             this.button_minus_bias_brown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.button_minus_bias_brown.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_minus_bias_brown.Location = new System.Drawing.Point(151, 90);
+            this.button_minus_bias_brown.Location = new System.Drawing.Point(160, 90);
             this.button_minus_bias_brown.Name = "button_minus_bias_brown";
-            this.button_minus_bias_brown.Size = new System.Drawing.Size(42, 36);
+            this.button_minus_bias_brown.Size = new System.Drawing.Size(33, 36);
             this.button_minus_bias_brown.TabIndex = 30;
             this.button_minus_bias_brown.Text = "-";
             this.button_minus_bias_brown.UseVisualStyleBackColor = true;
@@ -296,9 +284,9 @@ namespace ControllerPage
             // 
             this.button_minus_bias_wheat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.button_minus_bias_wheat.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_minus_bias_wheat.Location = new System.Drawing.Point(151, 132);
+            this.button_minus_bias_wheat.Location = new System.Drawing.Point(160, 132);
             this.button_minus_bias_wheat.Name = "button_minus_bias_wheat";
-            this.button_minus_bias_wheat.Size = new System.Drawing.Size(42, 36);
+            this.button_minus_bias_wheat.Size = new System.Drawing.Size(33, 36);
             this.button_minus_bias_wheat.TabIndex = 31;
             this.button_minus_bias_wheat.Text = "-";
             this.button_minus_bias_wheat.UseVisualStyleBackColor = true;
@@ -309,9 +297,9 @@ namespace ControllerPage
             // 
             this.button_minus_bias_barley.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.button_minus_bias_barley.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_minus_bias_barley.Location = new System.Drawing.Point(151, 174);
+            this.button_minus_bias_barley.Location = new System.Drawing.Point(160, 174);
             this.button_minus_bias_barley.Name = "button_minus_bias_barley";
-            this.button_minus_bias_barley.Size = new System.Drawing.Size(42, 36);
+            this.button_minus_bias_barley.Size = new System.Drawing.Size(33, 36);
             this.button_minus_bias_barley.TabIndex = 32;
             this.button_minus_bias_barley.Text = "-";
             this.button_minus_bias_barley.UseVisualStyleBackColor = true;
@@ -340,7 +328,7 @@ namespace ControllerPage
             this.label_5.Name = "label_5";
             this.label_5.Size = new System.Drawing.Size(157, 42);
             this.label_5.TabIndex = 17;
-            this.label_5.Text = "ข้าวเปลือกนึ่ง";
+            this.label_5.Text = "ข้าวนึ่ง";
             this.label_5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // button_minus_bias_soy
@@ -401,7 +389,7 @@ namespace ControllerPage
             this.label_7.Name = "label_7";
             this.label_7.Size = new System.Drawing.Size(134, 42);
             this.label_7.TabIndex = 19;
-            this.label_7.Text = "ข้าวเปลือกหอมมะลิ";
+            this.label_7.Text = "ข้าวสาลี";
             this.label_7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label_7.Click += new System.EventHandler(this.label8_Click);
             // 
@@ -478,16 +466,16 @@ namespace ControllerPage
             // 
             // label_4
             // 
-            this.label_4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label_4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_4.AutoSize = true;
             this.label_4.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_4.ForeColor = System.Drawing.Color.Black;
-            this.label_4.Location = new System.Drawing.Point(21, 181);
+            this.label_4.Location = new System.Drawing.Point(16, 181);
             this.label_4.Name = "label_4";
             this.label_4.Size = new System.Drawing.Size(124, 22);
             this.label_4.TabIndex = 16;
             this.label_4.Text = "ข้าวเปลือกเหนียว";
-            this.label_4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label_8
             // 
@@ -499,7 +487,7 @@ namespace ControllerPage
             this.label_8.Name = "label_8";
             this.label_8.Size = new System.Drawing.Size(134, 42);
             this.label_8.TabIndex = 44;
-            this.label_8.Text = "ข้าวสาร";
+            this.label_8.Text = "ข้าวสารเมล็ดยาว";
             this.label_8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label_8.Click += new System.EventHandler(this.label9_Click);
             // 
@@ -513,7 +501,7 @@ namespace ControllerPage
             this.label_9.Name = "label_9";
             this.label_9.Size = new System.Drawing.Size(134, 42);
             this.label_9.TabIndex = 45;
-            this.label_9.Text = "ข้าวกล้อง";
+            this.label_9.Text = "ข้าวกล้องเมล็ดยาว";
             this.label_9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label_9.Click += new System.EventHandler(this.label10_Click);
             // 
@@ -604,7 +592,7 @@ namespace ControllerPage
             // 
             this.BIAS_New_Close.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BIAS_New_Close.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BIAS_New_Close.BackgroundImage")));
-            this.BIAS_New_Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BIAS_New_Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tableLayoutPanel1.SetColumnSpan(this.BIAS_New_Close, 2);
             this.BIAS_New_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BIAS_New_Close.Location = new System.Drawing.Point(199, 259);
@@ -613,6 +601,17 @@ namespace ControllerPage
             this.BIAS_New_Close.TabIndex = 43;
             this.BIAS_New_Close.UseVisualStyleBackColor = true;
             this.BIAS_New_Close.Click += new System.EventHandler(this.Button_Close_BiasNew);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 132);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(132, 36);
+            this.pictureBox1.TabIndex = 52;
+            this.pictureBox1.TabStop = false;
             // 
             // FormBIAS_New
             // 
@@ -626,6 +625,7 @@ namespace ControllerPage
             this.Load += new System.EventHandler(this.FormBIAS_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -635,7 +635,6 @@ namespace ControllerPage
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label_2;
         private System.Windows.Forms.Label label_title;
-        private System.Windows.Forms.Label label_3;
         private System.Windows.Forms.Label label_1;
         private System.Windows.Forms.Label label_4;
         private System.Windows.Forms.Label label_5;
@@ -672,6 +671,7 @@ namespace ControllerPage
         private System.Windows.Forms.Button button9_plus;
         private System.Windows.Forms.TextBox textBox_Bias_longmilledrice;
         private System.Windows.Forms.TextBox textBox_Bias_shortmilledrice;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 
 

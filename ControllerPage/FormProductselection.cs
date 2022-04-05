@@ -178,12 +178,12 @@ namespace ControllerPage
                     button1.Text = "ข้าวเปลือกเมล็ดสั้น";
                     button2.Text = "ข้าวเปลือกเมล็ดยาว";
                     button3.Text = "ข้าวเปลือกหอมมะลิ";
-                    button4.Text = "ข้าวเปลือกเหนียว";
-                    button5.Text = "ข้าวเปลือกนึ่ง";
+                    //button4.Text = "ข้าวเปลือกเหนียว";
+                    button5.Text = "ข้าวนึ่ง";
                     button6.Text = "Peak AD Count";
                     button7.Text = "ข้าวสาลี";
-                    button8.Text = "ข้าวสาร";
-                    button9.Text = "ข้าวกล้อง";
+                    button8.Text = "ข้าวสารเมล็ดยาว";
+                    button9.Text = "ข้าวกล้องเมล็ดยาว";
 
                 }
 
@@ -212,7 +212,7 @@ namespace ControllerPage
         {
 
             //this.Productselection = "Corn_Medium";
-            this.Productselection = button4.Text.Replace(" ", "_");
+            this.Productselection = "ข้าวเปลือกหอมมะลิ";
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
@@ -267,6 +267,11 @@ namespace ControllerPage
         }
 
         private void FormProductselection_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

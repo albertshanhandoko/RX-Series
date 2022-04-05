@@ -87,13 +87,13 @@ namespace ControllerPage
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Noto Sans Thai", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label1.Location = new System.Drawing.Point(10, 21);
+            this.label1.Location = new System.Drawing.Point(38, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(383, 31);
+            this.label1.Size = new System.Drawing.Size(326, 37);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Waiting time between Intervals";
+            this.label1.Text = "ระยะห่างในการวัดแต่ละครั้ง";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FormIntervalTime

@@ -265,6 +265,11 @@
     <Compile Include="FormFixedTime.Designer.cs">
       <DependentUpon>FormFixedTime.cs</DependentUpon>
     </Compile>
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -334,6 +339,10 @@
     <EmbeddedResource Include="FormFixedTime.resx">
       <DependentUpon>FormFixedTime.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="ControllerPage_1_TemporaryKey.pfx" />
     <None Include="ControllerPage_TemporaryKey.pfx" />
     <None Include="packages.config" />
@@ -364,6 +373,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Image1.bmp" />
+    <Content Include="Resources\error.jpg" />
+    <None Include="Resources\interface.jpg" />
+    <None Include="Resources\ipset.jpg" />
+    <None Include="Resources\mode.jpg" />
+    <None Include="Resources\numofinterval.jpg" />
+    <None Include="Resources\numofpcs.jpg" />
+    <Content Include="Resources\offline.jpg" />
+    <Content Include="Resources\Online.jpg" />
+    <None Include="Resources\productselection.jpg" />
+    <Content Include="Resources\Running.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

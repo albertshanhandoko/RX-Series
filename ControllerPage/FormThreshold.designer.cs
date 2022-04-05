@@ -125,7 +125,7 @@ namespace ControllerPage
             // 
             this.button_thereshold_apply.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button_thereshold_apply.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_thereshold_apply.BackgroundImage")));
-            this.button_thereshold_apply.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_thereshold_apply.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button_thereshold_apply.Font = new System.Drawing.Font("Noto Sans Thai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_thereshold_apply.Location = new System.Drawing.Point(259, 299);
             this.button_thereshold_apply.Name = "button_thereshold_apply";

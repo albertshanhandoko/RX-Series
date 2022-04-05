@@ -48,14 +48,14 @@ namespace ControllerPage
         {
             if (Global.GlobalVar == "Bahasa")
             {
-                label1.Text = "Mode Pengukuran";
+                //label1.Text = "Mode Pengukuran";
                 button1.Text = "PCS Tetap";
                 button3.Text = "Waktu Tetap";
 
             }
             if (Global.GlobalVar == "English")
             {
-                label1.Text = "Measure Mode";
+                //label1.Text = "Measure Mode";
                 button1.Text = "Fixed PCS";
                 button3.Text = "Fixed Time";
             }

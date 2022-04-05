@@ -434,7 +434,7 @@ namespace ControllerPage
                 }
 
             }
-            Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
+            //Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
         }
         private void button_start_Click(object sender, EventArgs e)
         {
@@ -453,7 +453,7 @@ namespace ControllerPage
                 Sensor_input_Helper.Update_ErrorCode(Sensor_input_Helper.GetLocalIPAddress(), batch_id_002, "001");
                 MessageBox.Show("Error 001 - Connection to sensor failed");
                 Console.WriteLine(ex.Message);
-                Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
+                Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus("Error"));
             }
 
             data_cleansing();
@@ -612,15 +612,17 @@ namespace ControllerPage
                 Button_Mode.Enabled = false;
                 if (Global.GlobalVar == "Thai")
                 {
-                    textBox_Sensor_Status.Text = "ออนไลน์";
-                    textBox_Sensor_Status.ForeColor = Color.Green;
-                    Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
+                    pictureBox11.BackgroundImage = ControllerPage.Resource1.Running;
+
+
+                    Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus("Running"));
                 }
                 else 
                 {
-                    textBox_Sensor_Status.Text = "ออนไลน์";
-                    textBox_Sensor_Status.ForeColor = Color.Green;
-                    Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
+                    pictureBox11.BackgroundImage = ControllerPage.Resource1.Running;
+
+
+                    Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus("Running"));
                 }
 
 
@@ -873,15 +875,13 @@ namespace ControllerPage
             //online and no online
             if (Global.GlobalVar == "Thai")
             {
-                textBox_Sensor_Status.Text = "ออฟไลน์";
-                textBox_Sensor_Status.ForeColor = Color.Red;
-                Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
+                pictureBox11.BackgroundImage = ControllerPage.Resource1.offline;
+                Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus("Offline"));
             }
             else
             {
-                textBox_Sensor_Status.Text = "ออฟไลน์";
-                textBox_Sensor_Status.ForeColor = Color.Red;
-                Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
+                pictureBox11.BackgroundImage = ControllerPage.Resource1.offline;
+                Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus("Offline"));
             }
 
 
@@ -1345,21 +1345,19 @@ namespace ControllerPage
                     //Curr_Kernel_TextBox.Text = (counter_data + 1).ToString();
                     Button_Interface.Enabled = true;
                 });
-                textBox_Sensor_Status.Invoke((Action)delegate
+                pictureBox11.Invoke((Action)delegate
                 {
                     //Curr_Kernel_TextBox.Text = (counter_data + 1).ToString();
 
                     if (Global.GlobalVar == "Thai")
                     {
-                        textBox_Sensor_Status.Text = "ออนไลน์";
-                        textBox_Sensor_Status.ForeColor = Color.Green;
-                        Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
+                        pictureBox11.BackgroundImage = ControllerPage.Resource1.Online;
+                        Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus("Online"));
                     }
                     else
                     {
-                        textBox_Sensor_Status.Text = "ออนไลน์";
-                        textBox_Sensor_Status.ForeColor = Color.Green;
-                        Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
+                        pictureBox11.BackgroundImage = ControllerPage.Resource1.Online;
+                        Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus("Online"));
                     }
 
                 });
@@ -1394,12 +1392,11 @@ namespace ControllerPage
                 {
                     Btn_Check.Enabled = true;
                 });
-                textBox_Sensor_Status.Invoke((Action)delegate
+                pictureBox11.Invoke((Action)delegate
                 {
                     //Curr_Kernel_TextBox.Text = (counter_data + 1).ToString();
-                    textBox_Sensor_Status.Text = "Error";
-                    textBox_Sensor_Status.ForeColor = Color.Red;
-                    Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus(textBox_Sensor_Status.Text));
+                    pictureBox11.BackgroundImage = ControllerPage.Resource1.error;
+                    Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus("Error"));
 
                 });
 

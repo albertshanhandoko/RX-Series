@@ -71,7 +71,7 @@ namespace ControllerPage
             // 
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tableLayoutPanel1.SetColumnSpan(this.button5, 2);
             this.button5.Font = new System.Drawing.Font("Noto Sans Thai", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(189, 345);

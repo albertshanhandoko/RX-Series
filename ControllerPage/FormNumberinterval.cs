@@ -68,13 +68,13 @@ namespace ControllerPage
         {
             if (Global.GlobalVar == "Bahasa")
             {
-                label1.Text = "Nomor dari Interval (1-50)";
+                //label1.Text = "Nomor dari Interval (1-50)";
                 Combobox_NumInterval.Text = "-- Mohon Pilih Nomor dari Interval --";
                 button1.Text = "Gunakan";
             }
             if (Global.GlobalVar == "English")
             {
-                label1.Text = "Number of Intervals (1-50)";
+                //label1.Text = "Number of Intervals (1-50)";
                 Combobox_NumInterval.Text = "-- Please Choose Number of Interval --";
                 button1.Text = "Apply";
             }

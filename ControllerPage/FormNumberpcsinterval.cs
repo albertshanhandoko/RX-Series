@@ -31,13 +31,13 @@ namespace ControllerPage
         {
             if (Global.GlobalVar == "Bahasa")
             {
-                label1.Text = "No. PCS dari Tiap Interval (1-250)";
+                //label1.Text = "No. PCS dari Tiap Interval (1-250)";
                 Combobox_NumPerPCS.Text = "-- Mohon Pilih No PCS --";
                 button1.Text = "Gunakan";
             }
             if (Global.GlobalVar == "English")
             {
-                label1.Text = "No. of PCS per Interval (1-250)";
+                //label1.Text = "No. of PCS per Interval (1-250)";
                 Combobox_NumPerPCS.Text = "Combobox_NumPerPCS";
                 button1.Text = "Apply";
             }
