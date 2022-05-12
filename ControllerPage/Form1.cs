@@ -2050,7 +2050,7 @@ namespace ControllerPage
                         if (Result_Parsing != null)
                         {
                             if (
-                                Result_Parsing.Contains("-")
+                                Result_Parsing.Contains("-") || Result_Parsing.Contains("+")
                                 && (Result_Parsing.Length) > 4
                                 && Result_Parsing.Contains(STX)
                                 && Result_Parsing.Contains(ETX)
@@ -2115,7 +2115,7 @@ namespace ControllerPage
                             }
                             else if (
                                  (Data_Measure_Result.Count == 0 && Result_Parsing.Substring(3, 5) == "00000")
-                                 || (!Result_Parsing.Contains("-") && (Result_Parsing.Length) > 10)
+                                 || (!Result_Parsing.Contains("-") || !Result_Parsing.Contains("+") && (Result_Parsing.Length) > 10)
                                  )
                             {
                                 Result_Parsing = "0.0";
@@ -2555,7 +2555,7 @@ namespace ControllerPage
                                     if (
                                         Result_Parsing.Contains(STX)
                                         && Result_Parsing.Contains(ETX)
-                                        && Result_Parsing.Contains("-")
+                                        && Result_Parsing.Contains("-") || Result_Parsing.Contains("+")
                                         && (Result_Parsing.Length) > 8
                                         && Data_Measure_Result.Count >= 1
                                         )
@@ -2614,7 +2614,7 @@ namespace ControllerPage
 
                                     else if (
                                         (Data_Measure_Result.Count == 0 && Result_Parsing.Substring(3,5) == "00000") 
-                                        || (!Result_Parsing.Contains("-") && (Result_Parsing.Length) > 10)
+                                        || (!Result_Parsing.Contains("-") || !Result_Parsing.Contains("+") && (Result_Parsing.Length) > 10)
 
                                         )
                                     {
@@ -3016,7 +3016,7 @@ namespace ControllerPage
                         if (Result_Parsing != null)
                         {
                             if (
-                                Result_Parsing.Contains("-")
+                                Result_Parsing.Contains("-") || Result_Parsing.Contains("+")
                                 && (Result_Parsing.Length) > 4
                                 && Result_Parsing.Contains(STX)
                                 && Result_Parsing.Contains(ETX)
@@ -3079,7 +3079,7 @@ namespace ControllerPage
                             }
                             else if (
                                         (Data_Measure_Result.Count == 0 && Result_Parsing.Substring(3, 5) == "00000")
-                                        || (!Result_Parsing.Contains("-") && (Result_Parsing.Length) > 10)
+                                        || (!Result_Parsing.Contains("-") || !Result_Parsing.Contains("+") && (Result_Parsing.Length) > 10)
 
                                         )
                             {
