@@ -182,8 +182,8 @@ namespace ControllerPage
                     button5.Text = "ข้าวนึ่ง";
                     button6.Text = "Peak AD Count";
                     button7.Text = "ข้าวสาลี";
-                    button8.Text = "ข้าวสารเมล็ดยาว";
-                    button9.Text = "ข้าวกล้องเมล็ดยาว";
+                    button8.Text = "ข้าวสาร";
+                    button9.Text = "ข้าวกล้อง";
 
                 }
 
