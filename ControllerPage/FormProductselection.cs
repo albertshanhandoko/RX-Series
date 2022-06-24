@@ -212,7 +212,7 @@ namespace ControllerPage
         {
 
             //this.Productselection = "Corn_Medium";
-            this.Productselection = "ข้าวเปลือกหอมมะลิ";
+            this.Productselection = "ข้าวเปลือกเหนียว";
             this.DialogResult = DialogResult.OK;
             this.Close();
         }

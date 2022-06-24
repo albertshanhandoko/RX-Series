@@ -509,7 +509,7 @@ namespace ControllerPage
                 {
                     product_text = "Long_Sticky_Paddy";
                 }
-                else if (ButtonProduct.Text == "Beras Long Parboiled" || ButtonProduct.Text == "ข้าวเปลือกนึ่ง")
+                else if (ButtonProduct.Text == "Beras Long Parboiled" || ButtonProduct.Text == "ข้าวนึ่ง")
                 {
                     product_text = "Long_Parboiled_Rice";
                 }
