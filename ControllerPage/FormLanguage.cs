@@ -43,8 +43,8 @@ namespace ControllerPage
             Global.GlobalVar12 = "Temp";
             Global.GlobalVar13 = "Interface";
             Global.GlobalVar14 = "Mode ";
-            Global.GlobalVar15 = "Threshold Max";
-            Global.GlobalVar16 = "Threshold Min";
+            Global.GlobalVar15 = "Ambang Batas Maksimal";
+            Global.GlobalVar16 = "Ambang Batas Minimal";
             Global.GlobalVar17 = "Offline";
             Global.GlobalVar18 = "Padi";
             this.Close();

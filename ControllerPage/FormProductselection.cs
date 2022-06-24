@@ -64,12 +64,12 @@ namespace ControllerPage
                     button1.Text = "Padi Pendek";
                     button2.Text = "Padi Panjang";
                     button3.Text = "Padi Jasmine";
-                    button4.Text = "Padi Long Sticky";
+                    button4.Text = "Pady Ketan";
                     button5.Text = "Beras Long Parboiled";
                     button6.Text = "Peak AD Count";
                     button7.Text = "Gandum";
-                    button8.Text = "Beras Long Milled";
-                    button9.Text = "Beras Long Brown";
+                    button8.Text = "Beras";
+                    button9.Text = "Beras Pecah Kulit";
 
                 }
             }
@@ -253,6 +253,11 @@ namespace ControllerPage
 
             this.DialogResult = DialogResult.OK;
             this.Close();
+        }
+
+        private void FormProductselection_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

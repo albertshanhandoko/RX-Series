@@ -202,8 +202,8 @@ namespace ControllerPage
                 Global.GlobalVar12 = "Temp";
                 Global.GlobalVar13 = "Interface";
                 Global.GlobalVar14 = "Mode ";
-                Global.GlobalVar15 = "Threshold Max";
-                Global.GlobalVar16 = "Threshold Min";
+                Global.GlobalVar15 = "Ambang Batas Maksimal";
+                Global.GlobalVar16 = "Ambang Batas Minimal";
                 Global.GlobalVar17 = "Offline";
                 Global.GlobalVar18 = "Padi";
             }
@@ -611,7 +611,7 @@ namespace ControllerPage
                 {
                     product_text = "Jasmine_Paddy";
                 }
-                else if (ButtonProduct.Text == "Padi Long Sticky" || ButtonProduct.Text == "ข้าวเปลือกเหนียว")
+                else if (ButtonProduct.Text == "Pady Ketan" || ButtonProduct.Text == "ข้าวเปลือกเหนียว")
                 {
                     product_text = "Long_Sticky_Paddy";
                 }
@@ -623,11 +623,11 @@ namespace ControllerPage
                 {
                     product_text = "Wheat";
                 }
-                else if (ButtonProduct.Text == "Beras Long Milled" || ButtonProduct.Text == "ข้าวสาร")
+                else if (ButtonProduct.Text == "Beras" || ButtonProduct.Text == "ข้าวสาร")
                 {
                     product_text = "Long_Milled_Rice";
                 }
-                else if (ButtonProduct.Text == "Beras Long Brown" || ButtonProduct.Text == "ข้าวกล้อง")
+                else if (ButtonProduct.Text == "Beras Pecah Kulit" || ButtonProduct.Text == "ข้าวกล้อง")
                 {
                     product_text = "Long_Brown_Rice";
                 }
@@ -1080,7 +1080,7 @@ namespace ControllerPage
                     {
                         combox_typemeasure = "Jasmine_Paddy";
                     }
-                    else if (ButtonProduct.Text == "Padi Long Sticky" || ButtonProduct.Text == "ข้าวเปลือกเหนียว")
+                    else if (ButtonProduct.Text == "Pady Ketan" || ButtonProduct.Text == "ข้าวเปลือกเหนียว")
                     {
                         combox_typemeasure = "Long_Sticky_Paddy";
                     }
@@ -1092,11 +1092,11 @@ namespace ControllerPage
                     {
                         combox_typemeasure = "Wheat";
                     }
-                    else if (ButtonProduct.Text == "Beras Long Milled" || ButtonProduct.Text == "ข้าวสาร")
+                    else if (ButtonProduct.Text == "Beras" || ButtonProduct.Text == "ข้าวสาร")
                     {
                         combox_typemeasure = "Long_Milled_Rice";
                     }
-                    else if (ButtonProduct.Text == "Beras Long Brown" || ButtonProduct.Text == "ข้าวกล้อง")
+                    else if (ButtonProduct.Text == "Beras Pecah Kulit" || ButtonProduct.Text == "ข้าวกล้อง")
                     {
                         combox_typemeasure = "Long_Brown_Rice";
                     }
@@ -1189,7 +1189,7 @@ namespace ControllerPage
                     {
                         combox_typemeasure = "Jasmine_Paddy";
                     }
-                    else if (ButtonProduct.Text == "Padi Long Sticky" || ButtonProduct.Text == "ข้าวเปลือกเหนียว")
+                    else if (ButtonProduct.Text == "Pady Ketan" || ButtonProduct.Text == "ข้าวเปลือกเหนียว")
                     {
                         combox_typemeasure = "Long_Sticky_Paddy";
                     }
@@ -1201,11 +1201,11 @@ namespace ControllerPage
                     {
                         combox_typemeasure = "Wheat";
                     }
-                    else if (ButtonProduct.Text == "Beras Long Milled" || ButtonProduct.Text == "ข้าวสาร")
+                    else if (ButtonProduct.Text == "Beras" || ButtonProduct.Text == "ข้าวสาร")
                     {
                         combox_typemeasure = "Long_Milled_Rice";
                     }
-                    else if (ButtonProduct.Text == "Beras Long Brown" || ButtonProduct.Text == "ข้าวกล้อง")
+                    else if (ButtonProduct.Text == "Beras Pecah Kulit" || ButtonProduct.Text == "ข้าวกล้อง")
                     {
                         combox_typemeasure = "Long_Brown_Rice";
                     }
