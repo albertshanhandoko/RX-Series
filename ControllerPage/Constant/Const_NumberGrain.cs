@@ -439,21 +439,21 @@ namespace ControllerPage.Constant
         [Description("A20A3\r")]
         Brown_Rice,
         
-        [Description("62098\r")]
+        [Description("D20A6\r")]
         Barley,
-        [Description("8209A\r")]
+        [Description("C20A5\r")]
         Soy,
         [Description("A20A3\r")]
         Corn,
         [Description("32095\r")]
         Polished_Rice,
-        [Description("22094\r")]
-        Short_Paddy,
-        [Description("32095\r")]
-        Long_Paddy,
-        [Description("42096\r")]
-        Jasmine_Paddy,
         [Description("52097\r")]
+        Short_Paddy,
+        [Description("62098\r")]
+        Long_Paddy,
+        [Description("8209A\r")]
+        Jasmine_Paddy,
+        [Description("A20A3\r")]
         Long_Sticky_Paddy,
         [Description("62098\r")]
         Long_Parboiled_Rice,
@@ -461,21 +461,18 @@ namespace ControllerPage.Constant
         Peak_AD_Count,
         [Description("8209A\r")]
         Wheat,
-        [Description("A20A3\r")]
+        [Description("B20A4\r")]
         Long_Milled_Rice,
         [Description("B20A4\r")]
         Long_Brown_Rice
-
     }
-
-
     public enum Corn_Only // Gii RX -30 V 1.01
     {
-        [Description("A20A3\r")]
+        [Description("32095\r")]
         Corn_low,
-        [Description("A20A3\r")]
+        [Description("22094\r")]
         Corn_medium,
-        [Description("A20A3\r")]
+        [Description("42096\r")]
         Corn_high,
     }
 
