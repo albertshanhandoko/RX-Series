@@ -205,6 +205,12 @@
     <Compile Include="FormNumpadBPassword.designer.cs">
       <DependentUpon>FormNumpadBPassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormNumpad_firstdelay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNumpad_firstdelay.Designer.cs">
+      <DependentUpon>FormNumpad_firstdelay.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormNumpad_min.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +222,18 @@
     </Compile>
     <Compile Include="FormNumpad_max.designer.cs">
       <DependentUpon>FormNumpad_max.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNumpad_thresmax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNumpad_thresmax.Designer.cs">
+      <DependentUpon>FormNumpad_thresmax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNumpad_thresmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNumpad_thresmin.Designer.cs">
+      <DependentUpon>FormNumpad_thresmin.cs</DependentUpon>
     </Compile>
     <Compile Include="FormOptions.cs">
       <SubType>Form</SubType>
@@ -306,11 +324,20 @@
     <EmbeddedResource Include="FormNumpadBPassword.resx">
       <DependentUpon>FormNumpadBPassword.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormNumpad_firstdelay.resx">
+      <DependentUpon>FormNumpad_firstdelay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormNumpad_min.resx">
       <DependentUpon>FormNumpad_min.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormNumpad_max.resx">
       <DependentUpon>FormNumpad_max.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNumpad_thresmax.resx">
+      <DependentUpon>FormNumpad_thresmax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNumpad_thresmin.resx">
+      <DependentUpon>FormNumpad_thresmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormOptions.resx">
       <DependentUpon>FormOptions.cs</DependentUpon>

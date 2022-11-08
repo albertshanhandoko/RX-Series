@@ -67,5 +67,12 @@ namespace ControllerPage
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.ModeSelection = "Relay";
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
     }
 }

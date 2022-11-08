@@ -657,6 +657,16 @@ namespace ControllerPage
                     start_thread.Start();
 
                 }
+
+                else if (Button_Mode.Text.ToLower() == "relay")
+                {
+                    //readThread = new Thread(Read_Interval);
+                    //readThread.Start();
+                    start_thread = new Thread(Read_Relay_Thread);
+                    start_thread.Start();
+
+                }
+
                 else
                 {
                     MessageBox.Show("Wrong Picked on mode");
@@ -3171,6 +3181,580 @@ namespace ControllerPage
             //MessageBox.Show("measurement finsih");
             Console.WriteLine("Measurement Finish");
         }
+        public void Read_Relay_Thread()
+        {
+
+            string forever_str;
+            string readStr;
+            bool Measure_Cond = true;
+            bool relay_triggered = false;
+            float relay_max_thers = float.Parse(button_thereshold_maxvalue.Text.Replace("%", "").Replace("MAX ", ""));
+            float relay_min_thres = float.Parse(button_thereshold_minvalue.Text.Replace("%", "").Replace("MIN ", ""));
+            int relay_first_delay_duration = (int)(float.Parse(button_1stdelay.Text.Replace("sec", "").Replace("Relay Duration ", "")));
+            //int relay_second_delay_duration= (int)(float.Parse(button_2nddelay.Text.Replace("min","").Replace("Second Delay ", "")) *60);
+            byte[] readBuffer = new byte[mySerialPort.ReadBufferSize];
+            int readLen;
+            string[] charactersToReplace = new string[] { @"\t", @"\n", @"\r", " ", "<CR>", "<LF>" };
+            string Result_Parsing;
+            bool countingbatch;
+            const char STX = '\u0002';
+            const char ETX = '\u0003';
+            List<string> AllText = new List<string>();
+            Data_Measure_Result = new List<data_measure_2> { };
+            counter_data = 0;
+            //Data_Measure_Result
+            DateTime date_start_ReadInterval = DateTime.Now;
+
+            while (stat_continue)
+            {
+                try
+                {
+                    readStr = string.Empty;
+                    forever_str = string.Empty;
+                    aggregate_cond = true;
+                    start_next_cond = true;
+                    Measure_Cond = true;
+                    countingbatch = true;
+                    Thread.Sleep(3000);
+                    MyTimer.Enabled = true;
+                    //MyTimer.Start();
+                    Console.WriteLine("Start Timer");
+                    #region Collect Measurement Value
+
+                    while (Measure_Cond == true)
+                    {
+                        Thread.Sleep(1000);// this solves the problem
+                        readBuffer = new byte[mySerialPort.ReadBufferSize];
+                        readLen = mySerialPort.Read(readBuffer, 0, readBuffer.Length);
+                        //string readStr = string.Empty;
+                        Console.WriteLine("ReadStr original adalah: " + Encoding.UTF8.GetString(readBuffer, 0, readLen));
+                        forever_str = forever_str + Encoding.UTF8.GetString(readBuffer, 0, readLen);
+                        readStr = Encoding.UTF8.GetString(readBuffer, 0, readLen);
+                        // Data Cleansing
+
+                        if (readStr != "" && readStr != null)
+                        {
+                            char[] delimiter_r = { '\r' };
+
+                            if (readStr.Any(c => char.IsDigit(c)) && !readStr.Trim().ToLower().Contains("r"))
+                            {
+                                readStr = readStr.Trim();
+                                Console.WriteLine("ReadStr Trim adalah: " + readStr);
+                                string[] Measures_With_U = readStr.Split(delimiter_r); // misahin antar nilai
+                                List<string> Measure_Results = new List<string>();
+
+                                foreach (var Measure in Measures_With_U)
+                                {
+
+                                    Result_Parsing = GetWords(Measure).FirstOrDefault(); // hilangin ETX dan STX
+                                    if (Result_Parsing != "" && Result_Parsing != null)
+                                    {
+                                        foreach (string s in charactersToReplace)
+                                        {
+                                            Result_Parsing = Result_Parsing.Replace(s, "");
+                                        }
+                                    }
+
+                                    if (Result_Parsing != "" && Result_Parsing != null && !Result_Parsing.Trim().ToLower().Contains("r"))
+                                    {
+                                        // check error
+                                        Console.WriteLine("Result_Parsing & Batch_ID adalah: " + Result_Parsing + " " + batch_id.ToString());
+                                        if (check_Error_during_measurement(Result_Parsing, batch_id))
+                                        {
+                                            aggregate_cond = false;
+                                            Measure_Cond = false;
+                                            countingbatch = false;
+                                            bool_check_error = true;
+                                            Console.WriteLine("MyTimerStop");
+                                        }
+                                        // Finsih check error
+
+                                        Result_Parsing = String.Concat(Result_Parsing.Substring(0, Result_Parsing.Length - 1)
+                                            , ".", Result_Parsing.Substring(Result_Parsing.Length - 1, 1));
+                                        Result_Parsing = (double.Parse(Result_Parsing) + bias_value).ToString("0.0");
+
+                                        counter_data_reset = counter_data_reset + 1;
+                                        Console.WriteLine("nilai measure adalah: " + Result_Parsing); // ganti jadi
+                                        Curr_Kernel_TextBox.Invoke((Action)delegate
+                                        {
+                                            //Curr_Kernel_TextBox.Text = (counter_data + 1).ToString();
+                                            Curr_Kernel_TextBox.Text = (counter_data_reset).ToString();
+                                        });
+
+
+                                        if (thereshold_param == true && (double.Parse(Result_Parsing) > therehold_max || double.Parse(Result_Parsing) < thereshold_min))
+                                        {
+                                            Sensor_input_Helper.Callbeep();
+                                        }
+
+
+                                        #region thereshold temporary
+                                        if (thereshold_param == true)
+                                        {
+                                            if (double.Parse(Result_Parsing) > therehold_max)
+                                            {
+                                                thereshold_max_counter = thereshold_max_counter + 1;
+
+                                                textBox_theresholdmax.Invoke((Action)delegate
+                                                {
+                                                    //Curr_Kernel_TextBox.Text = (counter_data + 1).ToString();
+                                                    textBox_theresholdmax.Text = (thereshold_max_counter).ToString();
+                                                });
+
+
+                                            }
+
+                                            if (double.Parse(Result_Parsing) < thereshold_min)
+                                            {
+                                                thereshold_min_counter = thereshold_min_counter + 1;
+
+                                                textBox_theresholdmin.Invoke((Action)delegate
+                                                {
+                                                    //Curr_Kernel_TextBox.Text = (counter_data + 1).ToString();
+                                                    textBox_theresholdmin.Text = (thereshold_min_counter).ToString();
+                                                });
+
+                                            }
+
+                                        }
+                                        #endregion
+
+
+                                        //float Result_Parsing_input = float.Parse(Result_Parsing);
+                                        readStr = string.Empty;
+                                    }
+                                }
+                                // klo ada measurement. mulai olah
+                                // masukin olah data yag lama 
+                            }
+
+                            else if
+                                (
+                                    (
+                                        readStr.Trim().ToLower().Contains("r")
+                                        //&& counter_data_reset > (int.Parse(ButtonNumPcs.Text) / 2)
+                                        && counter_data_reset >= 1
+                                        && !readStr.Any(c => char.IsDigit(c))
+                                        && countingbatch == true
+                                    )
+                                        || bool_stop_click == true
+                                 )
+                            {
+                                //counter_data = 0;
+                                counter_data_reset = 0;
+                                Console.WriteLine("Forever_str original adalah: " + forever_str);
+
+                                string[] Measures_With_U = forever_str.Split(delimiter_r); // misahin antar nilai
+
+                                foreach (var Measure in Measures_With_U)
+                                {
+                                    bool test1 = Measure.Any(c => char.IsDigit(c));
+                                    bool test2 = !Measure.Trim().ToLower().Contains("r");
+                                    bool test3 = Measure.Contains(STX);
+                                    bool test4 = Measure.Contains(ETX);
+
+                                    //bool test3 = Measure.Trim().ToLower().Contains("u0002");
+                                    //bool test4 = Measure.Trim().ToLower().Contains("u0003");
+
+                                    if (test1 && test2 && test3 && test4)
+                                    {
+                                        Result_Parsing = GetWords(Measure).FirstOrDefault(); // hilangin ETX dan STX
+                                        foreach (string s in charactersToReplace)
+                                        {
+                                            Result_Parsing = Result_Parsing.Replace(s, "");
+                                        }
+
+
+                                        #region compare checksum
+
+                                        string checksum_parsing = Measure.Substring(5, 2);
+
+                                        bool checksum_result = Sensor_input_Helper.checksum(Result_Parsing, checksum_parsing);
+                                        Console.WriteLine("Test: ");
+                                        Console.WriteLine("result_parsing adalah: " + Result_Parsing);
+                                        Console.WriteLine("checksum_parsing adalah: " + checksum_parsing);
+                                        Console.WriteLine("checksum_result adalah: " + checksum_result);
+
+                                        if (!checksum_result)
+                                        {
+                                            bool_checksum_error = true;
+                                        }
+
+                                        // 2-4 nilai 
+                                        // 6-7 checksum
+
+
+                                        #endregion
+                                        // Data cleansing
+
+
+                                        Result_Parsing = String.Concat(Result_Parsing.Substring(0, Result_Parsing.Length - 1)
+                                                , ".", Result_Parsing.Substring(Result_Parsing.Length - 1, 1));
+
+                                        Result_Parsing = (double.Parse(Result_Parsing) + bias_value).ToString();
+
+                                        counter_data = Data_Measure_Result.Count;
+
+                                        Data_Measure_Current = new data_measure_2(counter_data + 1
+                                            , Result_Parsing
+                                            , (DateTime.Now).ToString());
+                                        Data_Measure_Result.Add(Data_Measure_Current);
+
+                                        Console.WriteLine("nilai measure forever str parsing result adalah: " + Result_Parsing); // ganti jadi
+
+                                        float Result_Parsing_input = float.Parse(Result_Parsing);
+                                        Sensor_input_Helper.MySql_Insert_Measure(batch_id, counter_data + 1, Result_Parsing_input
+                                            , DateTime.Now, 0, current_interval + 1);
+                                        counter_data_reset = counter_data_reset + 1;
+                                        //readStr = string.Empty;
+
+                                        // Thereshold Max
+                                        //int count = Data_Measure_Result.Count(x => x.Measures < 5);
+
+                                        #region theresholdfinal
+                                        int theresholdmax_counter = Data_Measure_Result.Count(x => float.Parse(x.Measures) > therehold_max);
+
+                                        textBox_theresholdmax.Invoke((Action)delegate
+                                        {
+                                            //ListFilesToProcess.Count(item => item.IsChecked);
+                                            //Curr_Kernel_TextBox.Text = (counter_data + 1).ToString();
+                                            textBox_theresholdmax.Text = theresholdmax_counter.ToString();
+                                        });
+
+                                        int theresholdmin_counter = Data_Measure_Result.Count(x => float.Parse(x.Measures) < thereshold_min);
+
+                                        textBox_theresholdmin.Invoke((Action)delegate
+                                        {
+                                            //Curr_Kernel_TextBox.Text = (counter_data + 1).ToString();
+                                            textBox_theresholdmin.Text = (thereshold_min_counter).ToString();
+                                        });
+
+                                        // Thereshold min
+                                        #endregion
+
+
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("R");
+                                    }
+
+
+                                }
+
+                                // Checksum test
+                                if (bool_checksum_error == true)
+                                {
+                                    aggregate_cond = false;
+                                    Measure_Cond = false;
+                                    countingbatch = false;
+                                    bool_check_error = true;
+                                    Console.WriteLine("MyTimerStop");
+
+                                    Sensor_input_Helper.Update_ErrorCode(Sensor_input_Helper.GetLocalIPAddress(), batch_id, "030");
+                                    MessageBox.Show(this, "Error 030 ", application_name);
+
+
+                                }
+
+                                Curr_Kernel_TextBox.Invoke((Action)delegate
+                                {
+                                    //Curr_Kernel_TextBox.Text = (counter_data + 1).ToString();
+                                    Curr_Kernel_TextBox.Text = counter_data_reset.ToString();
+                                });
+                                Measure_Cond = false;
+                                countingbatch = false;
+                            }
+
+                            else
+                            {
+                                Console.WriteLine("Nilainya Readstr Dari if else null adalah: " + readStr);
+                            }
+
+                        }
+
+                        else
+                        {
+                            Console.WriteLine("Nilainya Readstr null adalah: " + readStr);
+                        }
+                        //string input = "hello123world";
+                        //bool isDigitPresent = input.Any(c => char.IsDigit(c));
+
+                    }
+
+                    #endregion
+
+                    #region Get Aggregate value
+
+                    //start_next_init = 0;
+                    //OpenCon_Port_local(mySerialPort, BaudRate);
+                    while (aggregate_cond)
+                    {
+                        Result_Parsing = string.Empty;
+                        Console.WriteLine("Start Aggregate_cond");
+                        Sensor_input_Helper.Command_MoisturAggregate(mySerialPort);
+                        Thread.Sleep(2000);// this solves the problem
+                        readBuffer = new byte[mySerialPort.ReadBufferSize];
+                        readLen = mySerialPort.Read(readBuffer, 0, readBuffer.Length);
+                        readStr = string.Empty;
+                        readStr = Encoding.UTF8.GetString(readBuffer, 0, readLen);
+                        readStr = readStr.Trim();
+
+                        Console.WriteLine("ReadStr Average adalah: " + readStr);
+                        foreach (string s in charactersToReplace)
+                        {
+                            Result_Parsing = readStr.Replace(s, "");
+                        }
+
+                        //Result_Parsing = GetWords(Result_Parsing).FirstOrDefault();
+                        if (Result_Parsing != null)
+                        {
+                            if (
+                                Result_Parsing.Contains("-") || Result_Parsing.Contains("+")
+                                && (Result_Parsing.Length) > 4
+                                && Result_Parsing.Contains(STX)
+                                && Result_Parsing.Contains(ETX)
+                                )
+                            {
+                                MyTimer.Enabled = false;
+                                //MyTimer.Stop();
+
+                                AllText = GetWords(Result_Parsing);
+                                int checkindex;
+                                string aggregate_value_string = string.Empty;
+                                foreach (string text in AllText)
+                                {
+                                    if (
+                                        text.Length >= 10
+                                        //&& text.Length <= 12
+                                        && !text.Trim().ToLower().ToString().Contains("r")
+                                        )
+                                    {
+                                        aggregate_value_string = text;
+                                    }
+                                }
+
+                                Result_Parsing = aggregate_value_string.Substring(5, 3);
+                                Result_Parsing = String.Concat(Result_Parsing.Substring(0, Result_Parsing.Length - 1)
+                                    , ".", Result_Parsing.Substring(Result_Parsing.Length - 1, 1));
+                                Result_Parsing = (double.Parse(Result_Parsing) + bias_value).ToString("0.0");
+
+                                Data_Avg_Result.Add(new data_measure_2(100, Result_Parsing, (DateTime.Now).ToString()));
+                                aggregate_cond = false;
+
+
+                                Curr_Measure_TextBox.Invoke((Action)delegate
+                                {
+                                    //Curr_Measure_TextBox.Text = Result_Parsing.Format("0.0");
+                                    Curr_Measure_TextBox.Text = string.Format("{0:F1}", Result_Parsing) + "%";
+                                    Console.WriteLine(Result_Parsing.ToString().Replace(",", ""));
+                                    SensorHelper_2.writeTextFile("/home/pi/Install_Init/moisture.log", Result_Parsing.ToString().Replace(".", ""));
+
+                                });
+
+                                total_average = 0;
+                                Current_Avg_TextBox.Invoke((Action)delegate
+                                {
+                                    foreach (data_measure_2 average_val in Data_Avg_Result)
+                                    {
+                                        total_average = total_average + float.Parse(average_val.Measures);
+                                    }
+
+                                    total_current_Average = total_average / Data_Avg_Result.Count();
+                                    Current_Avg_TextBox.Text = total_current_Average.ToString("0.00") + "%";
+                                    //Final Average
+                                });
+
+
+                                //loat Result_Parsing_input = float.Parse(Result_Parsing);
+                                Sensor_input_Helper.MySql_Insert_Measure(batch_id, 1000 + current_interval + 1
+                                    , float.Parse(Result_Parsing), DateTime.Now, 1, current_interval + 1);
+
+                                Console.WriteLine("Finish Aggregate");
+                                if (float.Parse(Result_Parsing) >= relay_max_thers || float.Parse(Result_Parsing) <= relay_min_thres)
+                                {
+                                    Console.WriteLine("Trigger First relay sequence");
+                                    Button_Mode.Enabled = false;
+                                    Button_Interface.Enabled = false;
+                                    Btn_Check.Enabled = false;
+                                    Btn_CheckTemp.Enabled = false;
+                                    ButtonIPSet.Enabled = false;
+                                    button_1stdelay.Enabled = false;
+                                    //button_2nddelay.Enabled = false;
+                                    button_thereshold_maxvalue.Enabled = false;
+                                    button_thereshold_minvalue.Enabled = false;
+                                    ButtonProduct.Enabled = false;
+                                    ButtonNumInterval.Enabled = false;
+                                    ButtonNumPcs.Enabled = false;
+                                    ButtonOption.Enabled = false;
+                                    ButtonWaitingTime.Enabled = false;
+                                    Relay_start_trigger();
+                                    Console.WriteLine("Wait For");
+                                    Console.WriteLine(relay_first_delay_duration);
+                                    Thread.Sleep(relay_first_delay_duration * 1000);
+                                    Relay_reset_trigger();
+                                    Button_Mode.Enabled = true;
+                                    Button_Interface.Enabled = true;
+                                    Btn_Check.Enabled = true;
+                                    Btn_CheckTemp.Enabled = true;
+                                    ButtonIPSet.Enabled = true;
+                                    button_1stdelay.Enabled = true;
+                                    //button_2nddelay.Enabled = true;
+                                    button_thereshold_maxvalue.Enabled = true;
+                                    button_thereshold_minvalue.Enabled = true;
+                                    ButtonProduct.Enabled = true;
+                                    ButtonNumInterval.Enabled = true;
+                                    ButtonNumPcs.Enabled = true;
+                                    ButtonOption.Enabled = true;
+                                    ButtonWaitingTime.Enabled = true;
+                                    /*Console.WriteLine("Trigger Second relay sequence");
+                                    First_delay_trigger();
+                                    Console.WriteLine("Wait For");
+                                    Console.WriteLine(relay_second_delay_duration);
+                                    Thread.Sleep(relay_second_delay_duration*1000);
+                                    Console.WriteLine("Trigger Last relay sequence");
+                                    Second_Delay_trigger();
+                                    
+                                    relay_triggered = true;*/
+
+                                }
+                                readStr = string.Empty;
+                            }
+                            else if (
+                                 (Data_Measure_Result.Count == 0 && Result_Parsing.Substring(3, 5) == "00000")
+                                 || (!Result_Parsing.Contains("-") || !Result_Parsing.Contains("+") && (Result_Parsing.Length) > 10)
+                                 )
+                            {
+                                Result_Parsing = "0.0";
+
+                                Data_Avg_Result.Add(new data_measure_2(100, Result_Parsing, (DateTime.Now).ToString()));
+                                aggregate_cond = false;
+
+
+                                Curr_Measure_TextBox.Invoke((Action)delegate
+                                {
+                                    Curr_Measure_TextBox.Text = Result_Parsing + "%";
+                                });
+
+                                Current_Avg_TextBox.Invoke((Action)delegate
+                                {
+                                    foreach (data_measure_2 average_val in Data_Avg_Result)
+                                    {
+                                        total_average = total_average + float.Parse(average_val.Measures);
+                                    }
+
+                                    total_current_Average = total_average / Data_Avg_Result.Count();
+                                    Current_Avg_TextBox.Text = total_current_Average.ToString("0.0") + "%";
+                                    //Final Average
+                                });
+
+                            }
+                            else
+                            {
+                                Console.WriteLine("Aggreagte empty");
+                            }
+
+                        }
+                        //start_next_init++;
+                    }
+
+                    #endregion Finish get aggregate value
+                    Console.WriteLine("Finish aggregate region");
+
+                    #region Finish All Measure and close port
+
+                    Console.WriteLine("data_average count adalah: ", Data_Avg_Result.Count().ToString());
+                    //Console.WriteLine("data_average count adalah: ", current_interval.ToString());
+
+                    if (Data_Avg_Result.Count() == TotalInterval || bool_check_error == true || bool_stop_click == true || relay_triggered == true)
+                    {
+                        Console.WriteLine("End All Measurement ");
+                        stat_continue = false;
+                        mySerialPort.DiscardInBuffer();
+                        mySerialPort.DiscardOutBuffer();
+
+                        stat_continue = false;
+                        start_next_cond = false;
+                        aggregate_cond = false;
+
+                        finish_measurement = 1;
+
+                        next_action_button(bool_check_error);
+                        //Relay_reset_trigger();
+
+                    }
+
+
+                    #endregion
+
+                    #region delay start
+                    if (start_next_cond == true)
+                    {
+                        #region Delay start
+                        Console.WriteLine("start delay", "start delay");
+                        //mySerialPort.Close();
+                        Thread.Sleep(delay);
+                        Console.WriteLine("Finish delay", "Finish delay");
+                        #endregion
+                    }
+                    #endregion
+
+
+                    #region Start Next sequence
+
+                    while (start_next_cond)
+                    {
+                        Sensor_input_Helper.Command_Write(mySerialPort, ResultGrain);
+                        Thread.Sleep(1000);
+                        Sensor_input_Helper.Command_Write(mySerialPort, ResultMeasure);
+                        current_interval++;
+                        Curr_Interval_TextBox.Invoke((Action)delegate
+                        {
+                            Curr_Interval_TextBox.Text = (current_interval + 1).ToString();
+                        });
+
+                        start_next_cond = false;
+                        blink_timer = 1;
+                        counter_data_reset = 0;
+                        readStr = string.Empty;
+
+
+                    }
+                    #endregion
+
+                }
+                catch (TimeoutException ex)
+                {
+
+                    bool error = true;
+                    next_action_button(error);
+                    Thread.Sleep(10000);
+                    mySerialPort.DiscardInBuffer();
+                    mySerialPort.DiscardOutBuffer();
+
+                    stat_continue = false;
+                    start_next_cond = false;
+                    aggregate_cond = false;
+                    Console.WriteLine(ex.Message);
+                    Sensor_input_Helper.Update_ErrorCode(Sensor_input_Helper.GetLocalIPAddress(), batch_id, "011");
+                    MessageBox.Show(this, "Error 011");
+                }
+
+                catch (Exception ex)
+                {
+                    //Trace.TraceError(ex.Message);
+                    Console.WriteLine(ex.Message);
+                    //return "";
+                }
+
+            }
+
+            //MessageBox.Show("measurement finsih");
+            Console.WriteLine("Measurement Finish");
+            Duration = DateTime.Now - duration_start;
+            Console.WriteLine(Duration.TotalMinutes.ToString());
+            Sensor_input_Helper.Update_Duration(Sensor_input_Helper.GetLocalIPAddress(), batch_id, Convert.ToSingle(Math.Round(Duration.TotalMinutes)));
+        }
 
 
         #endregion
@@ -3211,5 +3795,73 @@ namespace ControllerPage
 
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            //this.Hide();
+            using (var form = new FormNumpad_thresmin())
+            {
+                var result = form.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    button_thereshold_minvalue.Text = "MIN " + FormNumpad_thresmin.numpad_max + "%";
+                }
+            }
+            //this.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //this.Hide();
+            using (var form = new FormNumpad_thresmax())
+            {
+                var result = form.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    button_thereshold_maxvalue.Text = "MAX " + FormNumpad_thresmax.numpad_max + "%";
+                }
+            }
+            //this.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //this.Hide();
+            using (var form = new FormNumpad_firstdelay())
+            {
+                var result = form.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    button_1stdelay.Text = "Relay Duration " + FormNumpad_firstdelay.numpad_max + "sec";
+                }
+            }
+            //this.Show();
+        }
+        private void Relay_reset_trigger()
+        {
+            ProcessStartInfo procStartInfo = new ProcessStartInfo("/usr/bin/python3", "/home/pi/openall.py");
+            procStartInfo.RedirectStandardOutput = true;
+            procStartInfo.UseShellExecute = false;
+            procStartInfo.CreateNoWindow = true;
+
+            System.Diagnostics.Process proc = new System.Diagnostics.Process();
+            proc.StartInfo = procStartInfo;
+            proc.Start();
+        }
+        private void Relay_start_trigger()
+        {
+            ProcessStartInfo procStartInfo = new ProcessStartInfo("/usr/bin/python3", "/home/pi/closeall.py");
+            procStartInfo.RedirectStandardOutput = true;
+            procStartInfo.UseShellExecute = false;
+            procStartInfo.CreateNoWindow = true;
+
+            System.Diagnostics.Process proc = new System.Diagnostics.Process();
+            proc.StartInfo = procStartInfo;
+            proc.Start();
+        }
     }
 }

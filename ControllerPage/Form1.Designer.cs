@@ -72,6 +72,9 @@ namespace ControllerPage
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.button_thereshold_minvalue = new System.Windows.Forms.Button();
+            this.button_thereshold_maxvalue = new System.Windows.Forms.Button();
+            this.button_1stdelay = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -108,7 +111,6 @@ namespace ControllerPage
             this.tableLayoutPanel1.Controls.Add(this.Temp_TextBox, 5, 0);
             this.tableLayoutPanel1.Controls.Add(this.textBox1, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.Btn_Check, 6, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox5, 7, 7);
             this.tableLayoutPanel1.Controls.Add(this.textBox7, 2, 9);
             this.tableLayoutPanel1.Controls.Add(this.textBox6, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.ButtonProduct, 0, 10);
@@ -119,14 +121,11 @@ namespace ControllerPage
             this.tableLayoutPanel1.Controls.Add(this.Curr_Interval_TextBox, 5, 3);
             this.tableLayoutPanel1.Controls.Add(this.Btn_Start, 6, 3);
             this.tableLayoutPanel1.Controls.Add(this.label4, 8, 9);
-            this.tableLayoutPanel1.Controls.Add(this.Curr_Measure_TextBox, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.Btn_Stop, 6, 6);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.textBox15, 4, 5);
-            this.tableLayoutPanel1.Controls.Add(this.Current_Avg_TextBox, 5, 5);
             this.tableLayoutPanel1.Controls.Add(this.Curr_Kernel_TextBox, 5, 4);
             this.tableLayoutPanel1.Controls.Add(this.textBox_theresholdmin, 5, 8);
-            this.tableLayoutPanel1.Controls.Add(this.textBox_theresholdmax, 5, 7);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 6, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 4, 3);
@@ -138,6 +137,13 @@ namespace ControllerPage
             this.tableLayoutPanel1.Controls.Add(this.pictureBox9, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox10, 8, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox11, 7, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button_thereshold_minvalue, 8, 3);
+            this.tableLayoutPanel1.Controls.Add(this.textBox5, 9, 3);
+            this.tableLayoutPanel1.Controls.Add(this.button_thereshold_maxvalue, 8, 5);
+            this.tableLayoutPanel1.Controls.Add(this.textBox_theresholdmax, 5, 7);
+            this.tableLayoutPanel1.Controls.Add(this.button_1stdelay, 8, 7);
+            this.tableLayoutPanel1.Controls.Add(this.Curr_Measure_TextBox, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.Current_Avg_TextBox, 5, 5);
             this.tableLayoutPanel1.ForeColor = System.Drawing.SystemColors.InfoText;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -154,6 +160,9 @@ namespace ControllerPage
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333615F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333615F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333615F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(683, 425);
@@ -271,7 +280,7 @@ namespace ControllerPage
             this.textBox5.BackColor = System.Drawing.SystemColors.Control;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(3, 283);
+            this.textBox5.Location = new System.Drawing.Point(3, 143);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(0, 19);
             this.textBox5.TabIndex = 37;
@@ -400,12 +409,12 @@ namespace ControllerPage
             // 
             this.Btn_Start.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.Btn_Start.BackColor = System.Drawing.Color.Lime;
-            this.tableLayoutPanel1.SetColumnSpan(this.Btn_Start, 4);
-            this.Btn_Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Start.Location = new System.Drawing.Point(449, 108);
+            this.tableLayoutPanel1.SetColumnSpan(this.Btn_Start, 2);
+            this.Btn_Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Start.Location = new System.Drawing.Point(411, 108);
             this.Btn_Start.Name = "Btn_Start";
             this.tableLayoutPanel1.SetRowSpan(this.Btn_Start, 3);
-            this.Btn_Start.Size = new System.Drawing.Size(192, 99);
+            this.Btn_Start.Size = new System.Drawing.Size(128, 99);
             this.Btn_Start.TabIndex = 28;
             this.Btn_Start.Text = "START";
             this.Btn_Start.UseVisualStyleBackColor = false;
@@ -431,7 +440,7 @@ namespace ControllerPage
             this.Curr_Measure_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableLayoutPanel1.SetColumnSpan(this.Curr_Measure_TextBox, 4);
             this.Curr_Measure_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Curr_Measure_TextBox.Location = new System.Drawing.Point(18, 164);
+            this.Curr_Measure_TextBox.Location = new System.Drawing.Point(18, 199);
             this.Curr_Measure_TextBox.Name = "Curr_Measure_TextBox";
             this.tableLayoutPanel1.SetRowSpan(this.Curr_Measure_TextBox, 4);
             this.Curr_Measure_TextBox.Size = new System.Drawing.Size(235, 91);
@@ -442,12 +451,12 @@ namespace ControllerPage
             // 
             this.Btn_Stop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.Btn_Stop.BackColor = System.Drawing.Color.Red;
-            this.tableLayoutPanel1.SetColumnSpan(this.Btn_Stop, 4);
-            this.Btn_Stop.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Stop.Location = new System.Drawing.Point(449, 213);
+            this.tableLayoutPanel1.SetColumnSpan(this.Btn_Stop, 2);
+            this.Btn_Stop.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Stop.Location = new System.Drawing.Point(411, 213);
             this.Btn_Stop.Name = "Btn_Stop";
             this.tableLayoutPanel1.SetRowSpan(this.Btn_Stop, 3);
-            this.Btn_Stop.Size = new System.Drawing.Size(192, 99);
+            this.Btn_Stop.Size = new System.Drawing.Size(128, 99);
             this.Btn_Stop.TabIndex = 29;
             this.Btn_Stop.Text = "STOP";
             this.Btn_Stop.UseVisualStyleBackColor = false;
@@ -465,6 +474,7 @@ namespace ControllerPage
             this.label1.TabIndex = 64;
             this.label1.Text = "ความชื้นที่วัดได้";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox15
             // 
@@ -648,6 +658,45 @@ namespace ControllerPage
             this.pictureBox11.TabIndex = 81;
             this.pictureBox11.TabStop = false;
             // 
+            // button_thereshold_minvalue
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.button_thereshold_minvalue, 2);
+            this.button_thereshold_minvalue.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_thereshold_minvalue.Location = new System.Drawing.Point(545, 108);
+            this.button_thereshold_minvalue.Name = "button_thereshold_minvalue";
+            this.tableLayoutPanel1.SetRowSpan(this.button_thereshold_minvalue, 2);
+            this.button_thereshold_minvalue.Size = new System.Drawing.Size(135, 64);
+            this.button_thereshold_minvalue.TabIndex = 82;
+            this.button_thereshold_minvalue.Text = "มากที่สุด 15%";
+            this.button_thereshold_minvalue.UseVisualStyleBackColor = true;
+            this.button_thereshold_minvalue.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // button_thereshold_maxvalue
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.button_thereshold_maxvalue, 2);
+            this.button_thereshold_maxvalue.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_thereshold_maxvalue.Location = new System.Drawing.Point(545, 178);
+            this.button_thereshold_maxvalue.Name = "button_thereshold_maxvalue";
+            this.tableLayoutPanel1.SetRowSpan(this.button_thereshold_maxvalue, 2);
+            this.button_thereshold_maxvalue.Size = new System.Drawing.Size(135, 64);
+            this.button_thereshold_maxvalue.TabIndex = 83;
+            this.button_thereshold_maxvalue.Text = "น้อยที่สุด 15%";
+            this.button_thereshold_maxvalue.UseVisualStyleBackColor = true;
+            this.button_thereshold_maxvalue.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button_1stdelay
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.button_1stdelay, 2);
+            this.button_1stdelay.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_1stdelay.Location = new System.Drawing.Point(545, 248);
+            this.button_1stdelay.Name = "button_1stdelay";
+            this.tableLayoutPanel1.SetRowSpan(this.button_1stdelay, 2);
+            this.button_1stdelay.Size = new System.Drawing.Size(135, 64);
+            this.button_1stdelay.TabIndex = 84;
+            this.button_1stdelay.Text = "ระยะเวลาในการร้องเตือน 1sec";
+            this.button_1stdelay.UseVisualStyleBackColor = true;
+            this.button_1stdelay.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -721,6 +770,9 @@ namespace ControllerPage
         private PictureBox pictureBox9;
         private PictureBox pictureBox10;
         private PictureBox pictureBox11;
+        private Button button_thereshold_minvalue;
+        private Button button_thereshold_maxvalue;
+        private Button button_1stdelay;
     }
 }
 
