@@ -577,15 +577,15 @@ namespace ControllerPage
                 #endregion
                 if (ButtonProduct.Text== "Corn High"|| ButtonProduct.Text == "Jagung Tinggi")
                 {
-                    product_text = "Brown_Rice";
+                    product_text = "Corn_High";
                 }
                 else if (ButtonProduct.Text == "Corn Medium"|| ButtonProduct.Text =="Jagung Medium")
                 {
-                    product_text = "Wheat";
+                    product_text = "Corn_Medium";
                 }
                 else if (ButtonProduct.Text == "Corn Low"|| ButtonProduct.Text =="Jagung Rendah")
                 {
-                    product_text = "Corn";
+                    product_text = "Corn_Low";
                 }
                 else if (ButtonProduct.Text == "Padi")
                 {
@@ -1046,15 +1046,15 @@ namespace ControllerPage
                     string combox_typemeasure;
                     if (ButtonProduct.Text == "Corn High" || ButtonProduct.Text == "Jagung Tinggi")
                     {
-                        combox_typemeasure = "Brown_Rice";
+                        combox_typemeasure = "Corn_High";
                     }
                     else if (ButtonProduct.Text == "Corn Medium" || ButtonProduct.Text == "Jagung Medium")
                     {
-                        combox_typemeasure = "Wheat";
+                        combox_typemeasure = "Corn_Medium";
                     }
                     else if (ButtonProduct.Text == "Corn Low" || ButtonProduct.Text == "Jagung Rendah")
                     {
-                        combox_typemeasure = "Corn";
+                        combox_typemeasure = "Corn_Low";
                     }
                     else if (ButtonProduct.Text == "Padi")
                     {
@@ -1155,15 +1155,15 @@ namespace ControllerPage
                     string combox_typemeasure;
                     if (ButtonProduct.Text == "Corn High" || ButtonProduct.Text == "Jagung Tinggi")
                     {
-                        combox_typemeasure = "Brown_Rice";
+                        combox_typemeasure = "Corn_High";
                     }
                     else if (ButtonProduct.Text == "Corn Medium" || ButtonProduct.Text == "Jagung Medium")
                     {
-                        combox_typemeasure = "Wheat";
+                        combox_typemeasure = "Corn_Medium";
                     }
                     else if (ButtonProduct.Text == "Corn Low" || ButtonProduct.Text == "Jagung Rendah")
                     {
-                        combox_typemeasure = "Corn";
+                        combox_typemeasure = "Corn_Low";
                     }
                     else if (ButtonProduct.Text == "Padi")
                     {
@@ -1254,15 +1254,15 @@ namespace ControllerPage
                     string combox_typemeasure;
                     if (ButtonProduct.Text == "Corn High" || ButtonProduct.Text == "Jagung Tinggi")
                     {
-                        combox_typemeasure = "Brown_Rice";
+                        combox_typemeasure = "Corn_High";
                     }
                     else if (ButtonProduct.Text == "Corn Medium" || ButtonProduct.Text == "Jagung Medium")
                     {
-                        combox_typemeasure = "Wheat";
+                        combox_typemeasure = "Corn_Medium";
                     }
                     else if (ButtonProduct.Text == "Corn Low" || ButtonProduct.Text == "Jagung Rendah")
                     {
-                        combox_typemeasure = "Corn";
+                        combox_typemeasure = "Corn_Low";
                     }
                     else if (ButtonProduct.Text == "Padi")
                     {

@@ -45,7 +45,7 @@ namespace ControllerPage.Helper
             // 1 = Corn
             // 2 = Corn High
             // 3 = Paddy
-            return 3;
+            return 2;
 
         }
         

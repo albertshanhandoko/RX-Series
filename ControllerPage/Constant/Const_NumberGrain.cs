@@ -438,7 +438,6 @@ namespace ControllerPage.Constant
         Paddy,
         [Description("A20A3\r")]
         Brown_Rice,
-        
         [Description("D20A6\r")]
         Barley,
         [Description("C20A5\r")]
@@ -464,7 +463,13 @@ namespace ControllerPage.Constant
         [Description("B20A4\r")]
         Long_Milled_Rice,
         [Description("B20A4\r")]
-        Long_Brown_Rice
+        Long_Brown_Rice,
+        [Description("32095\r")]
+        Corn_Low,
+        [Description("22094\r")]
+        Corn_Medium,
+        [Description("42096\r")]
+        Corn_High,
     }
     public enum Corn_Only // Gii RX -30 V 1.01
     {
