@@ -42,7 +42,6 @@ namespace ControllerPage
             this.Temp_TextBox = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Btn_Check = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.ButtonProduct = new System.Windows.Forms.Button();
@@ -53,14 +52,11 @@ namespace ControllerPage
             this.Curr_Interval_TextBox = new System.Windows.Forms.TextBox();
             this.Btn_Start = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.Curr_Measure_TextBox = new System.Windows.Forms.TextBox();
             this.Btn_Stop = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
-            this.Current_Avg_TextBox = new System.Windows.Forms.TextBox();
             this.Curr_Kernel_TextBox = new System.Windows.Forms.TextBox();
             this.textBox_theresholdmin = new System.Windows.Forms.TextBox();
-            this.textBox_theresholdmax = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -73,8 +69,15 @@ namespace ControllerPage
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.button_thereshold_minvalue = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.button_thereshold_maxvalue = new System.Windows.Forms.Button();
+            this.textBox_theresholdmax = new System.Windows.Forms.TextBox();
             this.button_1stdelay = new System.Windows.Forms.Button();
+            this.Curr_Measure_TextBox = new System.Windows.Forms.TextBox();
+            this.Current_Avg_TextBox = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -104,6 +107,9 @@ namespace ControllerPage
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.671158F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.25729F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.00514F));
+            this.tableLayoutPanel1.Controls.Add(this.textBox4, 8, 7);
+            this.tableLayoutPanel1.Controls.Add(this.textBox3, 8, 5);
+            this.tableLayoutPanel1.Controls.Add(this.textBox2, 8, 3);
             this.tableLayoutPanel1.Controls.Add(this.Button_Interface, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.Button_Mode, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.ButtonIPSet, 8, 1);
@@ -137,13 +143,13 @@ namespace ControllerPage
             this.tableLayoutPanel1.Controls.Add(this.pictureBox9, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox10, 8, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox11, 7, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button_thereshold_minvalue, 8, 3);
             this.tableLayoutPanel1.Controls.Add(this.textBox5, 9, 3);
-            this.tableLayoutPanel1.Controls.Add(this.button_thereshold_maxvalue, 8, 5);
+            this.tableLayoutPanel1.Controls.Add(this.button_thereshold_maxvalue, 8, 6);
             this.tableLayoutPanel1.Controls.Add(this.textBox_theresholdmax, 5, 7);
-            this.tableLayoutPanel1.Controls.Add(this.button_1stdelay, 8, 7);
+            this.tableLayoutPanel1.Controls.Add(this.button_1stdelay, 8, 8);
             this.tableLayoutPanel1.Controls.Add(this.Curr_Measure_TextBox, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.Current_Avg_TextBox, 5, 5);
+            this.tableLayoutPanel1.Controls.Add(this.button_thereshold_minvalue, 8, 4);
             this.tableLayoutPanel1.ForeColor = System.Drawing.SystemColors.InfoText;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -274,17 +280,6 @@ namespace ControllerPage
             this.Btn_Check.Text = "CHECK";
             this.Btn_Check.UseVisualStyleBackColor = false;
             this.Btn_Check.Click += new System.EventHandler(this.Btn_Check_Click);
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(3, 143);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(0, 19);
-            this.textBox5.TabIndex = 37;
-            this.textBox5.Text = "Option";
             // 
             // textBox7
             // 
@@ -432,21 +427,6 @@ namespace ControllerPage
             this.label4.TabIndex = 63;
             this.label4.Text = "ตัวเลือก";
             // 
-            // Curr_Measure_TextBox
-            // 
-            this.Curr_Measure_TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Curr_Measure_TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
-            this.Curr_Measure_TextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.Curr_Measure_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tableLayoutPanel1.SetColumnSpan(this.Curr_Measure_TextBox, 4);
-            this.Curr_Measure_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Curr_Measure_TextBox.Location = new System.Drawing.Point(18, 199);
-            this.Curr_Measure_TextBox.Name = "Curr_Measure_TextBox";
-            this.tableLayoutPanel1.SetRowSpan(this.Curr_Measure_TextBox, 4);
-            this.Curr_Measure_TextBox.Size = new System.Drawing.Size(235, 91);
-            this.Curr_Measure_TextBox.TabIndex = 21;
-            this.Curr_Measure_TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // Btn_Stop
             // 
             this.Btn_Stop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -490,17 +470,6 @@ namespace ControllerPage
             this.textBox15.TabIndex = 24;
             this.textBox15.Text = "ค่าเฉลี่ยความชื้น";
             // 
-            // Current_Avg_TextBox
-            // 
-            this.Current_Avg_TextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Current_Avg_TextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.Current_Avg_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Current_Avg_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Current_Avg_TextBox.Location = new System.Drawing.Point(353, 180);
-            this.Current_Avg_TextBox.Name = "Current_Avg_TextBox";
-            this.Current_Avg_TextBox.Size = new System.Drawing.Size(52, 24);
-            this.Current_Avg_TextBox.TabIndex = 27;
-            // 
             // Curr_Kernel_TextBox
             // 
             this.Curr_Kernel_TextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -522,17 +491,6 @@ namespace ControllerPage
             this.textBox_theresholdmin.Name = "textBox_theresholdmin";
             this.textBox_theresholdmin.Size = new System.Drawing.Size(52, 24);
             this.textBox_theresholdmin.TabIndex = 70;
-            // 
-            // textBox_theresholdmax
-            // 
-            this.textBox_theresholdmax.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox_theresholdmax.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox_theresholdmax.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_theresholdmax.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_theresholdmax.Location = new System.Drawing.Point(353, 250);
-            this.textBox_theresholdmax.Name = "textBox_theresholdmax";
-            this.textBox_theresholdmax.Size = new System.Drawing.Size(52, 24);
-            this.textBox_theresholdmax.TabIndex = 69;
             // 
             // pictureBox1
             // 
@@ -662,40 +620,133 @@ namespace ControllerPage
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.button_thereshold_minvalue, 2);
             this.button_thereshold_minvalue.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_thereshold_minvalue.Location = new System.Drawing.Point(545, 108);
+            this.button_thereshold_minvalue.Location = new System.Drawing.Point(545, 143);
             this.button_thereshold_minvalue.Name = "button_thereshold_minvalue";
-            this.tableLayoutPanel1.SetRowSpan(this.button_thereshold_minvalue, 2);
-            this.button_thereshold_minvalue.Size = new System.Drawing.Size(135, 64);
+            this.button_thereshold_minvalue.Size = new System.Drawing.Size(135, 29);
             this.button_thereshold_minvalue.TabIndex = 82;
-            this.button_thereshold_minvalue.Text = "มากที่สุด 15%";
+            this.button_thereshold_minvalue.Text = "15%";
             this.button_thereshold_minvalue.UseVisualStyleBackColor = true;
             this.button_thereshold_minvalue.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(3, 143);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(0, 19);
+            this.textBox5.TabIndex = 37;
+            this.textBox5.Text = "Option";
             // 
             // button_thereshold_maxvalue
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.button_thereshold_maxvalue, 2);
             this.button_thereshold_maxvalue.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_thereshold_maxvalue.Location = new System.Drawing.Point(545, 178);
+            this.button_thereshold_maxvalue.Location = new System.Drawing.Point(545, 213);
             this.button_thereshold_maxvalue.Name = "button_thereshold_maxvalue";
-            this.tableLayoutPanel1.SetRowSpan(this.button_thereshold_maxvalue, 2);
-            this.button_thereshold_maxvalue.Size = new System.Drawing.Size(135, 64);
+            this.button_thereshold_maxvalue.Size = new System.Drawing.Size(135, 29);
             this.button_thereshold_maxvalue.TabIndex = 83;
-            this.button_thereshold_maxvalue.Text = "น้อยที่สุด 15%";
+            this.button_thereshold_maxvalue.Text = "15%";
             this.button_thereshold_maxvalue.UseVisualStyleBackColor = true;
             this.button_thereshold_maxvalue.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBox_theresholdmax
+            // 
+            this.textBox_theresholdmax.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox_theresholdmax.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox_theresholdmax.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_theresholdmax.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_theresholdmax.Location = new System.Drawing.Point(353, 250);
+            this.textBox_theresholdmax.Name = "textBox_theresholdmax";
+            this.textBox_theresholdmax.Size = new System.Drawing.Size(52, 24);
+            this.textBox_theresholdmax.TabIndex = 69;
             // 
             // button_1stdelay
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.button_1stdelay, 2);
             this.button_1stdelay.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_1stdelay.Location = new System.Drawing.Point(545, 248);
+            this.button_1stdelay.Location = new System.Drawing.Point(545, 283);
             this.button_1stdelay.Name = "button_1stdelay";
-            this.tableLayoutPanel1.SetRowSpan(this.button_1stdelay, 2);
-            this.button_1stdelay.Size = new System.Drawing.Size(135, 64);
+            this.button_1stdelay.Size = new System.Drawing.Size(135, 29);
             this.button_1stdelay.TabIndex = 84;
-            this.button_1stdelay.Text = "ระยะเวลาในการร้องเตือน 1sec";
+            this.button_1stdelay.Text = "1sec";
             this.button_1stdelay.UseVisualStyleBackColor = true;
             this.button_1stdelay.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // Curr_Measure_TextBox
+            // 
+            this.Curr_Measure_TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Curr_Measure_TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
+            this.Curr_Measure_TextBox.BackColor = System.Drawing.SystemColors.Control;
+            this.Curr_Measure_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tableLayoutPanel1.SetColumnSpan(this.Curr_Measure_TextBox, 4);
+            this.Curr_Measure_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Curr_Measure_TextBox.Location = new System.Drawing.Point(18, 199);
+            this.Curr_Measure_TextBox.Name = "Curr_Measure_TextBox";
+            this.tableLayoutPanel1.SetRowSpan(this.Curr_Measure_TextBox, 4);
+            this.Curr_Measure_TextBox.Size = new System.Drawing.Size(235, 91);
+            this.Curr_Measure_TextBox.TabIndex = 21;
+            this.Curr_Measure_TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Current_Avg_TextBox
+            // 
+            this.Current_Avg_TextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Current_Avg_TextBox.BackColor = System.Drawing.SystemColors.Control;
+            this.Current_Avg_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Current_Avg_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Current_Avg_TextBox.Location = new System.Drawing.Point(353, 180);
+            this.Current_Avg_TextBox.Name = "Current_Avg_TextBox";
+            this.Current_Avg_TextBox.Size = new System.Drawing.Size(52, 24);
+            this.Current_Avg_TextBox.TabIndex = 27;
+            // 
+            // textBox2
+            // 
+            this.textBox2.AcceptsReturn = true;
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox2, 2);
+            this.textBox2.Font = new System.Drawing.Font("Noto Sans Thai", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(549, 112);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(127, 21);
+            this.textBox2.TabIndex = 85;
+            this.textBox2.Text = "มากที่สุด";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox3
+            // 
+            this.textBox3.AcceptsReturn = true;
+            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox3, 2);
+            this.textBox3.Font = new System.Drawing.Font("Noto Sans Thai", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(549, 182);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(127, 21);
+            this.textBox3.TabIndex = 86;
+            this.textBox3.Text = "น้อยที่สุด";
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox4
+            // 
+            this.textBox4.AcceptsReturn = true;
+            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox4, 2);
+            this.textBox4.Font = new System.Drawing.Font("Noto Sans Thai", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(545, 252);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(135, 21);
+            this.textBox4.TabIndex = 87;
+            this.textBox4.Text = "ระยะเวลาในการร้องเตือน";
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
             // 
@@ -773,6 +824,9 @@ namespace ControllerPage
         private Button button_thereshold_minvalue;
         private Button button_thereshold_maxvalue;
         private Button button_1stdelay;
+        private TextBox textBox4;
+        private TextBox textBox3;
+        private TextBox textBox2;
     }
 }
 

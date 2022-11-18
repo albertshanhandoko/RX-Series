@@ -3188,9 +3188,9 @@ namespace ControllerPage
             string readStr;
             bool Measure_Cond = true;
             bool relay_triggered = false;
-            float relay_max_thers = float.Parse(button_thereshold_maxvalue.Text.Replace("%", "").Replace("MAX ", ""));
-            float relay_min_thres = float.Parse(button_thereshold_minvalue.Text.Replace("%", "").Replace("MIN ", ""));
-            int relay_first_delay_duration = (int)(float.Parse(button_1stdelay.Text.Replace("sec", "").Replace("Relay Duration ", "")));
+            float relay_max_thers = float.Parse(button_thereshold_maxvalue.Text.Replace("%", ""));
+            float relay_min_thres = float.Parse(button_thereshold_minvalue.Text.Replace("%", ""));
+            int relay_first_delay_duration = (int)(float.Parse(button_1stdelay.Text.Replace("sec", "")));
             //int relay_second_delay_duration= (int)(float.Parse(button_2nddelay.Text.Replace("min","").Replace("Second Delay ", "")) *60);
             byte[] readBuffer = new byte[mySerialPort.ReadBufferSize];
             int readLen;
@@ -3808,7 +3808,7 @@ namespace ControllerPage
                 var result = form.ShowDialog();
                 if (result == DialogResult.OK)
                 {
-                    button_thereshold_minvalue.Text = "MIN " + FormNumpad_thresmin.numpad_max + "%";
+                    button_thereshold_minvalue.Text = FormNumpad_thresmin.numpad_max + "%";
                 }
             }
             //this.Show();
@@ -3822,7 +3822,7 @@ namespace ControllerPage
                 var result = form.ShowDialog();
                 if (result == DialogResult.OK)
                 {
-                    button_thereshold_maxvalue.Text = "MAX " + FormNumpad_thresmax.numpad_max + "%";
+                    button_thereshold_maxvalue.Text = FormNumpad_thresmax.numpad_max + "%";
                 }
             }
             //this.Show();
@@ -3836,7 +3836,7 @@ namespace ControllerPage
                 var result = form.ShowDialog();
                 if (result == DialogResult.OK)
                 {
-                    button_1stdelay.Text = "Relay Duration " + FormNumpad_firstdelay.numpad_max + "sec";
+                    button_1stdelay.Text = FormNumpad_firstdelay.numpad_max + "sec";
                 }
             }
             //this.Show();
