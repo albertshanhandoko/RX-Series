@@ -251,6 +251,7 @@ namespace ControllerPage
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FormNumpad_thresmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FormNumpad_thresmin_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

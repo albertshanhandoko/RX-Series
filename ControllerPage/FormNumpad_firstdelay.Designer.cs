@@ -238,6 +238,7 @@ namespace ControllerPage
             this.ClientSize = new System.Drawing.Size(425, 342);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FormNumpad_firstdelay";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormNumpad_firstdelay";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

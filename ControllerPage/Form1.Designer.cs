@@ -35,6 +35,9 @@ namespace ControllerPage
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.Button_Interface = new System.Windows.Forms.Button();
             this.Button_Mode = new System.Windows.Forms.Button();
             this.ButtonIPSet = new System.Windows.Forms.Button();
@@ -68,16 +71,14 @@ namespace ControllerPage
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.button_thereshold_minvalue = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button_thereshold_maxvalue = new System.Windows.Forms.Button();
             this.textBox_theresholdmax = new System.Windows.Forms.TextBox();
             this.button_1stdelay = new System.Windows.Forms.Button();
             this.Curr_Measure_TextBox = new System.Windows.Forms.TextBox();
             this.Current_Avg_TextBox = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.button_thereshold_minvalue = new System.Windows.Forms.Button();
+            this.checkBox_recurringmode = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -150,6 +151,7 @@ namespace ControllerPage
             this.tableLayoutPanel1.Controls.Add(this.Curr_Measure_TextBox, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.Current_Avg_TextBox, 5, 5);
             this.tableLayoutPanel1.Controls.Add(this.button_thereshold_minvalue, 8, 4);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox_recurringmode, 4, 6);
             this.tableLayoutPanel1.ForeColor = System.Drawing.SystemColors.InfoText;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -174,6 +176,54 @@ namespace ControllerPage
             this.tableLayoutPanel1.Size = new System.Drawing.Size(683, 425);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // textBox4
+            // 
+            this.textBox4.AcceptsReturn = true;
+            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox4, 2);
+            this.textBox4.Font = new System.Drawing.Font("Noto Sans Thai", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(545, 252);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(135, 21);
+            this.textBox4.TabIndex = 87;
+            this.textBox4.Text = "ระยะเวลาในการร้องเตือน";
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox3
+            // 
+            this.textBox3.AcceptsReturn = true;
+            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox3, 2);
+            this.textBox3.Font = new System.Drawing.Font("Noto Sans Thai", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(549, 182);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(127, 21);
+            this.textBox3.TabIndex = 86;
+            this.textBox3.Text = "น้อยที่สุด";
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox2
+            // 
+            this.textBox2.AcceptsReturn = true;
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox2, 2);
+            this.textBox2.Font = new System.Drawing.Font("Noto Sans Thai", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(549, 112);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(127, 21);
+            this.textBox2.TabIndex = 85;
+            this.textBox2.Text = "มากที่สุด";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Button_Interface
             // 
@@ -616,18 +666,6 @@ namespace ControllerPage
             this.pictureBox11.TabIndex = 81;
             this.pictureBox11.TabStop = false;
             // 
-            // button_thereshold_minvalue
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.button_thereshold_minvalue, 2);
-            this.button_thereshold_minvalue.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_thereshold_minvalue.Location = new System.Drawing.Point(545, 143);
-            this.button_thereshold_minvalue.Name = "button_thereshold_minvalue";
-            this.button_thereshold_minvalue.Size = new System.Drawing.Size(135, 29);
-            this.button_thereshold_minvalue.TabIndex = 82;
-            this.button_thereshold_minvalue.Text = "15%";
-            this.button_thereshold_minvalue.UseVisualStyleBackColor = true;
-            this.button_thereshold_minvalue.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.SystemColors.Control;
@@ -642,7 +680,7 @@ namespace ControllerPage
             // button_thereshold_maxvalue
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.button_thereshold_maxvalue, 2);
-            this.button_thereshold_maxvalue.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_thereshold_maxvalue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_thereshold_maxvalue.Location = new System.Drawing.Point(545, 213);
             this.button_thereshold_maxvalue.Name = "button_thereshold_maxvalue";
             this.button_thereshold_maxvalue.Size = new System.Drawing.Size(135, 29);
@@ -665,7 +703,7 @@ namespace ControllerPage
             // button_1stdelay
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.button_1stdelay, 2);
-            this.button_1stdelay.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_1stdelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_1stdelay.Location = new System.Drawing.Point(545, 283);
             this.button_1stdelay.Name = "button_1stdelay";
             this.button_1stdelay.Size = new System.Drawing.Size(135, 29);
@@ -700,53 +738,30 @@ namespace ControllerPage
             this.Current_Avg_TextBox.Size = new System.Drawing.Size(52, 24);
             this.Current_Avg_TextBox.TabIndex = 27;
             // 
-            // textBox2
+            // button_thereshold_minvalue
             // 
-            this.textBox2.AcceptsReturn = true;
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox2, 2);
-            this.textBox2.Font = new System.Drawing.Font("Noto Sans Thai", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(549, 112);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(127, 21);
-            this.textBox2.TabIndex = 85;
-            this.textBox2.Text = "มากที่สุด";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tableLayoutPanel1.SetColumnSpan(this.button_thereshold_minvalue, 2);
+            this.button_thereshold_minvalue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_thereshold_minvalue.Location = new System.Drawing.Point(545, 143);
+            this.button_thereshold_minvalue.Name = "button_thereshold_minvalue";
+            this.button_thereshold_minvalue.Size = new System.Drawing.Size(135, 29);
+            this.button_thereshold_minvalue.TabIndex = 82;
+            this.button_thereshold_minvalue.Text = "15%";
+            this.button_thereshold_minvalue.UseVisualStyleBackColor = true;
+            this.button_thereshold_minvalue.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // textBox3
+            // checkBox_recurringmode
             // 
-            this.textBox3.AcceptsReturn = true;
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox3, 2);
-            this.textBox3.Font = new System.Drawing.Font("Noto Sans Thai", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(549, 182);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(127, 21);
-            this.textBox3.TabIndex = 86;
-            this.textBox3.Text = "น้อยที่สุด";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox4
-            // 
-            this.textBox4.AcceptsReturn = true;
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox4, 2);
-            this.textBox4.Font = new System.Drawing.Font("Noto Sans Thai", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(545, 252);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(135, 21);
-            this.textBox4.TabIndex = 87;
-            this.textBox4.Text = "ระยะเวลาในการร้องเตือน";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.checkBox_recurringmode.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkBox_recurringmode.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.checkBox_recurringmode, 2);
+            this.checkBox_recurringmode.Font = new System.Drawing.Font("Noto Sans Thai", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_recurringmode.Location = new System.Drawing.Point(302, 218);
+            this.checkBox_recurringmode.Name = "checkBox_recurringmode";
+            this.checkBox_recurringmode.Size = new System.Drawing.Size(76, 19);
+            this.checkBox_recurringmode.TabIndex = 88;
+            this.checkBox_recurringmode.Text = "โหมดวัดซ้ำ";
+            this.checkBox_recurringmode.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -827,6 +842,7 @@ namespace ControllerPage
         private TextBox textBox4;
         private TextBox textBox3;
         private TextBox textBox2;
+        private CheckBox checkBox_recurringmode;
     }
 }
 

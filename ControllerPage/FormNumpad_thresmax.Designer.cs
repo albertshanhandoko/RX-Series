@@ -251,6 +251,7 @@ namespace ControllerPage
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FormNumpad_thresmax";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

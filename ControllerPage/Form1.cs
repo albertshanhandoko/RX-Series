@@ -191,6 +191,16 @@ namespace ControllerPage
                 //textBox9.Text = "Int. Waiting Time";
 
             }
+            else if (Button_Mode.Text.ToLower() == "relay")
+            {
+                ButtonProduct.Enabled = true;
+                ButtonNumInterval.Enabled = true;
+                ButtonNumPcs.Enabled = true;
+                ButtonWaitingTime.Enabled = true;
+                ButtonWaitingTime.Text = string.Empty;
+                //textBox9.Text = "Int. Waiting Time";
+
+            }
             else
             {
                 MessageBox.Show("Please pick Mode", application_name);
@@ -675,6 +685,7 @@ namespace ControllerPage
 
 
         }
+       
         private void button_CheckTemp_Click(object sender, EventArgs e)
         {
             Sensor_input_Helper.Command_CheckTemp(mySerialPort);
@@ -1129,6 +1140,116 @@ namespace ControllerPage
                 }
 
             }
+
+            else if (Button_Mode.Text.ToLower() == "relay")
+            {
+                if (ButtonProduct.Text == "")
+                {
+                    MessageBox.Show("PLease Enter Product", application_name);
+                }
+                else if (ButtonNumInterval.Text == "")
+                {
+                    MessageBox.Show("PLease Enter Number Interval", application_name);
+                }
+                else if (ButtonNumPcs.Text == "")
+                {
+                    MessageBox.Show("PLease Enter Number of Pieces", application_name);
+                }
+                else if (ButtonWaitingTime.Text == "")
+                {
+                    MessageBox.Show("PLease Enter Waiting Time", application_name);
+                }
+                else
+                {
+
+                    // Waiting Time Interval
+                    var result = Sensor_input_Helper.GetEnumValueFromDescription<Time_Interval>(ButtonWaitingTime.Text);
+                    delay = ((int)(result)) * 60;
+
+                    // Total Interval
+                    TotalInterval = int.Parse(ButtonNumInterval.Text.ToString());
+
+                    // Total Number Per Pieces
+                    number_grain enum_numgrain = (number_grain)Enum.Parse(typeof(number_grain), ButtonNumPcs.Text);
+                    ResultGrain = Sensor_input_Helper.GetDescription(enum_numgrain);
+
+                    // Product
+
+                    ///*
+                    string combox_typemeasure;
+                    if (ButtonProduct.Text == "Corn High" || ButtonProduct.Text == "Jagung Tinggi")
+                    {
+                        combox_typemeasure = "Brown_Rice";
+                    }
+                    else if (ButtonProduct.Text == "Corn Medium" || ButtonProduct.Text == "Jagung Medium")
+                    {
+                        combox_typemeasure = "Wheat";
+                    }
+                    else if (ButtonProduct.Text == "Corn Low" || ButtonProduct.Text == "Jagung Rendah")
+                    {
+                        combox_typemeasure = "Corn";
+                    }
+                    else if (ButtonProduct.Text == "Padi")
+                    {
+                        combox_typemeasure = "Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Kedelai")
+                    {
+                        combox_typemeasure = "Soy";
+                    }
+                    else if (ButtonProduct.Text == "Beras Poles")
+                    {
+                        combox_typemeasure = "Polished_Rice";
+                    }
+                    else if (ButtonProduct.Text == "Padi Pendek" || ButtonProduct.Text == "ข้าวเปลือกเมล็ดสั้น")
+                    {
+                        combox_typemeasure = "Short_Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Padi Panjang" || ButtonProduct.Text == "ข้าวเปลือกเมล็ดยาว")
+                    {
+                        combox_typemeasure = "Long_Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Padi Jasmine" || ButtonProduct.Text == "ข้าวเปลือกหอมมะลิ")
+                    {
+                        combox_typemeasure = "Jasmine_Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Padi Long Sticky" || ButtonProduct.Text == "ข้าวเปลือกเหนียว")
+                    {
+                        combox_typemeasure = "Long_Sticky_Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Beras Long Parboiled" || ButtonProduct.Text == "ข้าวเปลือกนึ่ง")
+                    {
+                        combox_typemeasure = "Long_Parboiled_Rice";
+                    }
+                    else if (ButtonProduct.Text == "Gandum" || ButtonProduct.Text == "ข้าวสาลี")
+                    {
+                        combox_typemeasure = "Wheat";
+                    }
+                    else if (ButtonProduct.Text == "Beras Long Milled" || ButtonProduct.Text == "ข้าวสาร")
+                    {
+                        combox_typemeasure = "Long_Milled_Rice";
+                    }
+                    else if (ButtonProduct.Text == "Beras Long Brown" || ButtonProduct.Text == "ข้าวกล้อง")
+                    {
+                        combox_typemeasure = "Long_Brown_Rice";
+                    }
+                    else
+                    {
+                        combox_typemeasure = ButtonProduct.Text.Replace(" ", "_");
+                    }
+                    //*/
+
+                    //string combox_typemeasure = ButtonProduct.Text;
+                    //combox_typemeasure = combox_typemeasure.Replace(" ", "_");
+                    TypeOfMeasure enum_typemeasure = (TypeOfMeasure)Enum.Parse(typeof(TypeOfMeasure), combox_typemeasure);
+                    ResultMeasure = Sensor_input_Helper.GetDescription(enum_typemeasure);
+
+                    isvalid = true;
+
+                }
+
+            }
+
             else if (Button_Mode.Text.ToLower() == "fixed pieces")
             {
                 if (ButtonProduct.Text == "")
@@ -2256,6 +2377,11 @@ namespace ControllerPage
             Duration = DateTime.Now - duration_start;
             Console.WriteLine(Duration.TotalMinutes.ToString());
             Sensor_input_Helper.Update_Duration(Sensor_input_Helper.GetLocalIPAddress(), batch_id, Convert.ToSingle(Math.Round(Duration.TotalMinutes)));
+            if (checkBox_recurringmode.Checked)
+            {
+                Thread.Sleep(30000);
+                Btn_Start.PerformClick();
+            }
         }
         public void Read_FixedTime_Thread()
         {
@@ -2728,6 +2854,14 @@ namespace ControllerPage
 
             //MessageBox.Show("measurement finsih");
             Console.WriteLine("Measurement Finish");
+            Duration = DateTime.Now - duration_start;
+            Console.WriteLine(Duration.TotalMinutes.ToString());
+            Sensor_input_Helper.Update_Duration(Sensor_input_Helper.GetLocalIPAddress(), batch_id, Convert.ToSingle(Math.Round(Duration.TotalMinutes)));
+            if (checkBox_recurringmode.Checked)
+            {
+                Thread.Sleep(30000);
+                Btn_Start.PerformClick();
+            }
         }
         public void Read_FixedPieces_Thread()
         {
@@ -3180,6 +3314,14 @@ namespace ControllerPage
 
             //MessageBox.Show("measurement finsih");
             Console.WriteLine("Measurement Finish");
+            Duration = DateTime.Now - duration_start;
+            Console.WriteLine(Duration.TotalMinutes.ToString());
+            Sensor_input_Helper.Update_Duration(Sensor_input_Helper.GetLocalIPAddress(), batch_id, Convert.ToSingle(Math.Round(Duration.TotalMinutes)));
+            if (checkBox_recurringmode.Checked)
+            {
+                Thread.Sleep(30000);
+                Btn_Start.PerformClick();
+            }
         }
         public void Read_Relay_Thread()
         {
@@ -3754,6 +3896,13 @@ namespace ControllerPage
             Duration = DateTime.Now - duration_start;
             Console.WriteLine(Duration.TotalMinutes.ToString());
             Sensor_input_Helper.Update_Duration(Sensor_input_Helper.GetLocalIPAddress(), batch_id, Convert.ToSingle(Math.Round(Duration.TotalMinutes)));
+            if(checkBox_recurringmode.Checked)
+            {
+                Thread.Sleep(30000);
+                Btn_Start.PerformClick();
+            }
+
+
         }
 
 
