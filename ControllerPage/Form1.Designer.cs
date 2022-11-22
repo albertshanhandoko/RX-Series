@@ -753,12 +753,13 @@ namespace ControllerPage
             // checkBox_recurringmode
             // 
             this.checkBox_recurringmode.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkBox_recurringmode.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox_recurringmode.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.checkBox_recurringmode, 2);
-            this.checkBox_recurringmode.Font = new System.Drawing.Font("Noto Sans Thai", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_recurringmode.Location = new System.Drawing.Point(302, 218);
+            this.checkBox_recurringmode.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_recurringmode.Location = new System.Drawing.Point(293, 213);
             this.checkBox_recurringmode.Name = "checkBox_recurringmode";
-            this.checkBox_recurringmode.Size = new System.Drawing.Size(76, 19);
+            this.checkBox_recurringmode.Size = new System.Drawing.Size(94, 29);
             this.checkBox_recurringmode.TabIndex = 88;
             this.checkBox_recurringmode.Text = "โหมดวัดซ้ำ";
             this.checkBox_recurringmode.UseVisualStyleBackColor = true;

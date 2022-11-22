@@ -165,6 +165,13 @@ namespace ControllerPage
                 ButtonWaitingTime.Enabled = true;
                 ButtonWaitingTime.Text = string.Empty;
                 //textBox9.Text = "Running Time";
+                textBox2.Visible = false;
+                button_thereshold_minvalue.Visible = false;
+                textBox3.Visible = false;
+                button_thereshold_maxvalue.Visible = false;
+                textBox4.Visible = false;
+                button_1stdelay.Visible = false;
+
 
             }
             else if (Button_Mode.Text.ToLower() == "fixed pieces")
@@ -178,6 +185,12 @@ namespace ControllerPage
                 //ButtonNumPcs.Text = string.Empty;
                 ButtonWaitingTime.Enabled = false;
                 ButtonWaitingTime.Text = string.Empty;
+                textBox2.Visible = false;
+                button_thereshold_minvalue.Visible = false;
+                textBox3.Visible = false;
+                button_thereshold_maxvalue.Visible = false;
+                textBox4.Visible = false;
+                button_1stdelay.Visible = false;
 
             }
 
@@ -189,6 +202,12 @@ namespace ControllerPage
                 ButtonWaitingTime.Enabled = true;
                 ButtonWaitingTime.Text = string.Empty;
                 //textBox9.Text = "Int. Waiting Time";
+                textBox2.Visible = false;
+                button_thereshold_minvalue.Visible = false;
+                textBox3.Visible = false;
+                button_thereshold_maxvalue.Visible = false;
+                textBox4.Visible = false;
+                button_1stdelay.Visible = false;
 
             }
             else if (Button_Mode.Text.ToLower() == "relay")
@@ -199,6 +218,12 @@ namespace ControllerPage
                 ButtonWaitingTime.Enabled = true;
                 ButtonWaitingTime.Text = string.Empty;
                 //textBox9.Text = "Int. Waiting Time";
+                textBox2.Visible = true;
+                button_thereshold_minvalue.Visible = true;
+                textBox3.Visible = true;
+                button_thereshold_maxvalue.Visible = true;
+                textBox4.Visible = true;
+                button_1stdelay.Visible = true;
 
             }
             else
@@ -2379,8 +2404,10 @@ namespace ControllerPage
             Sensor_input_Helper.Update_Duration(Sensor_input_Helper.GetLocalIPAddress(), batch_id, Convert.ToSingle(Math.Round(Duration.TotalMinutes)));
             if (checkBox_recurringmode.Checked)
             {
-                Thread.Sleep(30000);
+                disable_button();
+                Thread.Sleep(50000);
                 Btn_Start.PerformClick();
+                enable_button();
             }
         }
         public void Read_FixedTime_Thread()
@@ -2859,8 +2886,10 @@ namespace ControllerPage
             Sensor_input_Helper.Update_Duration(Sensor_input_Helper.GetLocalIPAddress(), batch_id, Convert.ToSingle(Math.Round(Duration.TotalMinutes)));
             if (checkBox_recurringmode.Checked)
             {
-                Thread.Sleep(30000);
+                disable_button();
+                Thread.Sleep(50000);
                 Btn_Start.PerformClick();
+                enable_button();
             }
         }
         public void Read_FixedPieces_Thread()
@@ -3319,8 +3348,10 @@ namespace ControllerPage
             Sensor_input_Helper.Update_Duration(Sensor_input_Helper.GetLocalIPAddress(), batch_id, Convert.ToSingle(Math.Round(Duration.TotalMinutes)));
             if (checkBox_recurringmode.Checked)
             {
-                Thread.Sleep(30000);
+                disable_button();
+                Thread.Sleep(50000);
                 Btn_Start.PerformClick();
+                enable_button();
             }
         }
         public void Read_Relay_Thread()
@@ -3898,8 +3929,10 @@ namespace ControllerPage
             Sensor_input_Helper.Update_Duration(Sensor_input_Helper.GetLocalIPAddress(), batch_id, Convert.ToSingle(Math.Round(Duration.TotalMinutes)));
             if(checkBox_recurringmode.Checked)
             {
-                Thread.Sleep(30000);
+                disable_button();
+                Thread.Sleep(50000);
                 Btn_Start.PerformClick();
+                enable_button();
             }
 
 
@@ -4012,5 +4045,43 @@ namespace ControllerPage
             proc.StartInfo = procStartInfo;
             proc.Start();
         }
+
+        private void disable_button()
+        {
+            Button_Mode.Enabled = false;
+            Button_Interface.Enabled = false;
+            Btn_CheckTemp.Enabled = false;
+            Btn_Check.Enabled = false;
+            ButtonIPSet.Enabled = false;
+            button_thereshold_minvalue.Enabled = false;
+            button_thereshold_maxvalue.Enabled = false;
+            button_1stdelay.Enabled = false;
+            Btn_Start.Enabled = false;
+            Btn_Stop.Enabled = false;
+            ButtonProduct.Enabled = false;
+            ButtonProduct.Enabled = false;
+            ButtonNumPcs.Enabled = false;
+            ButtonWaitingTime.Enabled = false;
+            ButtonOption.Enabled = false;
+        }
+        private void enable_button()
+        {
+            Button_Mode.Enabled = true;
+            Button_Interface.Enabled = true;
+            Btn_CheckTemp.Enabled = true;
+            Btn_Check.Enabled = true;
+            ButtonIPSet.Enabled = true;
+            button_thereshold_minvalue.Enabled = true;
+            button_thereshold_maxvalue.Enabled = true;
+            button_1stdelay.Enabled = true;
+            Btn_Start.Enabled = true;
+            Btn_Stop.Enabled = true;
+            ButtonProduct.Enabled = true;
+            ButtonProduct.Enabled = true;
+            ButtonNumPcs.Enabled = true;
+            ButtonWaitingTime.Enabled = true;
+            ButtonOption.Enabled = true;
+        }
+
     }
 }
