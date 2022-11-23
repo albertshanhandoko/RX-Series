@@ -35,9 +35,8 @@ namespace ControllerPage
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.PictureBox();
+            this.textBox2 = new System.Windows.Forms.PictureBox();
             this.Button_Interface = new System.Windows.Forms.Button();
             this.Button_Mode = new System.Windows.Forms.Button();
             this.ButtonIPSet = new System.Windows.Forms.Button();
@@ -79,7 +78,10 @@ namespace ControllerPage
             this.Current_Avg_TextBox = new System.Windows.Forms.TextBox();
             this.button_thereshold_minvalue = new System.Windows.Forms.Button();
             this.checkBox_recurringmode = new System.Windows.Forms.CheckBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -108,7 +110,6 @@ namespace ControllerPage
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.671158F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.25729F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.00514F));
-            this.tableLayoutPanel1.Controls.Add(this.textBox4, 8, 7);
             this.tableLayoutPanel1.Controls.Add(this.textBox3, 8, 5);
             this.tableLayoutPanel1.Controls.Add(this.textBox2, 8, 3);
             this.tableLayoutPanel1.Controls.Add(this.Button_Interface, 2, 1);
@@ -152,6 +153,7 @@ namespace ControllerPage
             this.tableLayoutPanel1.Controls.Add(this.Current_Avg_TextBox, 5, 5);
             this.tableLayoutPanel1.Controls.Add(this.button_thereshold_minvalue, 8, 4);
             this.tableLayoutPanel1.Controls.Add(this.checkBox_recurringmode, 4, 6);
+            this.tableLayoutPanel1.Controls.Add(this.textBox4, 8, 7);
             this.tableLayoutPanel1.ForeColor = System.Drawing.SystemColors.InfoText;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -177,53 +179,29 @@ namespace ControllerPage
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // textBox4
-            // 
-            this.textBox4.AcceptsReturn = true;
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox4, 2);
-            this.textBox4.Font = new System.Drawing.Font("Noto Sans Thai", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(545, 252);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(135, 21);
-            this.textBox4.TabIndex = 87;
-            this.textBox4.Text = "ระยะเวลาในการร้องเตือน";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // textBox3
             // 
-            this.textBox3.AcceptsReturn = true;
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("textBox3.BackgroundImage")));
+            this.textBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tableLayoutPanel1.SetColumnSpan(this.textBox3, 2);
-            this.textBox3.Font = new System.Drawing.Font("Noto Sans Thai", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(549, 182);
-            this.textBox3.Multiline = true;
+            this.textBox3.Location = new System.Drawing.Point(577, 178);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(127, 21);
-            this.textBox3.TabIndex = 86;
-            this.textBox3.Text = "น้อยที่สุด";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox3.Size = new System.Drawing.Size(70, 29);
+            this.textBox3.TabIndex = 90;
+            this.textBox3.TabStop = false;
             // 
             // textBox2
             // 
-            this.textBox2.AcceptsReturn = true;
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("textBox2.BackgroundImage")));
+            this.textBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tableLayoutPanel1.SetColumnSpan(this.textBox2, 2);
-            this.textBox2.Font = new System.Drawing.Font("Noto Sans Thai", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(549, 112);
-            this.textBox2.Multiline = true;
+            this.textBox2.Location = new System.Drawing.Point(577, 108);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(127, 21);
-            this.textBox2.TabIndex = 85;
-            this.textBox2.Text = "มากที่สุด";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox2.Size = new System.Drawing.Size(70, 29);
+            this.textBox2.TabIndex = 89;
+            this.textBox2.TabStop = false;
             // 
             // Button_Interface
             // 
@@ -753,16 +731,31 @@ namespace ControllerPage
             // checkBox_recurringmode
             // 
             this.checkBox_recurringmode.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox_recurringmode.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox_recurringmode.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.checkBox_recurringmode, 2);
             this.checkBox_recurringmode.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_recurringmode.Location = new System.Drawing.Point(293, 213);
+            this.checkBox_recurringmode.Location = new System.Drawing.Point(288, 214);
             this.checkBox_recurringmode.Name = "checkBox_recurringmode";
-            this.checkBox_recurringmode.Size = new System.Drawing.Size(94, 29);
+            this.checkBox_recurringmode.Size = new System.Drawing.Size(103, 26);
             this.checkBox_recurringmode.TabIndex = 88;
             this.checkBox_recurringmode.Text = "โหมดวัดซ้ำ";
             this.checkBox_recurringmode.UseVisualStyleBackColor = true;
+            // 
+            // textBox4
+            // 
+            this.textBox4.AcceptsReturn = true;
+            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox4, 2);
+            this.textBox4.Font = new System.Drawing.Font("Noto Sans Thai", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(545, 248);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(135, 29);
+            this.textBox4.TabIndex = 91;
+            this.textBox4.Text = "ระยะเวลาในการร้องเตือน";
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
             // 
@@ -777,6 +770,8 @@ namespace ControllerPage
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -840,10 +835,10 @@ namespace ControllerPage
         private Button button_thereshold_minvalue;
         private Button button_thereshold_maxvalue;
         private Button button_1stdelay;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
         private CheckBox checkBox_recurringmode;
+        private PictureBox textBox3;
+        private PictureBox textBox2;
+        private TextBox textBox4;
     }
 }
 
