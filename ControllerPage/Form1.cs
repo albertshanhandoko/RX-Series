@@ -368,6 +368,7 @@ namespace ControllerPage
         private void Btn_Stop_Click(object sender, EventArgs e)
         {
             Sensor_input_Helper.Command_Stop(mySerialPort);
+            checkBox_recurringmode.Checked = false;
             bool_stop_click = true;
             MyTimer.Enabled = false;
             Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus("Online"));
@@ -376,7 +377,7 @@ namespace ControllerPage
         private void Btn_Check_Click(object sender, EventArgs e)
         {
             Btn_Check.Enabled = false;
-            /*if (Button_Interface.Text == "RS-232")
+            if (Button_Interface.Text == "RS-232")
             {
                 ProcessStartInfo procStartInfo1 = new ProcessStartInfo("/usr/bin/sudo", "systemctl stop modbusserver.service");
                 procStartInfo1.RedirectStandardOutput = true;
@@ -416,7 +417,7 @@ namespace ControllerPage
                 proc4.StartInfo = procStartInfo4;
                 proc4.Start();
             }
-            */
+            
             if (Button_Interface.Text != "RS-232" && Button_Interface.Text != "RS-485")
             {
                 MessageBox.Show("Please Pick Interface " + Button_Interface.Text, application_name);
@@ -2271,7 +2272,8 @@ namespace ControllerPage
                             }
                             else if (
                                  (Data_Measure_Result.Count == 0 && Result_Parsing.Substring(3, 5) == "00000")
-                                 || (!Result_Parsing.Contains("-") || !Result_Parsing.Contains("+") && (Result_Parsing.Length) > 10)
+                                 || (!Result_Parsing.Contains("-")// || !Result_Parsing.Contains("+")
+                                 && (Result_Parsing.Length) > 10)
                                  )
                             {
                                 Result_Parsing = "0.0";
@@ -2777,7 +2779,8 @@ namespace ControllerPage
 
                                     else if (
                                         (Data_Measure_Result.Count == 0 && Result_Parsing.Substring(3,5) == "00000") 
-                                        || (!Result_Parsing.Contains("-") || !Result_Parsing.Contains("+") && (Result_Parsing.Length) > 10)
+                                        || (!Result_Parsing.Contains("-")// || !Result_Parsing.Contains("+")
+                                        && (Result_Parsing.Length) > 10)
 
                                         )
                                     {
@@ -3252,7 +3255,8 @@ namespace ControllerPage
                             }
                             else if (
                                         (Data_Measure_Result.Count == 0 && Result_Parsing.Substring(3, 5) == "00000")
-                                        || (!Result_Parsing.Contains("-") || !Result_Parsing.Contains("+") && (Result_Parsing.Length) > 10)
+                                        || (!Result_Parsing.Contains("-")// || !Result_Parsing.Contains("+")
+                                        && (Result_Parsing.Length) > 10)
 
                                         )
                             {
@@ -3795,7 +3799,8 @@ namespace ControllerPage
                             }
                             else if (
                                  (Data_Measure_Result.Count == 0 && Result_Parsing.Substring(3, 5) == "00000")
-                                 || (!Result_Parsing.Contains("-") || !Result_Parsing.Contains("+") && (Result_Parsing.Length) > 10)
+                                 || (!Result_Parsing.Contains("-")// || !Result_Parsing.Contains("+")
+                                 && (Result_Parsing.Length) > 10)
                                  )
                             {
                                 Result_Parsing = "0.0";
