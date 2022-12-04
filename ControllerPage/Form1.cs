@@ -438,6 +438,7 @@ namespace ControllerPage
         private void Btn_Stop_Click(object sender, EventArgs e)
         {
             Sensor_input_Helper.Command_Stop(mySerialPort);
+            checkBox_recurringmode.Checked = false;
             bool_stop_click = true;
             MyTimer.Enabled = false;
             Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), "status", stringtonumcheckstatus("Online"));
@@ -2224,7 +2225,8 @@ namespace ControllerPage
                             }
                             else if (
                                  (Data_Measure_Result.Count == 0 && Result_Parsing.Substring(3, 5) == "00000")
-                                 || (!Result_Parsing.Contains("-") || !Result_Parsing.Contains("+") && (Result_Parsing.Length) > 10)
+                                 || (!Result_Parsing.Contains("-") //|| !Result_Parsing.Contains("+")
+                                 && (Result_Parsing.Length) > 10)
                                  )
                             {
                                 Result_Parsing = "0.0";
@@ -2355,6 +2357,13 @@ namespace ControllerPage
             Duration = DateTime.Now - duration_start;
             Console.WriteLine(Duration.TotalMinutes.ToString());
             Sensor_input_Helper.Update_Duration(Sensor_input_Helper.GetLocalIPAddress(), batch_id, Convert.ToSingle(Math.Round(Duration.TotalMinutes)));
+            if (checkBox_recurringmode.Checked)
+            {
+                disable_button();
+                Thread.Sleep(50000);
+                enable_button();
+                Btn_Start.PerformClick();
+            }
         }
         public void Read_FixedTime_Thread()
         {
@@ -2723,7 +2732,8 @@ namespace ControllerPage
 
                                     else if (
                                         (Data_Measure_Result.Count == 0 && Result_Parsing.Substring(3,5) == "00000") 
-                                        || (!Result_Parsing.Contains("-") || !Result_Parsing.Contains("+") && (Result_Parsing.Length) > 10)
+                                        || (!Result_Parsing.Contains("-")// || !Result_Parsing.Contains("+")
+                                        && (Result_Parsing.Length) > 10)
 
                                         )
                                     {
@@ -2827,6 +2837,16 @@ namespace ControllerPage
 
             //MessageBox.Show("measurement finsih");
             Console.WriteLine("Measurement Finish");
+            Duration = DateTime.Now - duration_start;
+            Console.WriteLine(Duration.TotalMinutes.ToString());
+            Sensor_input_Helper.Update_Duration(Sensor_input_Helper.GetLocalIPAddress(), batch_id, Convert.ToSingle(Math.Round(Duration.TotalMinutes)));
+            if (checkBox_recurringmode.Checked)
+            {
+                disable_button();
+                Thread.Sleep(50000);
+                enable_button();
+                Btn_Start.PerformClick();
+            }
         }
         public void Read_FixedPieces_Thread()
         {
@@ -3188,7 +3208,8 @@ namespace ControllerPage
                             }
                             else if (
                                         (Data_Measure_Result.Count == 0 && Result_Parsing.Substring(3, 5) == "00000")
-                                        || (!Result_Parsing.Contains("-") || !Result_Parsing.Contains("+") && (Result_Parsing.Length) > 10)
+                                        || (!Result_Parsing.Contains("-")// || !Result_Parsing.Contains("+")
+                                        && (Result_Parsing.Length) > 10)
 
                                         )
                             {
@@ -3279,6 +3300,16 @@ namespace ControllerPage
 
             //MessageBox.Show("measurement finsih");
             Console.WriteLine("Measurement Finish");
+            Duration = DateTime.Now - duration_start;
+            Console.WriteLine(Duration.TotalMinutes.ToString());
+            Sensor_input_Helper.Update_Duration(Sensor_input_Helper.GetLocalIPAddress(), batch_id, Convert.ToSingle(Math.Round(Duration.TotalMinutes)));
+            if (checkBox_recurringmode.Checked)
+            {
+                disable_button();
+                Thread.Sleep(50000);
+                enable_button();
+                Btn_Start.PerformClick();
+            }
         }
 
 
@@ -3318,6 +3349,39 @@ namespace ControllerPage
                 return "3";
             }
 
+        }
+
+        private void disable_button()
+        {
+            Button_Mode.Enabled = false;
+            Button_Interface.Enabled = false;
+            Btn_CheckTemp.Enabled = false;
+            Btn_Check.Enabled = false;
+            ButtonIPSet.Enabled = false;
+            Btn_Start.Enabled = false;
+            Btn_Stop.Enabled = false;
+            ButtonProduct.Enabled = false;
+            ButtonProduct.Enabled = false;
+            ButtonNumPcs.Enabled = false;
+            ButtonWaitingTime.Enabled = false;
+            ButtonOption.Enabled = false;
+            ButtonNumInterval.Enabled = false;
+        }
+        private void enable_button()
+        {
+            Button_Mode.Enabled = true;
+            Button_Interface.Enabled = true;
+            Btn_CheckTemp.Enabled = true;
+            Btn_Check.Enabled = true;
+            ButtonIPSet.Enabled = true;
+            Btn_Start.Enabled = true;
+            Btn_Stop.Enabled = true;
+            ButtonProduct.Enabled = true;
+            ButtonProduct.Enabled = true;
+            ButtonNumPcs.Enabled = true;
+            ButtonWaitingTime.Enabled = true;
+            ButtonOption.Enabled = true;
+            ButtonNumInterval.Enabled = true;
         }
 
     }

@@ -72,6 +72,7 @@ namespace ControllerPage
             this.Curr_Kernel_TextBox = new System.Windows.Forms.TextBox();
             this.textBox_theresholdmin = new System.Windows.Forms.TextBox();
             this.textBox_theresholdmax = new System.Windows.Forms.TextBox();
+            this.checkBox_recurringmode = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -127,6 +128,7 @@ namespace ControllerPage
             this.tableLayoutPanel1.Controls.Add(this.Curr_Kernel_TextBox, 5, 4);
             this.tableLayoutPanel1.Controls.Add(this.textBox_theresholdmin, 5, 8);
             this.tableLayoutPanel1.Controls.Add(this.textBox_theresholdmax, 5, 7);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox_recurringmode, 4, 6);
             this.tableLayoutPanel1.ForeColor = System.Drawing.SystemColors.InfoText;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -654,6 +656,18 @@ namespace ControllerPage
             this.textBox_theresholdmax.Size = new System.Drawing.Size(52, 24);
             this.textBox_theresholdmax.TabIndex = 69;
             // 
+            // checkBox_recurringmode
+            // 
+            this.checkBox_recurringmode.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.checkBox_recurringmode, 2);
+            this.checkBox_recurringmode.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_recurringmode.Location = new System.Drawing.Point(275, 213);
+            this.checkBox_recurringmode.Name = "checkBox_recurringmode";
+            this.checkBox_recurringmode.Size = new System.Drawing.Size(123, 20);
+            this.checkBox_recurringmode.TabIndex = 74;
+            this.checkBox_recurringmode.Text = "Recurring Mode";
+            this.checkBox_recurringmode.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -716,6 +730,7 @@ namespace ControllerPage
         private TextBox textBox_theresholdmin;
         private TextBox textBox11;
         private TextBox textBox4;
+        private CheckBox checkBox_recurringmode;
     }
 }
 
