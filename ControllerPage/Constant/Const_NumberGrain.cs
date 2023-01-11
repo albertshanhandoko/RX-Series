@@ -442,7 +442,7 @@ namespace ControllerPage.Constant
         Barley,
         [Description("C20A5\r")]
         Soy,
-        [Description("A20A3\r")]
+        [Description("22094\r")]
         Corn,
         [Description("32095\r")]
         Polished_Rice,
@@ -462,7 +462,7 @@ namespace ControllerPage.Constant
         Wheat,
         [Description("B20A4\r")]
         Long_Milled_Rice,
-        [Description("B20A4\r")]
+        [Description("D20A6\r")]
         Long_Brown_Rice,
         [Description("32095\r")]
         Corn_Low,

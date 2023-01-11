@@ -31,6 +31,7 @@ namespace ControllerPage
         string var_label7;
         string var_label8;
         string var_label9;
+        string var_label10;
         int product_type;
 
         bool _runPaddy;
@@ -96,14 +97,16 @@ namespace ControllerPage
             else if (product_type == 2)
             {
 
-                var_label1 = "Paddy";
+                var_label1 = "Corn";
                 var_label2 = "Corn High";
                 var_label3 = "Corn Medium";
-                var_label4 = "Barley";
-                var_label5 = "Soy";
-                var_label6 = "Corn Low";
-                var_label7 = "Polished Rice";
-
+                var_label4 = "Soy";
+                var_label5 = "Short Paddy";
+                var_label6 = "Long Brown Rice";
+                var_label7 = "Long Paddy";
+                var_label8 = "Jasmine Paddy";
+                var_label9 = "Long Sticky Paddy";
+                var_label10 = "Long Milled Rice";
 
                 label_1.Text = var_label1;
                 label_2.Text = var_label2;
@@ -112,6 +115,9 @@ namespace ControllerPage
                 label_5.Text = var_label5;
                 label_6.Text = var_label6;
                 label_7.Text = var_label7;
+                label_8.Text = var_label8;
+                label_9.Text = var_label9;
+                label_10.Text = var_label10;
 
                 if (Global.GlobalVar == "Bahasa")
                 {
@@ -128,14 +134,14 @@ namespace ControllerPage
                 }
 
 
-                label_8.Visible = false;
-                button8_minus.Visible = false;
-                button8_plus.Visible = false;
-                textBox_Bias_longmilledrice.Visible = false;
-                label_9.Visible = false;
-                button9_minus.Visible = false;
-                button9_plus.Visible = false;
-                textBox_Bias_shortmilledrice.Visible = false;
+                label_8.Visible = true;
+                button8_minus.Visible = true;
+                button8_plus.Visible = true;
+                textBox_Bias_longmilledrice.Visible = true;
+                label_9.Visible = true;
+                button9_minus.Visible = true;
+                button9_plus.Visible = true;
+                textBox_Bias_shortmilledrice.Visible = true;
 
             }
             else //3
@@ -233,7 +239,16 @@ namespace ControllerPage
 
             var var7 = current_config.Where(config => config.Config_Param == var_label7.ToLower().Replace(" ", "_"));
             double var_value7 = (var7.Select(p => p.Config_Value).ToArray()).First();
-            
+
+            var var8 = current_config.Where(config => config.Config_Param == var_label8.ToLower().Replace(" ", "_"));
+            double var_value8 = (var8.Select(p => p.Config_Value).ToArray()).First();
+
+            var var9 = current_config.Where(config => config.Config_Param == var_label9.ToLower().Replace(" ", "_"));
+            double var_value9 = (var9.Select(p => p.Config_Value).ToArray()).First();
+
+            var var10 = current_config.Where(config => config.Config_Param == var_label10.ToLower().Replace(" ", "_"));
+            double var_value10 = (var10.Select(p => p.Config_Value).ToArray()).First();
+
             /*
             var LongPaddy_var = current_config.Where(config => config.Config_Param == "long_paddy");
             double LongPaddy_value = (LongPaddy_var.Select(p => p.Config_Value).ToArray()).First();
@@ -266,20 +281,22 @@ namespace ControllerPage
             textBox_bias_LongParboiledRice.Text = var_value5.ToString();
             textBox_bias_PeakADCount.Text = var_value6.ToString();
             textBox_bias_JasminePaddy.Text = var_value7.ToString();
+            textBox_Bias_longmilledrice.Text = var_value8.ToString();
+            textBox_Bias_shortmilledrice.Text = var_value9.ToString();
+            textBox_biasnew.Text = var_value10.ToString();
 
+            /* if (product_type == 3)
+             {
+                 var var8 = current_config.Where(config => config.Config_Param == var_label8.ToLower().Replace(" ", "_"));
+                 double var_value8 = (var8.Select(p => p.Config_Value).ToArray()).First();
 
-            if (product_type == 3)
-            {
-                var var8 = current_config.Where(config => config.Config_Param == var_label8.ToLower().Replace(" ", "_"));
-                double var_value8 = (var8.Select(p => p.Config_Value).ToArray()).First();
+                 var var9 = current_config.Where(config => config.Config_Param == var_label9.ToLower().Replace(" ", "_"));
+                 double var_value9 = (var9.Select(p => p.Config_Value).ToArray()).First();
+                 textBox_Bias_longmilledrice.Text = var_value8.ToString();
+                 textBox_Bias_shortmilledrice.Text = var_value9.ToString();
 
-                var var9 = current_config.Where(config => config.Config_Param == var_label9.ToLower().Replace(" ", "_"));
-                double var_value9 = (var9.Select(p => p.Config_Value).ToArray()).First();
-                textBox_Bias_longmilledrice.Text = var_value8.ToString();
-                textBox_Bias_shortmilledrice.Text = var_value9.ToString();
-
-            }
-
+             }
+            */
             //button_plus_bias_paddy.Hol
 
         }
@@ -1002,8 +1019,6 @@ namespace ControllerPage
 
         #endregion
 
-
-
         #region long milled rice
 
         private bool _runlongmilledrice = false;
@@ -1210,6 +1225,110 @@ namespace ControllerPage
 
         #endregion
 
+        #region new
+
+        private bool _runshortmilledrice_new = false;
+
+        private void button_plus_bias_shortmilledrice_new_MouseDown(object sender, MouseEventArgs e)
+        {
+            _runshortmilledrice = true;
+            Thread readThread = new Thread(shortmilledrice_new_Plus_Async);
+            readThread.Start();
+        }
+        private void button_plus_bias_shortmilledrice_new_MouseUp(object sender, MouseEventArgs e)
+        {
+            _runshortmilledrice = false;
+        }
+        public void shortmilledrice_new_Plus_Async()
+        {
+            //DateTime Start = DateTime.Now();
+            int counter_shortmilledrice = 0;
+            while (_runshortmilledrice)
+            {
+                counter_shortmilledrice++;
+                if (counter_shortmilledrice <= 6)
+                {
+                    Thread.Sleep(300);
+                    textBox_biasnew.Invoke((Action)delegate
+                    {
+                        textBox_biasnew.Text = (double.Parse(textBox_biasnew.Text) + 0.1).ToString("0.0");
+                    });
+                }
+
+                else if (counter_shortmilledrice > 5 & counter_shortmilledrice <= 10)
+                {
+                    Thread.Sleep(200);
+                    textBox_biasnew.Invoke((Action)delegate
+                    {
+                        textBox_biasnew.Text = (double.Parse(textBox_biasnew.Text) + 0.1).ToString("0.0");
+                    });
+                }
+
+                else if (counter_shortmilledrice > 10)
+                {
+                    Thread.Sleep(50);
+                    textBox_biasnew.Invoke((Action)delegate
+                    {
+                        textBox_biasnew.Text = (double.Parse(textBox_biasnew.Text) + 0.1).ToString("0.0");
+                    });
+                }
+
+
+                //You actions
+            }
+        }
+        private void button_minus_bias_shortmilledrice_new_MouseDown(object sender, MouseEventArgs e)
+        {
+            _runshortmilledrice = true;
+            Thread readThread = new Thread(shortmilledrice_new_Minus_Async);
+            readThread.Start();
+        }
+        private void button_minus_bias_shortmilledrice_new_MouseUp(object sender, MouseEventArgs e)
+        {
+            _runshortmilledrice = false;
+        }
+        public void shortmilledrice_new_Minus_Async()
+        {
+            int counter_shortmilledrice = 0;
+            while (_runshortmilledrice)
+            {
+                counter_shortmilledrice++;
+                if (counter_shortmilledrice <= 6)
+                {
+                    Thread.Sleep(300);
+                    textBox_biasnew.Invoke((Action)delegate
+                    {
+                        textBox_biasnew.Text = (double.Parse(textBox_biasnew.Text) - 0.1).ToString("0.0");
+                    });
+                }
+
+                else if (counter_shortmilledrice > 5 & counter_shortmilledrice <= 10)
+                {
+                    Thread.Sleep(200);
+                    textBox_biasnew.Invoke((Action)delegate
+                    {
+                        textBox_biasnew.Text = (double.Parse(textBox_biasnew.Text) - 0.1).ToString("0.0");
+                    });
+                }
+
+                else if (counter_shortmilledrice > 10)
+                {
+                    Thread.Sleep(50);
+                    textBox_biasnew.Invoke((Action)delegate
+                    {
+                        textBox_biasnew.Text = (double.Parse(textBox_biasnew.Text) - 0.1).ToString("0.0");
+                    });
+                }
+
+
+                //You actions
+            }
+        }
+
+
+        #endregion
+
+
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -1275,7 +1394,9 @@ namespace ControllerPage
                 Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), var_label5.ToLower().Replace(" ", "_"), textBox_bias_LongParboiledRice.Text);
                 Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), var_label6.ToLower().Replace(" ", "_"), textBox_bias_PeakADCount.Text);
                 Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), var_label7.ToLower().Replace(" ", "_"), textBox_bias_JasminePaddy.Text);
-
+                Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), var_label8.ToLower().Replace(" ", "_"), textBox_Bias_longmilledrice.Text);
+                Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), var_label9.ToLower().Replace(" ", "_"), textBox_Bias_shortmilledrice.Text);
+                Sensor_input_Helper.Update_DataConfig(Sensor_input_Helper.GetLocalIPAddress(), var_label10.ToLower().Replace(" ", "_"), textBox_biasnew.Text);
 
                 if (product_type == 3)
                 {
@@ -1325,6 +1446,16 @@ namespace ControllerPage
         }
 
         private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_minus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_minus_Click(object sender, EventArgs e)
         {
 
         }

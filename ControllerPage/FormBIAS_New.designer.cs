@@ -70,6 +70,10 @@ namespace ControllerPage
             this.textBox_Bias_shortmilledrice = new System.Windows.Forms.TextBox();
             this.button_bias_apply = new System.Windows.Forms.Button();
             this.BIAS_New_Close = new System.Windows.Forms.Button();
+            this.label_10 = new System.Windows.Forms.Label();
+            this.button10_minus = new System.Windows.Forms.Button();
+            this.button10_plus = new System.Windows.Forms.Button();
+            this.textBox_biasnew = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -123,6 +127,10 @@ namespace ControllerPage
             this.tableLayoutPanel1.Controls.Add(this.textBox_Bias_shortmilledrice, 6, 5);
             this.tableLayoutPanel1.Controls.Add(this.button_bias_apply, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.BIAS_New_Close, 2, 6);
+            this.tableLayoutPanel1.Controls.Add(this.label_10, 4, 6);
+            this.tableLayoutPanel1.Controls.Add(this.button10_minus, 5, 6);
+            this.tableLayoutPanel1.Controls.Add(this.button10_plus, 7, 6);
+            this.tableLayoutPanel1.Controls.Add(this.textBox_biasnew, 6, 6);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(8, 9);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 8;
@@ -526,6 +534,7 @@ namespace ControllerPage
             this.button8_minus.TabIndex = 46;
             this.button8_minus.Text = "-";
             this.button8_minus.UseVisualStyleBackColor = true;
+            this.button8_minus.Click += new System.EventHandler(this.button8_minus_Click);
             this.button8_minus.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_minus_bias_longmilledrice_MouseDown);
             this.button8_minus.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button_minus_bias_longmilledrice_MouseUp);
             // 
@@ -539,6 +548,7 @@ namespace ControllerPage
             this.button9_minus.TabIndex = 47;
             this.button9_minus.Text = "-";
             this.button9_minus.UseVisualStyleBackColor = true;
+            this.button9_minus.Click += new System.EventHandler(this.button9_minus_Click);
             this.button9_minus.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_minus_bias_shortmilledrice_MouseDown);
             this.button9_minus.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button_minus_bias_shortmilledrice_MouseUp);
             // 
@@ -612,6 +622,54 @@ namespace ControllerPage
             this.BIAS_New_Close.UseVisualStyleBackColor = true;
             this.BIAS_New_Close.Click += new System.EventHandler(this.Button_Close_BiasNew);
             // 
+            // label_10
+            // 
+            this.label_10.AllowDrop = true;
+            this.label_10.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label_10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_10.ForeColor = System.Drawing.Color.Black;
+            this.label_10.Location = new System.Drawing.Point(318, 255);
+            this.label_10.Name = "label_10";
+            this.label_10.Size = new System.Drawing.Size(134, 39);
+            this.label_10.TabIndex = 52;
+            this.label_10.Text = "Short Milled Rice";
+            this.label_10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // button10_minus
+            // 
+            this.button10_minus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.button10_minus.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10_minus.Location = new System.Drawing.Point(458, 258);
+            this.button10_minus.Name = "button10_minus";
+            this.button10_minus.Size = new System.Drawing.Size(41, 33);
+            this.button10_minus.TabIndex = 53;
+            this.button10_minus.Text = "-";
+            this.button10_minus.UseVisualStyleBackColor = true;
+            this.button10_minus.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_plus_bias_shortmilledrice_new_MouseDown);
+            this.button10_minus.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button_plus_bias_shortmilledrice_new_MouseUp);
+            // 
+            // button10_plus
+            // 
+            this.button10_plus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.button10_plus.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10_plus.Location = new System.Drawing.Point(563, 258);
+            this.button10_plus.Name = "button10_plus";
+            this.button10_plus.Size = new System.Drawing.Size(46, 33);
+            this.button10_plus.TabIndex = 54;
+            this.button10_plus.Text = "+";
+            this.button10_plus.UseVisualStyleBackColor = true;
+            this.button10_plus.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_plus_bias_shortmilledrice_new_MouseDown);
+            this.button10_plus.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button_plus_bias_shortmilledrice_new_MouseUp);
+            // 
+            // textBox_biasnew
+            // 
+            this.textBox_biasnew.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_biasnew.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_biasnew.Location = new System.Drawing.Point(505, 258);
+            this.textBox_biasnew.Name = "textBox_biasnew";
+            this.textBox_biasnew.Size = new System.Drawing.Size(52, 38);
+            this.textBox_biasnew.TabIndex = 55;
+            // 
             // FormBIAS_New
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -670,6 +728,10 @@ namespace ControllerPage
         private System.Windows.Forms.Button button9_plus;
         private System.Windows.Forms.TextBox textBox_Bias_longmilledrice;
         private System.Windows.Forms.TextBox textBox_Bias_shortmilledrice;
+        private System.Windows.Forms.Label label_10;
+        private System.Windows.Forms.Button button10_minus;
+        private System.Windows.Forms.Button button10_plus;
+        private System.Windows.Forms.TextBox textBox_biasnew;
     }
 
 
