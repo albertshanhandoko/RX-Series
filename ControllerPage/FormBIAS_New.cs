@@ -98,8 +98,8 @@ namespace ControllerPage
             {
 
                 var_label1 = "Corn";
-                var_label2 = "Corn High";
-                var_label3 = "Corn Medium";
+                var_label2 = "Corn Low";
+                var_label3 = "Corn High";
                 var_label4 = "Soy";
                 var_label5 = "Short Paddy";
                 var_label6 = "Long Brown Rice";

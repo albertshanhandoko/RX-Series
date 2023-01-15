@@ -645,8 +645,8 @@ namespace ControllerPage
             this.button10_minus.TabIndex = 53;
             this.button10_minus.Text = "-";
             this.button10_minus.UseVisualStyleBackColor = true;
-            this.button10_minus.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_plus_bias_shortmilledrice_new_MouseDown);
-            this.button10_minus.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button_plus_bias_shortmilledrice_new_MouseUp);
+            this.button10_minus.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_minus_bias_shortmilledrice_new_MouseDown);
+            this.button10_minus.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button_minus_bias_shortmilledrice_new_MouseUp);
             // 
             // button10_plus
             // 

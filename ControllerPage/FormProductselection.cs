@@ -149,16 +149,16 @@ namespace ControllerPage
                 }
                 else if (product_type == 2)
                 {
-                    button1.Text = "Corn";
+                    button1.Text = "Corn (Dryer)";
                     button2.Text = "Corn Low";
                     button3.Text = "Corn High";
                     button4.Text = "Soy";
-                    button5.Text = "Short paddy";
-                    button6.Text = "Long brown rice";
-                    button7.Text = "Long paddy";
+                    button5.Text = "Short Paddy";
+                    button6.Text = "Long Brown Rice";
+                    button7.Text = "Long Paddy";
                     button8.Text = "Jasmine Paddy";
                     button9.Text = "Long Sticky Paddy";
-                    button9.Text = "Long Milled Rice";
+                    button10.Text = "Long Milled Rice";
 
                 }
                 else //3
@@ -231,8 +231,8 @@ namespace ControllerPage
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //this.Productselection = "Polished_Rice";
-            this.Productselection = button1.Text.Replace(" ", "_");
+            this.Productselection = "Corn";
+            //this.Productselection = button1.Text.Replace(" ", "_");
 
             this.DialogResult = DialogResult.OK;
             this.Close();
