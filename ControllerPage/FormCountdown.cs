@@ -28,7 +28,7 @@ namespace ControllerPage
             this.label1.Text = Global.GlobalVar19.ToString() + " Hr and " + Global.GlobalVar20 + " Min left";
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timer1_Tick_1(object sender, EventArgs e)
         {
             totalMinutes--;
             int hours = totalMinutes / 60;
@@ -40,6 +40,5 @@ namespace ControllerPage
                 this.Close();
             }
         }
-
     }
 }

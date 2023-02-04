@@ -447,7 +447,7 @@ namespace ControllerPage
         private void Btn_Check_Click(object sender, EventArgs e)
         {
             Btn_Check.Enabled = false;
-            /*
+            
             if (Button_Interface.Text == "RS-232")
             {
                 ProcessStartInfo procStartInfo1 = new ProcessStartInfo("/usr/bin/sudo", "systemctl stop modbusserver.service");
@@ -488,7 +488,7 @@ namespace ControllerPage
                 proc4.StartInfo = procStartInfo4;
                 proc4.Start();
             }
-            */
+            
             if (Button_Interface.Text != "RS-232" && Button_Interface.Text != "RS-485")
             {
                 MessageBox.Show("Please Pick Interface " + Button_Interface.Text, application_name);
@@ -3390,5 +3390,16 @@ namespace ControllerPage
             ButtonNumInterval.Enabled = true;
         }
 
+        private void buttondelaystart_Click(object sender, EventArgs e)
+        {
+            using (var form = new Formdelaystart())
+            {
+                var result = form.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    buttondelaystart.Text = Formdelaystart.delay_start;
+                }
+            }
+        }
     }
 }

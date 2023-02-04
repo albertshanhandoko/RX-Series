@@ -35,6 +35,8 @@ namespace ControllerPage
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.buttondelaystart = new System.Windows.Forms.Button();
+            this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.Button_Interface = new System.Windows.Forms.Button();
@@ -73,8 +75,6 @@ namespace ControllerPage
             this.textBox_theresholdmin = new System.Windows.Forms.TextBox();
             this.textBox_theresholdmax = new System.Windows.Forms.TextBox();
             this.checkBox_recurringmode = new System.Windows.Forms.CheckBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.buttondelaystart = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -154,6 +154,35 @@ namespace ControllerPage
             this.tableLayoutPanel1.Size = new System.Drawing.Size(683, 425);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // buttondelaystart
+            // 
+            this.buttondelaystart.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttondelaystart.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.tableLayoutPanel1.SetColumnSpan(this.buttondelaystart, 2);
+            this.buttondelaystart.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttondelaystart.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttondelaystart.Location = new System.Drawing.Point(6, 253);
+            this.buttondelaystart.Name = "buttondelaystart";
+            this.tableLayoutPanel1.SetRowSpan(this.buttondelaystart, 2);
+            this.buttondelaystart.Size = new System.Drawing.Size(124, 54);
+            this.buttondelaystart.TabIndex = 77;
+            this.buttondelaystart.Text = "0 Hr and 0 Min";
+            this.buttondelaystart.UseVisualStyleBackColor = false;
+            this.buttondelaystart.Click += new System.EventHandler(this.buttondelaystart_Click);
+            // 
+            // textBox12
+            // 
+            this.textBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox12.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox12, 2);
+            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.Location = new System.Drawing.Point(29, 219);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(77, 17);
+            this.textBox12.TabIndex = 76;
+            this.textBox12.Text = "Delay Start";
             // 
             // textBox11
             // 
@@ -671,34 +700,6 @@ namespace ControllerPage
             this.checkBox_recurringmode.TabIndex = 74;
             this.checkBox_recurringmode.Text = "Recurring Mode";
             this.checkBox_recurringmode.UseVisualStyleBackColor = true;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox12.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox12, 2);
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(29, 219);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(77, 17);
-            this.textBox12.TabIndex = 76;
-            this.textBox12.Text = "Delay Start";
-            // 
-            // buttondelaystart
-            // 
-            this.buttondelaystart.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttondelaystart.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.tableLayoutPanel1.SetColumnSpan(this.buttondelaystart, 2);
-            this.buttondelaystart.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttondelaystart.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttondelaystart.Location = new System.Drawing.Point(6, 253);
-            this.buttondelaystart.Name = "buttondelaystart";
-            this.tableLayoutPanel1.SetRowSpan(this.buttondelaystart, 2);
-            this.buttondelaystart.Size = new System.Drawing.Size(124, 54);
-            this.buttondelaystart.TabIndex = 77;
-            this.buttondelaystart.Text = "0 Hr and 0 Min";
-            this.buttondelaystart.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 

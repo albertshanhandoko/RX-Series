@@ -67,7 +67,7 @@ namespace ControllerPage
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.82393F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.85989F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.00081F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(596, 417);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(556, 329);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // label3
@@ -75,7 +75,7 @@ namespace ControllerPage
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(490, 232);
+            this.label3.Location = new System.Drawing.Point(450, 177);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(101, 55);
             this.label3.TabIndex = 15;
@@ -86,9 +86,9 @@ namespace ControllerPage
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel1.SetColumnSpan(this.button1, 2);
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(103, 364);
+            this.button1.Location = new System.Drawing.Point(83, 285);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 45);
+            this.button1.Size = new System.Drawing.Size(100, 41);
             this.button1.TabIndex = 11;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
@@ -100,9 +100,9 @@ namespace ControllerPage
             this.radioButton_enable.BackColor = System.Drawing.SystemColors.ControlDark;
             this.tableLayoutPanel1.SetColumnSpan(this.radioButton_enable, 2);
             this.radioButton_enable.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_enable.Location = new System.Drawing.Point(71, 72);
+            this.radioButton_enable.Location = new System.Drawing.Point(51, 53);
             this.radioButton_enable.Name = "radioButton_enable";
-            this.radioButton_enable.Size = new System.Drawing.Size(165, 80);
+            this.radioButton_enable.Size = new System.Drawing.Size(165, 72);
             this.radioButton_enable.TabIndex = 5;
             this.radioButton_enable.Text = "Enable";
             this.radioButton_enable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -115,7 +115,7 @@ namespace ControllerPage
             this.tableLayoutPanel1.SetColumnSpan(this.label1, 4);
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label1.Location = new System.Drawing.Point(211, 13);
+            this.label1.Location = new System.Drawing.Point(191, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(174, 37);
             this.label1.TabIndex = 0;
@@ -129,10 +129,10 @@ namespace ControllerPage
             this.radioButton_disable.Checked = true;
             this.tableLayoutPanel1.SetColumnSpan(this.radioButton_disable, 2);
             this.radioButton_disable.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_disable.Location = new System.Drawing.Point(366, 72);
+            this.radioButton_disable.Location = new System.Drawing.Point(326, 53);
             this.radioButton_disable.Name = "radioButton_disable";
             this.radioButton_disable.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.radioButton_disable.Size = new System.Drawing.Size(171, 80);
+            this.radioButton_disable.Size = new System.Drawing.Size(171, 72);
             this.radioButton_disable.TabIndex = 6;
             this.radioButton_disable.TabStop = true;
             this.radioButton_disable.Text = "Disable";
@@ -144,9 +144,9 @@ namespace ControllerPage
             this.button_thereshold_apply.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel1.SetColumnSpan(this.button_thereshold_apply, 2);
             this.button_thereshold_apply.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_thereshold_apply.Location = new System.Drawing.Point(401, 364);
+            this.button_thereshold_apply.Location = new System.Drawing.Point(361, 285);
             this.button_thereshold_apply.Name = "button_thereshold_apply";
-            this.button_thereshold_apply.Size = new System.Drawing.Size(100, 45);
+            this.button_thereshold_apply.Size = new System.Drawing.Size(100, 41);
             this.button_thereshold_apply.TabIndex = 12;
             this.button_thereshold_apply.Text = "Close";
             this.button_thereshold_apply.UseVisualStyleBackColor = true;
@@ -157,7 +157,7 @@ namespace ControllerPage
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(214, 232);
+            this.label2.Location = new System.Drawing.Point(174, 177);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 55);
             this.label2.TabIndex = 14;
@@ -167,7 +167,7 @@ namespace ControllerPage
             // 
             this.numericUpDown1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(329, 201);
+            this.numericUpDown1.Location = new System.Drawing.Point(289, 147);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             60,
             0,
@@ -181,7 +181,7 @@ namespace ControllerPage
             // 
             this.numericUpDown2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown2.Location = new System.Drawing.Point(48, 201);
+            this.numericUpDown2.Location = new System.Drawing.Point(8, 147);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             99,
             0,
@@ -195,7 +195,7 @@ namespace ControllerPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(612, 434);
+            this.ClientSize = new System.Drawing.Size(572, 346);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Formdelaystart";
             this.Text = "Formdelaystart";
