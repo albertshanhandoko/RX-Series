@@ -73,6 +73,8 @@ namespace ControllerPage
             this.textBox_theresholdmin = new System.Windows.Forms.TextBox();
             this.textBox_theresholdmax = new System.Windows.Forms.TextBox();
             this.checkBox_recurringmode = new System.Windows.Forms.CheckBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.buttondelaystart = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,6 +93,8 @@ namespace ControllerPage
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.671158F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.25729F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.00514F));
+            this.tableLayoutPanel1.Controls.Add(this.buttondelaystart, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.textBox12, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.textBox11, 4, 8);
             this.tableLayoutPanel1.Controls.Add(this.textBox4, 4, 7);
             this.tableLayoutPanel1.Controls.Add(this.Button_Interface, 2, 1);
@@ -339,7 +343,7 @@ namespace ControllerPage
             this.textBox5.BackColor = System.Drawing.SystemColors.Control;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(3, 283);
+            this.textBox5.Location = new System.Drawing.Point(139, 283);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(0, 19);
             this.textBox5.TabIndex = 37;
@@ -550,11 +554,11 @@ namespace ControllerPage
             this.Curr_Measure_TextBox.BackColor = System.Drawing.SystemColors.Control;
             this.Curr_Measure_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableLayoutPanel1.SetColumnSpan(this.Curr_Measure_TextBox, 4);
-            this.Curr_Measure_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Curr_Measure_TextBox.Location = new System.Drawing.Point(18, 164);
+            this.Curr_Measure_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Curr_Measure_TextBox.Location = new System.Drawing.Point(18, 147);
             this.Curr_Measure_TextBox.Name = "Curr_Measure_TextBox";
-            this.tableLayoutPanel1.SetRowSpan(this.Curr_Measure_TextBox, 4);
-            this.Curr_Measure_TextBox.Size = new System.Drawing.Size(235, 91);
+            this.tableLayoutPanel1.SetRowSpan(this.Curr_Measure_TextBox, 2);
+            this.Curr_Measure_TextBox.Size = new System.Drawing.Size(235, 55);
             this.Curr_Measure_TextBox.TabIndex = 21;
             this.Curr_Measure_TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -668,6 +672,34 @@ namespace ControllerPage
             this.checkBox_recurringmode.Text = "Recurring Mode";
             this.checkBox_recurringmode.UseVisualStyleBackColor = true;
             // 
+            // textBox12
+            // 
+            this.textBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox12.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox12, 2);
+            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.Location = new System.Drawing.Point(29, 219);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(77, 17);
+            this.textBox12.TabIndex = 76;
+            this.textBox12.Text = "Delay Start";
+            // 
+            // buttondelaystart
+            // 
+            this.buttondelaystart.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttondelaystart.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.tableLayoutPanel1.SetColumnSpan(this.buttondelaystart, 2);
+            this.buttondelaystart.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttondelaystart.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttondelaystart.Location = new System.Drawing.Point(6, 253);
+            this.buttondelaystart.Name = "buttondelaystart";
+            this.tableLayoutPanel1.SetRowSpan(this.buttondelaystart, 2);
+            this.buttondelaystart.Size = new System.Drawing.Size(124, 54);
+            this.buttondelaystart.TabIndex = 77;
+            this.buttondelaystart.Text = "0 Hr and 0 Min";
+            this.buttondelaystart.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -731,6 +763,8 @@ namespace ControllerPage
         private TextBox textBox11;
         private TextBox textBox4;
         private CheckBox checkBox_recurringmode;
+        private Button buttondelaystart;
+        private TextBox textBox12;
     }
 }
 
