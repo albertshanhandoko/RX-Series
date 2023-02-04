@@ -3390,5 +3390,16 @@ namespace ControllerPage
             ButtonNumInterval.Enabled = true;
         }
 
+        private void buttondelaystart_Click(object sender, EventArgs e)
+        {
+            using (var form = new Formdelaystart())
+            {
+                var result = form.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    buttondelaystart.Text = Formdelaystart.delay_start;
+                }
+            }
+        }
     }
 }

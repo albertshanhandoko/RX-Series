@@ -41,5 +41,17 @@ namespace ControllerPage
             }
         }
 
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            totalMinutes--;
+            int hours = totalMinutes / 60;
+            int minutes = totalMinutes - (hours * 60);
+            this.label1.Text = hours.ToString() + " Hr and " + minutes + " Min left";
+            if (totalMinutes == 0)
+            {
+                this.timer1.Stop();
+                this.Close();
+            }
+        }
     }
 }
