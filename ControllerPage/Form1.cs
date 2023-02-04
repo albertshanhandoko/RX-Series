@@ -568,7 +568,13 @@ namespace ControllerPage
 
             if (check_start && check_connect_result)
             {
-
+                if (Global.GlobalVar22)
+                {
+                    using (var form = new FormCountdown())
+                    {
+                        var result = form.ShowDialog();
+                    }
+                }
                 Temp_TextBox.Text = "";
                 ///*
                 string product_text;

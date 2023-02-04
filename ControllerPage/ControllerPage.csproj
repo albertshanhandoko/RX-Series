@@ -163,6 +163,18 @@
     <Compile Include="FormBIAS_New.designer.cs">
       <DependentUpon>FormBIAS_New.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCountdown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCountdown.Designer.cs">
+      <DependentUpon>FormCountdown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formdelaystart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formdelaystart.Designer.cs">
+      <DependentUpon>Formdelaystart.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMode.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -279,6 +291,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormBIAS_New.resx">
       <DependentUpon>FormBIAS_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCountdown.resx">
+      <DependentUpon>FormCountdown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formdelaystart.resx">
+      <DependentUpon>Formdelaystart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMode.resx">
       <DependentUpon>FormMode.cs</DependentUpon>
