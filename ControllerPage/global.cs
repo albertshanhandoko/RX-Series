@@ -122,5 +122,33 @@ namespace ControllerPage
             get { return _globalVar18; }
             set { _globalVar18 = value; }
         }
+        private static int _globalVar19 = 0;
+        public static int GlobalVar19
+        {
+            get { return _globalVar19; }
+            set { _globalVar19 = value; }
+        }
+
+        private static int _globalVar20 = 0;
+        public static int GlobalVar20
+        {
+            get { return _globalVar20; }
+            set { _globalVar20 = value; }
+        }
+
+        private static string _globalVar21 = "00:00";
+        public static string GlobalVar21
+        {
+            get { return _globalVar21; }
+            set { _globalVar21 = value; }
+        }
+
+        private static bool _globalVar22 = false;
+        public static bool GlobalVar22
+        {
+            get { return _globalVar22; }
+            set { _globalVar22 = value; }
+        }
+
     }
 }
