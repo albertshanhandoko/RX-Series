@@ -35,6 +35,8 @@ namespace ControllerPage
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.buttondelaystart = new System.Windows.Forms.Button();
+            this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.PictureBox();
             this.Button_Interface = new System.Windows.Forms.Button();
@@ -45,7 +47,6 @@ namespace ControllerPage
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Btn_Check = new System.Windows.Forms.Button();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.ButtonProduct = new System.Windows.Forms.Button();
             this.ButtonNumInterval = new System.Windows.Forms.Button();
             this.ButtonNumPcs = new System.Windows.Forms.Button();
@@ -56,7 +57,6 @@ namespace ControllerPage
             this.label4 = new System.Windows.Forms.Label();
             this.Btn_Stop = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
             this.Curr_Kernel_TextBox = new System.Windows.Forms.TextBox();
             this.textBox_theresholdmin = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -78,9 +78,9 @@ namespace ControllerPage
             this.Current_Avg_TextBox = new System.Windows.Forms.TextBox();
             this.button_thereshold_minvalue = new System.Windows.Forms.Button();
             this.checkBox_recurringmode = new System.Windows.Forms.CheckBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.buttondelaystart = new System.Windows.Forms.Button();
+            this.textBox15 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox2)).BeginInit();
@@ -153,7 +153,7 @@ namespace ControllerPage
             this.tableLayoutPanel1.Controls.Add(this.button_thereshold_maxvalue, 8, 6);
             this.tableLayoutPanel1.Controls.Add(this.textBox_theresholdmax, 5, 7);
             this.tableLayoutPanel1.Controls.Add(this.button_1stdelay, 8, 8);
-            this.tableLayoutPanel1.Controls.Add(this.Curr_Measure_TextBox, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.Curr_Measure_TextBox, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.Current_Avg_TextBox, 5, 5);
             this.tableLayoutPanel1.Controls.Add(this.button_thereshold_minvalue, 8, 4);
             this.tableLayoutPanel1.Controls.Add(this.checkBox_recurringmode, 4, 6);
@@ -182,6 +182,35 @@ namespace ControllerPage
             this.tableLayoutPanel1.Size = new System.Drawing.Size(683, 425);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // buttondelaystart
+            // 
+            this.buttondelaystart.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttondelaystart.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.tableLayoutPanel1.SetColumnSpan(this.buttondelaystart, 2);
+            this.buttondelaystart.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttondelaystart.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttondelaystart.Location = new System.Drawing.Point(6, 253);
+            this.buttondelaystart.Name = "buttondelaystart";
+            this.tableLayoutPanel1.SetRowSpan(this.buttondelaystart, 2);
+            this.buttondelaystart.Size = new System.Drawing.Size(124, 54);
+            this.buttondelaystart.TabIndex = 93;
+            this.buttondelaystart.Text = "0 Hr and 0 Min";
+            this.buttondelaystart.UseVisualStyleBackColor = false;
+            this.buttondelaystart.Click += new System.EventHandler(this.buttondelaystart_Click);
+            // 
+            // textBox12
+            // 
+            this.textBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox12.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox12, 2);
+            this.textBox12.Font = new System.Drawing.Font("Noto Sans Thai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.Location = new System.Drawing.Point(16, 217);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(104, 21);
+            this.textBox12.TabIndex = 92;
+            this.textBox12.Text = "ตั้งเวลาเริ่มทำงาน";
             // 
             // textBox3
             // 
@@ -289,10 +318,10 @@ namespace ControllerPage
             this.textBox1.BackColor = System.Drawing.SystemColors.Control;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableLayoutPanel1.SetColumnSpan(this.textBox1, 2);
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(140, 9);
+            this.textBox1.Font = new System.Drawing.Font("Noto Sans Thai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(140, 7);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(127, 17);
+            this.textBox1.Size = new System.Drawing.Size(127, 21);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "ระบบการเชื่อมต่อ";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -319,34 +348,20 @@ namespace ControllerPage
             this.textBox7.BackColor = System.Drawing.SystemColors.Control;
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableLayoutPanel1.SetColumnSpan(this.textBox7, 2);
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(139, 324);
+            this.textBox7.Font = new System.Drawing.Font("Noto Sans Thai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.Location = new System.Drawing.Point(139, 322);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(130, 17);
+            this.textBox7.Size = new System.Drawing.Size(130, 21);
             this.textBox7.TabIndex = 9;
             this.textBox7.Text = "จำนวนครั้ง";
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox6.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox6, 2);
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(3, 324);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(130, 17);
-            this.textBox6.TabIndex = 8;
-            this.textBox6.Text = "ชนิดข้าว";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ButtonProduct
             // 
             this.ButtonProduct.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ButtonProduct.BackColor = System.Drawing.SystemColors.ControlDark;
             this.tableLayoutPanel1.SetColumnSpan(this.ButtonProduct, 2);
-            this.ButtonProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonProduct.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonProduct.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.ButtonProduct.Location = new System.Drawing.Point(6, 360);
             this.ButtonProduct.Name = "ButtonProduct";
@@ -452,10 +467,10 @@ namespace ControllerPage
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.label4, 2);
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(587, 323);
+            this.label4.Font = new System.Drawing.Font("Noto Sans Thai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(583, 322);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 18);
+            this.label4.Size = new System.Drawing.Size(59, 21);
             this.label4.TabIndex = 63;
             this.label4.Text = "ตัวเลือก";
             // 
@@ -478,7 +493,7 @@ namespace ControllerPage
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tableLayoutPanel1.SetColumnSpan(this.label1, 4);
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Noto Sans Thai", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label1.Location = new System.Drawing.Point(17, 105);
             this.label1.Name = "label1";
@@ -487,20 +502,6 @@ namespace ControllerPage
             this.label1.Text = "ความชื้นที่วัดได้";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // textBox15
-            // 
-            this.textBox15.AcceptsReturn = true;
-            this.textBox15.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox15.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(275, 178);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(72, 29);
-            this.textBox15.TabIndex = 24;
-            this.textBox15.Text = "ค่าเฉลี่ยความชื้น";
             // 
             // Curr_Kernel_TextBox
             // 
@@ -737,13 +738,27 @@ namespace ControllerPage
             this.checkBox_recurringmode.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox_recurringmode.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.checkBox_recurringmode, 2);
-            this.checkBox_recurringmode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_recurringmode.Location = new System.Drawing.Point(292, 215);
+            this.checkBox_recurringmode.Font = new System.Drawing.Font("Noto Sans Thai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_recurringmode.Location = new System.Drawing.Point(288, 214);
             this.checkBox_recurringmode.Name = "checkBox_recurringmode";
-            this.checkBox_recurringmode.Size = new System.Drawing.Size(95, 24);
+            this.checkBox_recurringmode.Size = new System.Drawing.Size(103, 26);
             this.checkBox_recurringmode.TabIndex = 88;
             this.checkBox_recurringmode.Text = "โหมดวัดซ้ำ";
             this.checkBox_recurringmode.UseVisualStyleBackColor = true;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox6.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox6, 2);
+            this.textBox6.Font = new System.Drawing.Font("Noto Sans Thai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(3, 322);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(130, 21);
+            this.textBox6.TabIndex = 8;
+            this.textBox6.Text = "ชนิดข้าว";
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox4
             // 
@@ -752,7 +767,7 @@ namespace ControllerPage
             this.textBox4.BackColor = System.Drawing.SystemColors.Control;
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableLayoutPanel1.SetColumnSpan(this.textBox4, 2);
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Font = new System.Drawing.Font("Noto Sans Thai", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(545, 248);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
@@ -761,34 +776,19 @@ namespace ControllerPage
             this.textBox4.Text = "ระยะเวลาในการร้องเตือน";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox12
+            // textBox15
             // 
-            this.textBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox12.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox12, 2);
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(16, 219);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(104, 17);
-            this.textBox12.TabIndex = 92;
-            this.textBox12.Text = "ตั้งเวลาเริ่มทำงาน";
-            // 
-            // buttondelaystart
-            // 
-            this.buttondelaystart.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttondelaystart.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.tableLayoutPanel1.SetColumnSpan(this.buttondelaystart, 2);
-            this.buttondelaystart.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttondelaystart.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttondelaystart.Location = new System.Drawing.Point(6, 253);
-            this.buttondelaystart.Name = "buttondelaystart";
-            this.tableLayoutPanel1.SetRowSpan(this.buttondelaystart, 2);
-            this.buttondelaystart.Size = new System.Drawing.Size(124, 54);
-            this.buttondelaystart.TabIndex = 93;
-            this.buttondelaystart.Text = "0 Hr and 0 Min";
-            this.buttondelaystart.UseVisualStyleBackColor = false;
-            this.buttondelaystart.Click += new System.EventHandler(this.buttondelaystart_Click);
+            this.textBox15.AcceptsReturn = true;
+            this.textBox15.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox15.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox15.Font = new System.Drawing.Font("Noto Sans Thai", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox15.Location = new System.Drawing.Point(275, 178);
+            this.textBox15.Multiline = true;
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(72, 29);
+            this.textBox15.TabIndex = 24;
+            this.textBox15.Text = "ค่าเฉลี่ยความชื้น";
             // 
             // Form1
             // 
@@ -838,7 +838,6 @@ namespace ControllerPage
         private System.Windows.Forms.TextBox Temp_TextBox;
         private System.Windows.Forms.TextBox Curr_Interval_TextBox;
         private System.Windows.Forms.TextBox Curr_Kernel_TextBox;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox Current_Avg_TextBox;
         private System.Windows.Forms.Button ButtonProduct;
@@ -846,7 +845,6 @@ namespace ControllerPage
         private System.Windows.Forms.Button ButtonNumPcs;
         private System.Windows.Forms.Button ButtonWaitingTime;
         private System.Windows.Forms.Button ButtonOption;
-        private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.Button ButtonIPSet;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
@@ -871,9 +869,11 @@ namespace ControllerPage
         private CheckBox checkBox_recurringmode;
         private PictureBox textBox3;
         private PictureBox textBox2;
-        private TextBox textBox4;
         private Button buttondelaystart;
         private TextBox textBox12;
+        private TextBox textBox6;
+        private TextBox textBox15;
+        private TextBox textBox4;
     }
 }
 

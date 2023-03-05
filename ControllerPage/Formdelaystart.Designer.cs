@@ -86,7 +86,7 @@ namespace ControllerPage
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel1.SetColumnSpan(this.button1, 2);
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Noto Sans Thai", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(81, 313);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(112, 45);
@@ -100,7 +100,7 @@ namespace ControllerPage
             this.radioButton_enable.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton_enable.BackColor = System.Drawing.SystemColors.ControlDark;
             this.tableLayoutPanel1.SetColumnSpan(this.radioButton_enable, 2);
-            this.radioButton_enable.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton_enable.Font = new System.Drawing.Font("Noto Sans Thai", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_enable.Location = new System.Drawing.Point(28, 58);
             this.radioButton_enable.Name = "radioButton_enable";
             this.radioButton_enable.Size = new System.Drawing.Size(218, 80);
@@ -114,11 +114,11 @@ namespace ControllerPage
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.label1, 4);
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Noto Sans Thai", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label1.Location = new System.Drawing.Point(170, 9);
+            this.label1.Location = new System.Drawing.Point(156, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 37);
+            this.label1.Size = new System.Drawing.Size(252, 44);
             this.label1.TabIndex = 0;
             this.label1.Text = "ตั้งเวลาเริ่มทำงาน";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -129,7 +129,7 @@ namespace ControllerPage
             this.radioButton_disable.BackColor = System.Drawing.SystemColors.ControlDark;
             this.radioButton_disable.Checked = true;
             this.tableLayoutPanel1.SetColumnSpan(this.radioButton_disable, 2);
-            this.radioButton_disable.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton_disable.Font = new System.Drawing.Font("Noto Sans Thai", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_disable.Location = new System.Drawing.Point(304, 58);
             this.radioButton_disable.Name = "radioButton_disable";
             this.radioButton_disable.RightToLeft = System.Windows.Forms.RightToLeft.No;
