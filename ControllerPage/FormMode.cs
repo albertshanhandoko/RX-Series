@@ -74,5 +74,12 @@ namespace ControllerPage
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.ModeSelection = "Dryer Mode";
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
     }
 }

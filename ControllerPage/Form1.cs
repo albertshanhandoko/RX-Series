@@ -152,11 +152,14 @@ namespace ControllerPage
                     Button_Mode.Text = display_val;
 
                 }
-            }
-            if (Button_Mode.Text.ToLower() == "fixed time")
+            }   
+        if (Button_Mode.Text.ToLower() == "fixed time")
             {
-
+                textBox7.Font = new Font("Noto Sans Thai", 11);
+                textBox8.Font = new Font("Noto Sans Thai", 11);
+                textBox9.Font = new Font("Noto Sans Thai", 11);
                 Console.WriteLine("Time mode");
+                textBox12.Text = "ตั้งเวลาเริ่มทำงาน";
                 ButtonProduct.Enabled = true;
                 ButtonNumInterval.Enabled = false;
                 ButtonNumInterval.Text = string.Empty;
@@ -165,18 +168,29 @@ namespace ControllerPage
                 ButtonWaitingTime.Enabled = true;
                 ButtonWaitingTime.Text = string.Empty;
                 //textBox9.Text = "Running Time";
-                textBox2.Visible = false;
-                button_thereshold_minvalue.Visible = false;
-                textBox3.Visible = false;
-                button_thereshold_maxvalue.Visible = false;
-                textBox4.Visible = false;
+                //textBox_1stdelay.Visible = false;
+                //textBox_2nddelay.Visible = false;
+                //textBox_maxthreshold.Visible = false;
+                //textBox_minthreshold.Visible = false;
                 button_1stdelay.Visible = false;
-
+                //button_2nddelay.Visible = false;
+                button_thereshold_maxvalue.Visible = false;
+                button_thereshold_minvalue.Visible = false;
+                textBox5.Visible = false;
+                textBox12.Visible = true;
+                ButtonCooldownTimer.Visible = false;
+                ButtonTargetMoisture.Visible = true;
+                ButtonNumInterval.Text = "";
+                ButtonNumPcs.Text = "";
+                ButtonWaitingTime.Text = "";
+                ButtonTargetMoisture.Text = "";
 
             }
             else if (Button_Mode.Text.ToLower() == "fixed pieces")
             {
-
+                textBox7.Font = new Font("Noto Sans Thai", 11);
+                textBox8.Font = new Font("Noto Sans Thai", 11);
+                textBox9.Font = new Font("Noto Sans Thai", 11);
                 Console.WriteLine("Time mode");
                 ButtonProduct.Enabled = true;
                 ButtonNumInterval.Enabled = false;
@@ -185,53 +199,127 @@ namespace ControllerPage
                 //ButtonNumPcs.Text = string.Empty;
                 ButtonWaitingTime.Enabled = false;
                 ButtonWaitingTime.Text = string.Empty;
-                textBox2.Visible = false;
-                button_thereshold_minvalue.Visible = false;
-                textBox3.Visible = false;
-                button_thereshold_maxvalue.Visible = false;
-                textBox4.Visible = false;
+                //textBox_1stdelay.Visible = false;
+                //textBox_2nddelay.Visible = false;
+                //textBox_maxthreshold.Visible = false;
+                //textBox_minthreshold.Visible = false;
                 button_1stdelay.Visible = false;
+                //button_2nddelay.Visible = false;
+                button_thereshold_maxvalue.Visible = false;
+                button_thereshold_minvalue.Visible = false;
+                textBox7.Text = "จำนวนครั้ง";
+                textBox8.Text = "ชิ้นต่อช่วงเวลาl";
+                textBox9.Text = "ช่วงเวลารอ";
+                textBox12.Text = "ตั้งเวลาเริ่มทำงาน";
+                textBox20.Visible = false;
+                textBox12.Visible = true;
+                ButtonCooldownTimer.Visible = false;
+                ButtonTargetMoisture.Visible = true;
+                ButtonNumInterval.Text = "";
+                ButtonNumPcs.Text = "";
+                ButtonWaitingTime.Text = "";
+                ButtonTargetMoisture.Text = "";
 
             }
-
             else if (Button_Mode.Text.ToLower() == "interval")
             {
+                textBox7.Font = new Font("Noto Sans Thai", 11);
+                textBox8.Font = new Font("Noto Sans Thai", 11);
+                textBox9.Font = new Font("Noto Sans Thai", 11);
                 ButtonProduct.Enabled = true;
                 ButtonNumInterval.Enabled = true;
                 ButtonNumPcs.Enabled = true;
                 ButtonWaitingTime.Enabled = true;
                 ButtonWaitingTime.Text = string.Empty;
-                //textBox9.Text = "Int. Waiting Time";
-                textBox2.Visible = false;
-                button_thereshold_minvalue.Visible = false;
-                textBox3.Visible = false;
-                button_thereshold_maxvalue.Visible = false;
-                textBox4.Visible = false;
+                //textBox_1stdelay.Visible = false;
+                //textBox_2nddelay.Visible = false;
+                //textBox_maxthreshold.Visible = false;
+                //textBox_minthreshold.Visible = false;
                 button_1stdelay.Visible = false;
+                //button_2nddelay.Visible = false;
+                button_thereshold_maxvalue.Visible = false;
+                button_thereshold_minvalue.Visible = false;
+                //textBox9.Text = "Int. Waiting Time";
+                textBox7.Text = "จำนวนครั้ง";
+                textBox8.Text = "ชิ้นต่อช่วงเวลา";
+                textBox9.Text = "ช่วงเวลารอ";
+                textBox12.Text = "ตั้งเวลาเริ่มทำงาน";
+                textBox20.Visible = false;
+                textBox12.Visible = true;
+                ButtonCooldownTimer.Visible = false;
+                ButtonTargetMoisture.Visible = true;
+                ButtonNumInterval.Text = "";
+                ButtonNumPcs.Text = "";
+                ButtonWaitingTime.Text = "";
+                ButtonTargetMoisture.Text = "";
 
             }
             else if (Button_Mode.Text.ToLower() == "relay")
             {
+                textBox7.Font = new Font("Noto Sans Thai", 11);
+                textBox8.Font = new Font("Noto Sans Thai", 11);
+                textBox9.Font = new Font("Noto Sans Thai", 11);
                 ButtonProduct.Enabled = true;
                 ButtonNumInterval.Enabled = true;
                 ButtonNumPcs.Enabled = true;
                 ButtonWaitingTime.Enabled = true;
                 ButtonWaitingTime.Text = string.Empty;
-                //textBox9.Text = "Int. Waiting Time";
-                textBox2.Visible = true;
-                button_thereshold_minvalue.Visible = true;
-                textBox3.Visible = true;
-                button_thereshold_maxvalue.Visible = true;
-                textBox4.Visible = true;
+                //textBox_1stdelay.Visible = true;
+                //textBox_2nddelay.Visible = true;
+                //textBox_maxthreshold.Visible = true;
+                //textBox_minthreshold.Visible = true;
                 button_1stdelay.Visible = true;
+                //button_2nddelay.Visible = true;
+                button_thereshold_maxvalue.Visible = true;
+                button_thereshold_minvalue.Visible = true;
+
+                //textBox9.Text = "Int. Waiting Time";
+                textBox7.Text = "จำนวนครั้ง";
+                textBox8.Text = "ชิ้นต่อช่วงเวลา";
+                textBox9.Text = "ช่วงเวลารอ";
+                textBox12.Text = "ตั้งเวลาเริ่มทำงาน";
+                textBox20.Visible = false;
+                textBox12.Visible = true;
+                ButtonCooldownTimer.Visible = false;
+                ButtonTargetMoisture.Visible = true;
+                ButtonNumInterval.Text = "";
+                ButtonNumPcs.Text = "";
+                ButtonWaitingTime.Text = "";
+                ButtonTargetMoisture.Text = "";
+
+            }
+            else if (Button_Mode.Text.ToLower() == "dryer mode")
+            {
+                ButtonProduct.Enabled = true;
+                ButtonNumInterval.Enabled = true;
+                ButtonNumPcs.Enabled = true;
+                ButtonWaitingTime.Enabled = true;
+                ButtonWaitingTime.Text = string.Empty;
+                button_1stdelay.Visible = false;
+                button_thereshold_maxvalue.Visible = false;
+                button_thereshold_minvalue.Visible = false;
+                textBox20.Visible = true;
+                textBox12.Visible = true;
+                ButtonCooldownTimer.Visible = true;
+                ButtonTargetMoisture.Visible = true;
+                textBox12.Text = "ตั้งเวลาเริ่มทำงาน";
+                textBox7.Text = ">5% Setting";
+                textBox8.Text = "1-5% Setting";
+                textBox9.Text = "<1% Setting";
+                ButtonNumInterval.Text = "";
+                ButtonNumPcs.Text = "";
+                ButtonWaitingTime.Text = "";
+                ButtonTargetMoisture.Text = "";
+                textBox7.Font = new Font("Calibri", 11); 
+                textBox8.Font = new Font("Calibri", 11); 
+                textBox9.Font = new Font("Calibri", 11); 
+
 
             }
             else
             {
                 MessageBox.Show("Please pick Mode", application_name);
             }
-
-
 
         }
         private void Button_Interface_Click(object sender, EventArgs e)
@@ -301,24 +389,55 @@ namespace ControllerPage
         }
         private void button_NumInterval_Click(object sender, EventArgs e)
         {
-            using (var form = new FormNumberinterval())
+            if (Button_Mode.Text == "Dryer Mode")
             {
-                var result = form.ShowDialog();
-                if (result == DialogResult.OK)
+                using (var form = new FormHigh())
                 {
-                    ButtonNumInterval.Text = FormNumberinterval.combobox_selectedItem_number_Interval;
+                    var result = form.ShowDialog();
+                    if (result == DialogResult.OK)
+                    {
+                        ButtonNumInterval.Text = FormHigh.numpad_min + "pcs/" + FormHigh.numpad_max + "min";
+                    }
+                }
+            }
+            else
+            {
+
+                using (var form = new FormNumberinterval())
+                {
+                    var result = form.ShowDialog();
+                    if (result == DialogResult.OK)
+                    {
+                        ButtonNumInterval.Text = FormNumberinterval.combobox_selectedItem_number_Interval;
+                    }
                 }
             }
 
         }
         private void button_NumPerPcs_Click(object sender, EventArgs e)
         {
-            using (var form = new FormNumberpcsinterval())
+
+            if (Button_Mode.Text == "Dryer Mode")
             {
-                var result = form.ShowDialog();
-                if (result == DialogResult.OK)
+                using (var form = new FormMedium())
                 {
-                    ButtonNumPcs.Text = FormNumberpcsinterval.combobox_selectedItem_number_PerPCS;
+                    var result = form.ShowDialog();
+                    if (result == DialogResult.OK)
+                    {
+                        ButtonNumPcs.Text = FormMedium.numpad_min + "pcs/" + FormMedium.numpad_max + "min";
+                    }
+                }
+            }
+            else
+            {
+
+                using (var form = new FormNumberpcsinterval())
+                {
+                    var result = form.ShowDialog();
+                    if (result == DialogResult.OK)
+                    {
+                        ButtonNumPcs.Text = FormNumberpcsinterval.combobox_selectedItem_number_PerPCS;
+                    }
                 }
             }
         }
@@ -338,6 +457,19 @@ namespace ControllerPage
                 }
 
             }
+
+            else if (Button_Mode.Text == "Dryer Mode")
+            {
+                using (var form = new FormLow())
+                {
+                    var result = form.ShowDialog();
+                    if (result == DialogResult.OK)
+                    {
+                        ButtonWaitingTime.Text = FormLow.numpad_min + "pcs/" + FormLow.numpad_max + "min";
+                    }
+                }
+            }
+
             else
             {
                 using (var form = new FormIntervalTime())
@@ -351,6 +483,7 @@ namespace ControllerPage
                 }
 
             }
+
 
 
         }
@@ -367,6 +500,10 @@ namespace ControllerPage
         }
         private void Btn_Stop_Click(object sender, EventArgs e)
         {
+            Global.count = 0;
+            Global.numofinterval = 3;
+            Global.numpcs = 100;
+            Global.waitinginterval = 180000;
             Sensor_input_Helper.Command_Stop(mySerialPort);
             checkBox_recurringmode.Checked = false;
             bool_stop_click = true;
@@ -377,7 +514,7 @@ namespace ControllerPage
         private void Btn_Check_Click(object sender, EventArgs e)
         {
             Btn_Check.Enabled = false;
-            
+            /*
             if (Button_Interface.Text == "RS-232")
             {
                 ProcessStartInfo procStartInfo1 = new ProcessStartInfo("/usr/bin/sudo", "systemctl stop modbusserver.service");
@@ -418,7 +555,7 @@ namespace ControllerPage
                 proc4.StartInfo = procStartInfo4;
                 proc4.Start();
             }
-            
+            */
             if (Button_Interface.Text != "RS-232" && Button_Interface.Text != "RS-485")
             {
                 MessageBox.Show("Please Pick Interface " + Button_Interface.Text, application_name);
@@ -615,13 +752,32 @@ namespace ControllerPage
                 }
                 int jumlahpieces = 0;
                 int number;
+                int numofpcs;
+                int waitinginterval;
+                int numofinterval;
                 if (Int32.TryParse(ButtonNumPcs.Text, out number))
                 {
                     jumlahpieces = number;
                 }
 
                 Thread.Sleep(500);
-                
+                Thread.Sleep(500);
+                if (Button_Mode.Text == "Dryer Mode")
+                {
+                    Console.WriteLine("Dryer Mode");
+                    numofpcs = Global.numpcs;
+                    waitinginterval = Global.waitinginterval;
+                    numofinterval = Global.numofinterval;
+                    //numofpcs = 100;
+                    //waitinginterval = 30;
+                    //numofinterval = 1;
+                }
+                else
+                {
+                    numofpcs = jumlahpieces;
+                    waitinginterval = delay;
+                    numofinterval = TotalInterval;
+                }
                 batch_id = Sensor_input_Helper.MySql_Insert_Batch(Sensor_input_Helper.GetLocalIPAddress()
                     , ButtonProduct.Text
                     , TotalInterval
@@ -709,7 +865,14 @@ namespace ControllerPage
                     start_thread.Start();
 
                 }
+                else if (Button_Mode.Text.ToLower() == "dryer mode")
+                {
+                    //readThread = new Thread(Read_Interval);
+                    //readThread.Start();
+                    start_thread = new Thread(Read_Dryer_Thread);
+                    start_thread.Start();
 
+                }
                 else
                 {
                     MessageBox.Show("Wrong Picked on mode");
@@ -1173,7 +1336,6 @@ namespace ControllerPage
                 }
 
             }
-
             else if (Button_Mode.Text.ToLower() == "relay")
             {
                 if (ButtonProduct.Text == "")
@@ -1282,7 +1444,6 @@ namespace ControllerPage
                 }
 
             }
-
             else if (Button_Mode.Text.ToLower() == "fixed pieces")
             {
                 if (ButtonProduct.Text == "")
@@ -1353,7 +1514,115 @@ namespace ControllerPage
                 }
 
             }
+            else if (Button_Mode.Text.ToLower() == "dryer mode")
+            {
+                if (ButtonProduct.Text == "")
+                {
+                    MessageBox.Show("PLease Enter Product", application_name);
+                }
+                else if (ButtonNumInterval.Text == "")
+                {
+                    MessageBox.Show("PLease Enter High Setting", application_name);
+                }
+                else if (ButtonNumPcs.Text == "")
+                {
+                    MessageBox.Show("PLease Enter Middle Setting", application_name);
+                }
+                else if (ButtonWaitingTime.Text == "")
+                {
+                    MessageBox.Show("PLease Enter Low Setting", application_name);
+                }
+                else
+                {
 
+                    // Waiting Time Interval
+                    // var result = Sensor_input_Helper.GetEnumValueFromDescription<Time_Interval>(ButtonWaitingTime.Text);
+                    //delay = ((int)(result)) * 60;
+                    delay = Global.waitinginterval;
+                    // Total Interval
+                    //TotalInterval = int.Parse(ButtonNumInterval.Text.ToString());
+                    TotalInterval = Global.numofinterval;
+
+                    // Total Number Per Pieces
+                    number_grain enum_numgrain = (number_grain)Enum.Parse(typeof(number_grain), Global.numpcs.ToString());
+                    ResultGrain = Sensor_input_Helper.GetDescription(enum_numgrain);
+
+                    // Product
+
+                    ///*
+                    string combox_typemeasure;
+                    if (ButtonProduct.Text == "Corn High" || ButtonProduct.Text == "Jagung Tinggi")
+                    {
+                        combox_typemeasure = "Brown_Rice";
+                    }
+                    else if (ButtonProduct.Text == "Corn Medium" || ButtonProduct.Text == "Jagung Medium")
+                    {
+                        combox_typemeasure = "Wheat";
+                    }
+                    else if (ButtonProduct.Text == "Corn Low" || ButtonProduct.Text == "Jagung Rendah")
+                    {
+                        combox_typemeasure = "Corn";
+                    }
+                    else if (ButtonProduct.Text == "Padi")
+                    {
+                        combox_typemeasure = "Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Kedelai")
+                    {
+                        combox_typemeasure = "Soy";
+                    }
+                    else if (ButtonProduct.Text == "Beras Poles")
+                    {
+                        combox_typemeasure = "Polished_Rice";
+                    }
+                    else if (ButtonProduct.Text == "Padi Pendek" || ButtonProduct.Text == "ข้าวเปลือกเมล็ดสั้น")
+                    {
+                        combox_typemeasure = "Short_Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Padi Panjang" || ButtonProduct.Text == "ข้าวเปลือกเมล็ดยาว")
+                    {
+                        combox_typemeasure = "Long_Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Padi Jasmine" || ButtonProduct.Text == "ข้าวเปลือกหอมมะลิ")
+                    {
+                        combox_typemeasure = "Jasmine_Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Pady Ketan" || ButtonProduct.Text == "ข้าวเปลือกเหนียว")
+                    {
+                        combox_typemeasure = "Long_Sticky_Paddy";
+                    }
+                    else if (ButtonProduct.Text == "Beras Long Parboiled" || ButtonProduct.Text == "ข้าวเปลือกนึ่ง")
+                    {
+                        combox_typemeasure = "Long_Parboiled_Rice";
+                    }
+                    else if (ButtonProduct.Text == "Gandum" || ButtonProduct.Text == "ข้าวสาลี")
+                    {
+                        combox_typemeasure = "Wheat";
+                    }
+                    else if (ButtonProduct.Text == "Beras" || ButtonProduct.Text == "ข้าวสาร")
+                    {
+                        combox_typemeasure = "Long_Milled_Rice";
+                    }
+                    else if (ButtonProduct.Text == "Beras Pecah Kulit" || ButtonProduct.Text == "ข้าวกล้อง")
+                    {
+                        combox_typemeasure = "Long_Brown_Rice";
+                    }
+                    else
+                    {
+                        combox_typemeasure = ButtonProduct.Text.Replace(" ", "_");
+                    }
+                    //*/
+
+                    //string combox_typemeasure = ButtonProduct.Text;
+                    //combox_typemeasure = combox_typemeasure.Replace(" ", "_");
+                    TypeOfMeasure enum_typemeasure = (TypeOfMeasure)Enum.Parse(typeof(TypeOfMeasure), combox_typemeasure);
+                    ResultMeasure = Sensor_input_Helper.GetDescription(enum_typemeasure);
+
+                    isvalid = true;
+
+                }
+
+            }
 
             return isvalid;
 
@@ -3950,6 +4219,703 @@ namespace ControllerPage
 
         }
 
+        public void Read_Dryer_Thread()
+        {
+            try
+            {
+                string forever_str;
+                string readStr;
+                bool Measure_Cond = true;
+
+                byte[] readBuffer = new byte[mySerialPort.ReadBufferSize];
+                int readLen;
+                string[] charactersToReplace = new string[] { @"\t", @"\n", @"\r", " ", "<CR>", "<LF>" };
+                string Result_Parsing;
+                bool countingbatch;
+                const char STX = '\u0002';
+                const char ETX = '\u0003';
+                List<string> AllText = new List<string>();
+                Data_Measure_Result = new List<data_measure_2> { };
+                counter_data = 0;
+                //Data_Measure_Result
+                DateTime date_start_ReadInterval = DateTime.Now;
+
+                while (stat_continue)
+                {
+                    try
+                    {
+                        readStr = string.Empty;
+                        forever_str = string.Empty;
+                        aggregate_cond = true;
+                        start_next_cond = true;
+                        Measure_Cond = true;
+                        countingbatch = true;
+                        Thread.Sleep(3000);
+                        MyTimer.Enabled = true;
+                        //MyTimer.Start();
+                        Console.WriteLine("Start Timer");
+                        #region Collect Measurement Value
+
+                        while (Measure_Cond == true)
+                        {
+                            Thread.Sleep(1000);// this solves the problem
+                            readBuffer = new byte[mySerialPort.ReadBufferSize];
+                            readLen = mySerialPort.Read(readBuffer, 0, readBuffer.Length);
+                            //string readStr = string.Empty;
+                            Console.WriteLine("ReadStr original adalah: " + Encoding.UTF8.GetString(readBuffer, 0, readLen));
+                            forever_str = forever_str + Encoding.UTF8.GetString(readBuffer, 0, readLen);
+                            readStr = Encoding.UTF8.GetString(readBuffer, 0, readLen);
+                            // Data Cleansing
+
+                            if (readStr != "" && readStr != null)
+                            {
+                                char[] delimiter_r = { '\r' };
+
+                                if (readStr.Any(c => char.IsDigit(c)) && !readStr.Trim().ToLower().Contains("r"))
+                                {
+                                    readStr = readStr.Trim();
+                                    Console.WriteLine("ReadStr Trim adalah: " + readStr);
+                                    string[] Measures_With_U = readStr.Split(delimiter_r); // misahin antar nilai
+                                    List<string> Measure_Results = new List<string>();
+
+                                    foreach (var Measure in Measures_With_U)
+                                    {
+
+                                        Result_Parsing = GetWords(Measure).FirstOrDefault(); // hilangin ETX dan STX
+                                        if (Result_Parsing != "" && Result_Parsing != null)
+                                        {
+                                            foreach (string s in charactersToReplace)
+                                            {
+                                                Result_Parsing = Result_Parsing.Replace(s, "");
+                                            }
+                                        }
+
+                                        if (Result_Parsing != "" && Result_Parsing != null && !Result_Parsing.Trim().ToLower().Contains("r"))
+                                        {
+                                            // check error
+                                            Console.WriteLine("Result_Parsing & Batch_ID adalah: " + Result_Parsing + " " + batch_id.ToString());
+                                            if (check_Error_during_measurement(Result_Parsing, batch_id))
+                                            {
+                                                aggregate_cond = false;
+                                                Measure_Cond = false;
+                                                countingbatch = false;
+                                                bool_check_error = true;
+                                                Console.WriteLine("MyTimerStop");
+                                            }
+                                            // Finsih check error
+
+                                            Result_Parsing = String.Concat(Result_Parsing.Substring(0, Result_Parsing.Length - 1)
+                                                , ".", Result_Parsing.Substring(Result_Parsing.Length - 1, 1));
+                                            Result_Parsing = (double.Parse(Result_Parsing) + bias_value).ToString("0.0");
+
+                                            counter_data_reset = counter_data_reset + 1;
+                                            Console.WriteLine("nilai measure adalah: " + Result_Parsing); // ganti jadi
+                                            Curr_Kernel_TextBox.Invoke((Action)delegate
+                                            {
+                                                //Curr_Kernel_TextBox.Text = (counter_data + 1).ToString();
+                                                Curr_Kernel_TextBox.Text = (counter_data_reset).ToString();
+                                            });
+
+
+                                            if (thereshold_param == true && (double.Parse(Result_Parsing) > therehold_max || double.Parse(Result_Parsing) < thereshold_min))
+                                            {
+                                                Sensor_input_Helper.Callbeep();
+                                            }
+
+
+                                            #region thereshold temporary
+                                            if (thereshold_param == true)
+                                            {
+                                                if (double.Parse(Result_Parsing) > therehold_max)
+                                                {
+                                                    thereshold_max_counter = thereshold_max_counter + 1;
+
+                                                    textBox_theresholdmax.Invoke((Action)delegate
+                                                    {
+                                                        //Curr_Kernel_TextBox.Text = (counter_data + 1).ToString();
+                                                        textBox_theresholdmax.Text = (thereshold_max_counter).ToString();
+                                                    });
+
+
+                                                }
+
+                                                if (double.Parse(Result_Parsing) < thereshold_min)
+                                                {
+                                                    thereshold_min_counter = thereshold_min_counter + 1;
+
+                                                    textBox_theresholdmin.Invoke((Action)delegate
+                                                    {
+                                                        //Curr_Kernel_TextBox.Text = (counter_data + 1).ToString();
+                                                        textBox_theresholdmin.Text = (thereshold_min_counter).ToString();
+                                                    });
+
+                                                }
+
+                                            }
+                                            #endregion
+
+
+                                            //float Result_Parsing_input = float.Parse(Result_Parsing);
+                                            readStr = string.Empty;
+                                        }
+                                    }
+                                    // klo ada measurement. mulai olah
+                                    // masukin olah data yag lama 
+                                }
+
+                                else if
+                                    (
+                                        (
+                                            readStr.Trim().ToLower().Contains("r")
+                                            //&& counter_data_reset > (int.Parse(ButtonNumPcs.Text) / 2)
+                                            && counter_data_reset >= 1
+                                            && !readStr.Any(c => char.IsDigit(c))
+                                            && countingbatch == true
+                                        )
+                                            || bool_stop_click == true
+                                     )
+                                {
+                                    //counter_data = 0;
+                                    counter_data_reset = 0;
+                                    Console.WriteLine("Forever_str original adalah: " + forever_str);
+
+                                    string[] Measures_With_U = forever_str.Split(delimiter_r); // misahin antar nilai
+
+                                    foreach (var Measure in Measures_With_U)
+                                    {
+                                        bool test1 = Measure.Any(c => char.IsDigit(c));
+                                        bool test2 = !Measure.Trim().ToLower().Contains("r");
+                                        bool test3 = Measure.Contains(STX);
+                                        bool test4 = Measure.Contains(ETX);
+
+                                        //bool test3 = Measure.Trim().ToLower().Contains("u0002");
+                                        //bool test4 = Measure.Trim().ToLower().Contains("u0003");
+
+                                        if (test1 && test2 && test3 && test4)
+                                        {
+                                            Result_Parsing = GetWords(Measure).FirstOrDefault(); // hilangin ETX dan STX
+                                            foreach (string s in charactersToReplace)
+                                            {
+                                                Result_Parsing = Result_Parsing.Replace(s, "");
+                                            }
+
+
+                                            #region compare checksum
+
+                                            string checksum_parsing = Measure.Substring(5, 2);
+
+                                            bool checksum_result = Sensor_input_Helper.checksum(Result_Parsing, checksum_parsing);
+                                            Console.WriteLine("Test: ");
+                                            Console.WriteLine("result_parsing adalah: " + Result_Parsing);
+                                            Console.WriteLine("checksum_parsing adalah: " + checksum_parsing);
+                                            Console.WriteLine("checksum_result adalah: " + checksum_result);
+
+                                            if (!checksum_result)
+                                            {
+                                                bool_checksum_error = true;
+                                            }
+
+                                            // 2-4 nilai 
+                                            // 6-7 checksum
+
+
+                                            #endregion
+                                            // Data cleansing
+
+
+                                            Result_Parsing = String.Concat(Result_Parsing.Substring(0, Result_Parsing.Length - 1)
+                                                    , ".", Result_Parsing.Substring(Result_Parsing.Length - 1, 1));
+
+                                            Result_Parsing = (double.Parse(Result_Parsing) + bias_value).ToString();
+
+                                            counter_data = Data_Measure_Result.Count;
+
+                                            Data_Measure_Current = new data_measure_2(counter_data + 1
+                                                , Result_Parsing
+                                                , (DateTime.Now).ToString());
+                                            Data_Measure_Result.Add(Data_Measure_Current);
+
+                                            Console.WriteLine("nilai measure forever str parsing result adalah: " + Result_Parsing); // ganti jadi
+
+                                            float Result_Parsing_input = float.Parse(Result_Parsing);
+                                            Sensor_input_Helper.MySql_Insert_Measure(batch_id, counter_data + 1, Result_Parsing_input
+                                                , DateTime.Now, 0, current_interval + 1);
+                                            counter_data_reset = counter_data_reset + 1;
+                                            //readStr = string.Empty;
+
+                                            // Thereshold Max
+                                            //int count = Data_Measure_Result.Count(x => x.Measures < 5);
+
+                                            #region theresholdfinal
+                                            int theresholdmax_counter = Data_Measure_Result.Count(x => float.Parse(x.Measures) > therehold_max);
+
+                                            textBox_theresholdmax.Invoke((Action)delegate
+                                            {
+                                                //ListFilesToProcess.Count(item => item.IsChecked);
+                                                //Curr_Kernel_TextBox.Text = (counter_data + 1).ToString();
+                                                textBox_theresholdmax.Text = theresholdmax_counter.ToString();
+                                            });
+
+                                            int theresholdmin_counter = Data_Measure_Result.Count(x => float.Parse(x.Measures) < thereshold_min);
+
+                                            textBox_theresholdmin.Invoke((Action)delegate
+                                            {
+                                                //Curr_Kernel_TextBox.Text = (counter_data + 1).ToString();
+                                                textBox_theresholdmin.Text = (thereshold_min_counter).ToString();
+                                            });
+
+                                            // Thereshold min
+                                            #endregion
+
+
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("R");
+                                        }
+
+
+                                    }
+
+                                    // Checksum test
+                                    if (bool_checksum_error == true)
+                                    {
+                                        aggregate_cond = false;
+                                        Measure_Cond = false;
+                                        countingbatch = false;
+                                        bool_check_error = true;
+                                        Console.WriteLine("MyTimerStop");
+
+                                        Sensor_input_Helper.Update_ErrorCode(Sensor_input_Helper.GetLocalIPAddress(), batch_id, "030");
+                                        MessageBox.Show(this, "Error 030 ", application_name);
+
+
+                                    }
+
+                                    Curr_Kernel_TextBox.Invoke((Action)delegate
+                                    {
+                                        //Curr_Kernel_TextBox.Text = (counter_data + 1).ToString();
+                                        Curr_Kernel_TextBox.Text = counter_data_reset.ToString();
+                                    });
+                                    Measure_Cond = false;
+                                    countingbatch = false;
+                                }
+
+                                else
+                                {
+                                    Console.WriteLine("Nilainya Readstr Dari if else null adalah: " + readStr);
+                                }
+
+                            }
+
+                            else
+                            {
+                                Console.WriteLine("Nilainya Readstr null adalah: " + readStr);
+                            }
+                            //string input = "hello123world";
+                            //bool isDigitPresent = input.Any(c => char.IsDigit(c));
+
+                        }
+
+                        #endregion
+
+                        #region Get Aggregate value
+
+                        //start_next_init = 0;
+                        //OpenCon_Port_local(mySerialPort, BaudRate);
+                        while (aggregate_cond)
+                        {
+                            Result_Parsing = string.Empty;
+                            Console.WriteLine("Start Aggregate_cond");
+                            Sensor_input_Helper.Command_MoisturAggregate(mySerialPort);
+                            Thread.Sleep(2000);// this solves the problem
+                            readBuffer = new byte[mySerialPort.ReadBufferSize];
+                            readLen = mySerialPort.Read(readBuffer, 0, readBuffer.Length);
+                            readStr = string.Empty;
+                            readStr = Encoding.UTF8.GetString(readBuffer, 0, readLen);
+                            readStr = readStr.Trim();
+
+                            Console.WriteLine("ReadStr Average adalah: " + readStr);
+                            foreach (string s in charactersToReplace)
+                            {
+                                Result_Parsing = readStr.Replace(s, "");
+                            }
+
+                            //Result_Parsing = GetWords(Result_Parsing).FirstOrDefault();
+                            if (Result_Parsing != null)
+                            {
+                                if (
+                                    Result_Parsing.Contains("-") || Result_Parsing.Contains("+")
+                                    && (Result_Parsing.Length) > 4
+                                    && Result_Parsing.Contains(STX)
+                                    && Result_Parsing.Contains(ETX)
+                                    )
+                                {
+                                    MyTimer.Enabled = false;
+                                    //MyTimer.Stop();
+
+                                    AllText = GetWords(Result_Parsing);
+                                    int checkindex;
+                                    string aggregate_value_string = string.Empty;
+                                    foreach (string text in AllText)
+                                    {
+                                        if (
+                                            text.Length >= 10
+                                            //&& text.Length <= 12
+                                            && !text.Trim().ToLower().ToString().Contains("r")
+                                            )
+                                        {
+                                            aggregate_value_string = text;
+                                        }
+                                    }
+
+                                    Result_Parsing = aggregate_value_string.Substring(5, 3);
+                                    Result_Parsing = String.Concat(Result_Parsing.Substring(0, Result_Parsing.Length - 1)
+                                        , ".", Result_Parsing.Substring(Result_Parsing.Length - 1, 1));
+                                    Result_Parsing = (double.Parse(Result_Parsing) + bias_value).ToString("0.0");
+
+                                    Data_Avg_Result.Add(new data_measure_2(100, Result_Parsing, (DateTime.Now).ToString()));
+                                    aggregate_cond = false;
+
+
+                                    Curr_Measure_TextBox.Invoke((Action)delegate
+                                    {
+                                        //Curr_Measure_TextBox.Text = Result_Parsing.Format("0.0");
+                                        Curr_Measure_TextBox.Text = string.Format("{0:F1}", Result_Parsing) + "%";
+                                        Console.WriteLine(Result_Parsing.ToString().Replace(",", ""));
+                                        SensorHelper_2.writeTextFile("/home/pi/Install_Init/moisture.log", Result_Parsing.ToString().Replace(".", ""));
+
+                                    });
+
+                                    total_average = 0;
+                                    Current_Avg_TextBox.Invoke((Action)delegate
+                                    {
+                                        foreach (data_measure_2 average_val in Data_Avg_Result)
+                                        {
+                                            total_average = total_average + float.Parse(average_val.Measures);
+                                        }
+
+                                        total_current_Average = total_average / Data_Avg_Result.Count();
+                                        Current_Avg_TextBox.Text = total_current_Average.ToString("0.00") + "%";
+                                        //Final Average
+                                    });
+
+
+                                    //loat Result_Parsing_input = float.Parse(Result_Parsing);
+                                    Sensor_input_Helper.MySql_Insert_Measure(batch_id, 1000 + current_interval + 1
+                                        , float.Parse(Result_Parsing), DateTime.Now, 1, current_interval + 1);
+
+                                    Console.WriteLine("Finish Aggregate");
+                                    readStr = string.Empty;
+                                }
+                                else if (
+                                     (Data_Measure_Result.Count == 0 && Result_Parsing.Substring(3, 5) == "00000")
+                                     || (!Result_Parsing.Contains("-")// || !Result_Parsing.Contains("+")
+                                     && (Result_Parsing.Length) > 10)
+                                     )
+                                {
+                                    Result_Parsing = "0.0";
+
+                                    Data_Avg_Result.Add(new data_measure_2(100, Result_Parsing, (DateTime.Now).ToString()));
+                                    aggregate_cond = false;
+
+
+                                    Curr_Measure_TextBox.Invoke((Action)delegate
+                                    {
+                                        Curr_Measure_TextBox.Text = Result_Parsing + "%";
+                                    });
+
+                                    Current_Avg_TextBox.Invoke((Action)delegate
+                                    {
+                                        foreach (data_measure_2 average_val in Data_Avg_Result)
+                                        {
+                                            total_average = total_average + float.Parse(average_val.Measures);
+                                        }
+
+                                        total_current_Average = total_average / Data_Avg_Result.Count();
+                                        Current_Avg_TextBox.Text = total_current_Average.ToString("0.0") + "%";
+                                        //Final Average
+                                    });
+
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Aggreagte empty");
+                                }
+
+                            }
+                            //start_next_init++;
+                        }
+
+                        #endregion Finish get aggregate value
+                        Console.WriteLine("Finish aggregate region");
+
+                        #region Finish All Measure and close port
+
+                        Console.WriteLine("data_average count adalah: ", Data_Avg_Result.Count().ToString());
+                        //Console.WriteLine("data_average count adalah: ", current_interval.ToString());
+
+                        if (Data_Avg_Result.Count() == TotalInterval || bool_check_error == true || bool_stop_click == true)
+                        {
+                            Console.WriteLine("End All Measurement ");
+                            stat_continue = false;
+                            mySerialPort.DiscardInBuffer();
+                            mySerialPort.DiscardOutBuffer();
+
+                            stat_continue = false;
+                            start_next_cond = false;
+                            aggregate_cond = false;
+
+                            finish_measurement = 1;
+
+                            next_action_button(bool_check_error);
+
+                        }
+
+
+                        #endregion
+
+                        #region delay start
+                        if (start_next_cond == true)
+                        {
+                            #region Delay start
+                            Console.WriteLine("start delay", "start delay");
+                            //mySerialPort.Close();
+                            Thread.Sleep(delay);
+                            Console.WriteLine("Finish delay", "Finish delay");
+                            #endregion
+                        }
+                        #endregion
+
+
+                        #region Start Next sequence
+
+                        while (start_next_cond)
+                        {
+                            Sensor_input_Helper.Command_Write(mySerialPort, ResultGrain);
+                            Thread.Sleep(1000);
+                            Sensor_input_Helper.Command_Write(mySerialPort, ResultMeasure);
+                            current_interval++;
+                            Curr_Interval_TextBox.Invoke((Action)delegate
+                            {
+                                Curr_Interval_TextBox.Text = (current_interval + 1).ToString();
+                            });
+
+                            start_next_cond = false;
+                            blink_timer = 1;
+                            counter_data_reset = 0;
+                            readStr = string.Empty;
+
+
+                        }
+                        #endregion
+
+                    }
+                    catch (TimeoutException ex)
+                    {
+
+                        bool error = true;
+                        next_action_button(error);
+                        Thread.Sleep(10000);
+                        mySerialPort.DiscardInBuffer();
+                        mySerialPort.DiscardOutBuffer();
+
+                        stat_continue = false;
+                        start_next_cond = false;
+                        aggregate_cond = false;
+                        Console.WriteLine(ex.Message);
+                        Sensor_input_Helper.Update_ErrorCode(Sensor_input_Helper.GetLocalIPAddress(), batch_id, "011");
+                        MessageBox.Show(this, "Error 011");
+                    }
+
+                    catch (Exception ex)
+                    {
+                        //Trace.TraceError(ex.Message);
+                        Console.WriteLine(ex.Message);
+                        //return "";
+                    }
+
+                }
+
+                //MessageBox.Show("measurement finsih");
+                Console.WriteLine("Measurement Finish");
+                Duration = DateTime.Now - duration_start;
+                Console.WriteLine(Duration.TotalMinutes.ToString());
+                Sensor_input_Helper.Update_Duration(Sensor_input_Helper.GetLocalIPAddress(), batch_id, Convert.ToSingle(Math.Round(Duration.TotalMinutes)));
+                if (Global.count == 1)
+                {
+                    Global.m1 = float.Parse(Curr_Measure_TextBox.Text.Split('%')[0]);
+                    if (Global.m1 < Global.m0)
+                    {
+                        disable_button();
+                        Thread.Sleep(10000);
+                        enable_button();
+                        Global.numofinterval = 2;
+                        Global.numpcs = 250;
+                        Global.waitinginterval = 30000;
+                        //Global.numofinterval = 1;
+                        //Global.numpcs = 10;
+                        //Global.waitinginterval = 30000;
+                        Global.count = 2;
+                        Btn_Start.PerformClick();
+                    }
+                    else
+                    {
+                        if (Global.m1 - Global.m0 < 1)
+                        {
+                            disable_button();
+                            Thread.Sleep((int)(Global.lowinterval) * 60000);
+                            enable_button();
+                            Global.numofinterval = 1;
+                            Global.numpcs = (int)(Global.lowpcs);
+                            Global.waitinginterval = (int)(Global.lowinterval) * 60000;
+                            Global.count = 3;
+                            Btn_Start.PerformClick();
+                        }
+                        else if (Global.m1 - Global.m0 < 5 && Global.m1 - Global.m0 > 1)
+                        {
+                            disable_button();
+                            Thread.Sleep((int)(Global.lowinterval) * 60000);
+                            enable_button();
+                            Global.numofinterval = 1;
+                            Global.numpcs = (int)(Global.mediumpcs);
+                            Global.waitinginterval = (int)(Global.mediuminterval) * 60000;
+                            Global.count = 3;
+                            Btn_Start.PerformClick();
+                        }
+                        else if (Global.m1 - Global.m0 > 5)
+                        {
+                            disable_button();
+                            Thread.Sleep((int)(Global.lowinterval) * 60000);
+                            enable_button();
+                            Global.numofinterval = 1;
+                            Global.numpcs = (int)(Global.highpcs);
+                            Global.waitinginterval = (int)(Global.highinterval) * 60000;
+                            Global.count = 3;
+                            Btn_Start.PerformClick();
+                        }
+                    }
+                }
+                if (Global.count == 2)
+                {
+                    Global.m2 = float.Parse(Curr_Measure_TextBox.Text.Split('%')[0]);
+                    if (Global.m2 < Global.m0)
+                    {
+                        send_oil_io();
+                        disable_button();
+                        Thread.Sleep(int.Parse(ButtonCooldownTimer.Text.Split(' ')[0]) * 60000);
+                        enable_button();
+                        send_fan_io();
+                        Global.count = 1;
+                        Global.numofinterval = 3;
+                        Global.numpcs = 100;
+                        Global.waitinginterval = 180000;
+
+                    }
+                    else
+                    {
+                        if (Global.m1 - Global.m0 < 1)
+                        {
+                            disable_button();
+                            Thread.Sleep((int)(Global.lowinterval) * 60000);
+                            enable_button();
+                            Global.numofinterval = 1;
+                            Global.numpcs = (int)(Global.lowpcs);
+                            Global.waitinginterval = (int)(Global.lowinterval) * 60000;
+                            Global.count = 3;
+                            Btn_Start.PerformClick();
+                        }
+                        else if (Global.m1 - Global.m0 < 5 && Global.m1 - Global.m0 > 1)
+                        {
+                            disable_button();
+                            Thread.Sleep((int)(Global.lowinterval) * 60000);
+                            enable_button();
+                            Global.numofinterval = 1;
+                            Global.numpcs = (int)(Global.mediumpcs);
+                            Global.waitinginterval = (int)(Global.mediuminterval) * 60000;
+                            Global.count = 3;
+                            Btn_Start.PerformClick();
+                        }
+                        else if (Global.m1 - Global.m0 > 5)
+                        {
+                            disable_button();
+                            Thread.Sleep((int)(Global.lowinterval) * 60000);
+                            enable_button();
+                            Global.numofinterval = 1;
+                            Global.numpcs = (int)(Global.highpcs);
+                            Global.waitinginterval = (int)(Global.highinterval) * 60000;
+                            Global.count = 3;
+                            Btn_Start.PerformClick();
+                        }
+                    }
+                }
+                if (Global.count == 3)
+                {
+                    Global.m3 = float.Parse(Curr_Measure_TextBox.Text.Split('%')[0]);
+                    if (Global.m3 < Global.m0)
+                    {
+                        disable_button();
+                        Thread.Sleep(30000);
+                        enable_button();
+                        Global.numofinterval = 2;
+                        Global.numpcs = 250;
+                        Global.waitinginterval = 30000;
+                        //Global.numofinterval = 1;
+                        //Global.numpcs = 10;
+                        //Global.waitinginterval = 30000;
+                        Global.count = 2;
+                        Btn_Start.PerformClick();
+                    }
+                    else
+                    {
+                        if (Global.m1 - Global.m0 < 1)
+                        {
+                            disable_button();
+                            Thread.Sleep((int)(Global.lowinterval) * 60000);
+                            enable_button();
+                            Global.numofinterval = 1;
+                            Global.numpcs = (int)(Global.lowpcs);
+                            Global.waitinginterval = (int)(Global.lowinterval) * 60000;
+                            Global.count = 3;
+                            Btn_Start.PerformClick();
+                        }
+                        else if (Global.m1 - Global.m0 < 5 && Global.m1 - Global.m0 > 1)
+                        {
+                            disable_button();
+                            Thread.Sleep((int)(Global.lowinterval) * 60000);
+                            enable_button();
+                            Global.numofinterval = 1;
+                            Global.numpcs = (int)(Global.mediumpcs);
+                            Global.waitinginterval = (int)(Global.mediuminterval) * 60000;
+                            Global.count = 3;
+                            Btn_Start.PerformClick();
+                        }
+                        else if (Global.m1 - Global.m0 > 5)
+                        {
+                            disable_button();
+                            Thread.Sleep((int)(Global.lowinterval) * 60000);
+                            enable_button();
+                            Global.numofinterval = 1;
+                            Global.numpcs = (int)(Global.highpcs);
+                            Global.waitinginterval = (int)(Global.highinterval) * 60000;
+                            Global.count = 3;
+                            Btn_Start.PerformClick();
+                        }
+                    }
+                }
+
+                if (Global.count == 0)
+                {
+                    Global.count = 1;
+                }
+            }
+            catch (Exception ex)
+            {
+                //Trace.TraceError(ex.Message);
+                Console.WriteLine(ex.Message);
+                //return "";
+            }
+        }
 
         #endregion
 
@@ -4099,12 +5065,63 @@ namespace ControllerPage
 
         private void buttondelaystart_Click(object sender, EventArgs e)
         {
-            using (var form = new Formdelaystart())
+            if (Button_Mode.Text == "Dryer Mode")
+            {
+                using (var form = new FormNumpadTargetMoisture())
+                {
+                    var result = form.ShowDialog();
+                    if (result == DialogResult.OK)
+                    {
+                        ButtonTargetMoisture.Text = FormNumpadTargetMoisture.numpad_max + " %";
+                        Global.m0 = float.Parse(FormNumpadTargetMoisture.numpad_max);
+                    }
+                }
+            }
+            else
+            {
+                using (var form = new Formdelaystart())
+                {
+                    var result = form.ShowDialog();
+                    if (result == DialogResult.OK)
+                    {
+                        ButtonTargetMoisture.Text = Formdelaystart.delay_start;
+                    }
+                }
+            }
+        }
+
+        private void send_oil_io()
+        {
+            ProcessStartInfo procStartInfo = new ProcessStartInfo("/usr/bin/python3", "/home/pi/oil.py");
+            procStartInfo.RedirectStandardOutput = true;
+            procStartInfo.UseShellExecute = false;
+            procStartInfo.CreateNoWindow = true;
+
+            System.Diagnostics.Process proc = new System.Diagnostics.Process();
+            proc.StartInfo = procStartInfo;
+            proc.Start();
+        }
+
+        private void send_fan_io()
+        {
+            ProcessStartInfo procStartInfo = new ProcessStartInfo("/usr/bin/python3", "/home/pi/fan.py");
+            procStartInfo.RedirectStandardOutput = true;
+            procStartInfo.UseShellExecute = false;
+            procStartInfo.CreateNoWindow = true;
+
+            System.Diagnostics.Process proc = new System.Diagnostics.Process();
+            proc.StartInfo = procStartInfo;
+            proc.Start();
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            using (var form = new FormCooldownTimer())
             {
                 var result = form.ShowDialog();
                 if (result == DialogResult.OK)
                 {
-                    buttondelaystart.Text = Formdelaystart.delay_start;
+                    ButtonCooldownTimer.Text = FormCooldownTimer.numpad_max + " Minutes";
                 }
             }
         }

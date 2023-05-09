@@ -35,7 +35,9 @@ namespace ControllerPage
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.buttondelaystart = new System.Windows.Forms.Button();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.ButtonCooldownTimer = new System.Windows.Forms.Button();
+            this.ButtonTargetMoisture = new System.Windows.Forms.Button();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.PictureBox();
@@ -47,6 +49,7 @@ namespace ControllerPage
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Btn_Check = new System.Windows.Forms.Button();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.ButtonProduct = new System.Windows.Forms.Button();
             this.ButtonNumInterval = new System.Windows.Forms.Button();
             this.ButtonNumPcs = new System.Windows.Forms.Button();
@@ -57,6 +60,7 @@ namespace ControllerPage
             this.label4 = new System.Windows.Forms.Label();
             this.Btn_Stop = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
             this.Curr_Kernel_TextBox = new System.Windows.Forms.TextBox();
             this.textBox_theresholdmin = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -65,8 +69,6 @@ namespace ControllerPage
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
@@ -78,9 +80,9 @@ namespace ControllerPage
             this.Current_Avg_TextBox = new System.Windows.Forms.TextBox();
             this.button_thereshold_minvalue = new System.Windows.Forms.Button();
             this.checkBox_recurringmode = new System.Windows.Forms.CheckBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox2)).BeginInit();
@@ -90,8 +92,6 @@ namespace ControllerPage
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -112,7 +112,11 @@ namespace ControllerPage
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.671158F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.25729F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.00514F));
-            this.tableLayoutPanel1.Controls.Add(this.buttondelaystart, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.textBox9, 4, 9);
+            this.tableLayoutPanel1.Controls.Add(this.textBox8, 3, 9);
+            this.tableLayoutPanel1.Controls.Add(this.textBox20, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.ButtonCooldownTimer, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.ButtonTargetMoisture, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.textBox12, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.textBox3, 8, 5);
             this.tableLayoutPanel1.Controls.Add(this.textBox2, 8, 3);
@@ -144,8 +148,6 @@ namespace ControllerPage
             this.tableLayoutPanel1.Controls.Add(this.pictureBox4, 4, 4);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox5, 4, 7);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox6, 4, 8);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox7, 4, 9);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox8, 6, 9);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox9, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox10, 8, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox11, 7, 0);
@@ -183,21 +185,50 @@ namespace ControllerPage
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // buttondelaystart
+            // textBox20
             // 
-            this.buttondelaystart.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttondelaystart.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.tableLayoutPanel1.SetColumnSpan(this.buttondelaystart, 2);
-            this.buttondelaystart.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttondelaystart.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttondelaystart.Location = new System.Drawing.Point(6, 253);
-            this.buttondelaystart.Name = "buttondelaystart";
-            this.tableLayoutPanel1.SetRowSpan(this.buttondelaystart, 2);
-            this.buttondelaystart.Size = new System.Drawing.Size(124, 54);
-            this.buttondelaystart.TabIndex = 93;
-            this.buttondelaystart.Text = "0 Hr and 0 Min";
-            this.buttondelaystart.UseVisualStyleBackColor = false;
-            this.buttondelaystart.Click += new System.EventHandler(this.buttondelaystart_Click);
+            this.textBox20.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox20.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox20, 2);
+            this.textBox20.Font = new System.Drawing.Font("Noto Sans Thai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox20.Location = new System.Drawing.Point(145, 217);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(117, 21);
+            this.textBox20.TabIndex = 95;
+            this.textBox20.Text = "ตัวจับเวลาคูลดาวน์";
+            this.textBox20.Visible = false;
+            // 
+            // ButtonCooldownTimer
+            // 
+            this.ButtonCooldownTimer.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ButtonCooldownTimer.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.tableLayoutPanel1.SetColumnSpan(this.ButtonCooldownTimer, 2);
+            this.ButtonCooldownTimer.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonCooldownTimer.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.ButtonCooldownTimer.Location = new System.Drawing.Point(142, 253);
+            this.ButtonCooldownTimer.Name = "ButtonCooldownTimer";
+            this.tableLayoutPanel1.SetRowSpan(this.ButtonCooldownTimer, 2);
+            this.ButtonCooldownTimer.Size = new System.Drawing.Size(124, 54);
+            this.ButtonCooldownTimer.TabIndex = 94;
+            this.ButtonCooldownTimer.UseVisualStyleBackColor = false;
+            this.ButtonCooldownTimer.Visible = false;
+            this.ButtonCooldownTimer.Click += new System.EventHandler(this.button1_Click_2);
+            // 
+            // ButtonTargetMoisture
+            // 
+            this.ButtonTargetMoisture.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ButtonTargetMoisture.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.tableLayoutPanel1.SetColumnSpan(this.ButtonTargetMoisture, 2);
+            this.ButtonTargetMoisture.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonTargetMoisture.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.ButtonTargetMoisture.Location = new System.Drawing.Point(6, 253);
+            this.ButtonTargetMoisture.Name = "ButtonTargetMoisture";
+            this.tableLayoutPanel1.SetRowSpan(this.ButtonTargetMoisture, 2);
+            this.ButtonTargetMoisture.Size = new System.Drawing.Size(124, 54);
+            this.ButtonTargetMoisture.TabIndex = 93;
+            this.ButtonTargetMoisture.UseVisualStyleBackColor = false;
+            this.ButtonTargetMoisture.Click += new System.EventHandler(this.buttondelaystart_Click);
             // 
             // textBox12
             // 
@@ -356,6 +387,20 @@ namespace ControllerPage
             this.textBox7.Text = "จำนวนครั้ง";
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // textBox6
+            // 
+            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox6.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox6, 2);
+            this.textBox6.Font = new System.Drawing.Font("Noto Sans Thai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(3, 322);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(130, 21);
+            this.textBox6.TabIndex = 8;
+            this.textBox6.Text = "ชนิดข้าว";
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // ButtonProduct
             // 
             this.ButtonProduct.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -503,6 +548,20 @@ namespace ControllerPage
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // textBox15
+            // 
+            this.textBox15.AcceptsReturn = true;
+            this.textBox15.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox15.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox15.Font = new System.Drawing.Font("Noto Sans Thai", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox15.Location = new System.Drawing.Point(275, 178);
+            this.textBox15.Multiline = true;
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(72, 29);
+            this.textBox15.TabIndex = 24;
+            this.textBox15.Text = "ค่าเฉลี่ยความชื้น";
+            // 
             // Curr_Kernel_TextBox
             // 
             this.Curr_Kernel_TextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -591,30 +650,6 @@ namespace ControllerPage
             this.pictureBox6.Size = new System.Drawing.Size(62, 26);
             this.pictureBox6.TabIndex = 76;
             this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tableLayoutPanel1.SetColumnSpan(this.pictureBox7, 2);
-            this.pictureBox7.Location = new System.Drawing.Point(275, 318);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(130, 25);
-            this.pictureBox7.TabIndex = 77;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tableLayoutPanel1.SetColumnSpan(this.pictureBox8, 2);
-            this.pictureBox8.Location = new System.Drawing.Point(417, 318);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(116, 25);
-            this.pictureBox8.TabIndex = 78;
-            this.pictureBox8.TabStop = false;
             // 
             // pictureBox9
             // 
@@ -746,20 +781,6 @@ namespace ControllerPage
             this.checkBox_recurringmode.Text = "โหมดวัดซ้ำ";
             this.checkBox_recurringmode.UseVisualStyleBackColor = true;
             // 
-            // textBox6
-            // 
-            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox6.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox6, 2);
-            this.textBox6.Font = new System.Drawing.Font("Noto Sans Thai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(3, 322);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(130, 21);
-            this.textBox6.TabIndex = 8;
-            this.textBox6.Text = "ชนิดข้าว";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // textBox4
             // 
             this.textBox4.AcceptsReturn = true;
@@ -776,19 +797,33 @@ namespace ControllerPage
             this.textBox4.Text = "ระยะเวลาในการร้องเตือน";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox15
+            // textBox8
             // 
-            this.textBox15.AcceptsReturn = true;
-            this.textBox15.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox15.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox15.Font = new System.Drawing.Font("Noto Sans Thai", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(275, 178);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(72, 29);
-            this.textBox15.TabIndex = 24;
-            this.textBox15.Text = "ค่าเฉลี่ยความชื้น";
+            this.textBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox8.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox8, 2);
+            this.textBox8.Font = new System.Drawing.Font("Noto Sans Thai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(275, 322);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(130, 21);
+            this.textBox8.TabIndex = 96;
+            this.textBox8.Text = "จำนวนครั้ง";
+            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox9.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox9, 2);
+            this.textBox9.Font = new System.Drawing.Font("Noto Sans Thai", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.Location = new System.Drawing.Point(411, 322);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(128, 21);
+            this.textBox9.TabIndex = 97;
+            this.textBox9.Text = "จำนวนครั้ง";
+            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
             // 
@@ -811,8 +846,6 @@ namespace ControllerPage
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -858,8 +891,6 @@ namespace ControllerPage
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox8;
         private PictureBox pictureBox9;
         private PictureBox pictureBox10;
         private PictureBox pictureBox11;
@@ -869,11 +900,15 @@ namespace ControllerPage
         private CheckBox checkBox_recurringmode;
         private PictureBox textBox3;
         private PictureBox textBox2;
-        private Button buttondelaystart;
+        private Button ButtonTargetMoisture;
         private TextBox textBox12;
         private TextBox textBox6;
         private TextBox textBox15;
         private TextBox textBox4;
+        private TextBox textBox20;
+        private Button ButtonCooldownTimer;
+        private TextBox textBox9;
+        private TextBox textBox8;
     }
 }
 

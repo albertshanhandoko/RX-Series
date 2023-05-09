@@ -163,6 +163,12 @@
     <Compile Include="FormBIAS_New.designer.cs">
       <DependentUpon>FormBIAS_New.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCooldownTimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCooldownTimer.Designer.cs">
+      <DependentUpon>FormCooldownTimer.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCountdown.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,24 @@
     </Compile>
     <Compile Include="Formdelaystart.Designer.cs">
       <DependentUpon>Formdelaystart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHigh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHigh.Designer.cs">
+      <DependentUpon>FormHigh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLow.Designer.cs">
+      <DependentUpon>FormLow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMedium.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMedium.Designer.cs">
+      <DependentUpon>FormMedium.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMode.cs">
       <SubType>Form</SubType>
@@ -216,6 +240,12 @@
     </Compile>
     <Compile Include="FormNumpadBPassword.designer.cs">
       <DependentUpon>FormNumpadBPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNumpadTargetMoisture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNumpadTargetMoisture.Designer.cs">
+      <DependentUpon>FormNumpadTargetMoisture.cs</DependentUpon>
     </Compile>
     <Compile Include="FormNumpad_firstdelay.cs">
       <SubType>Form</SubType>
@@ -315,11 +345,23 @@
     <EmbeddedResource Include="FormBIAS_New.resx">
       <DependentUpon>FormBIAS_New.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCooldownTimer.resx">
+      <DependentUpon>FormCooldownTimer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCountdown.resx">
       <DependentUpon>FormCountdown.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formdelaystart.resx">
       <DependentUpon>Formdelaystart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHigh.resx">
+      <DependentUpon>FormHigh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLow.resx">
+      <DependentUpon>FormLow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMedium.resx">
+      <DependentUpon>FormMedium.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMode.resx">
       <DependentUpon>FormMode.cs</DependentUpon>
@@ -341,6 +383,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormNumpadBPassword.resx">
       <DependentUpon>FormNumpadBPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNumpadTargetMoisture.resx">
+      <DependentUpon>FormNumpadTargetMoisture.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormNumpad_firstdelay.resx">
       <DependentUpon>FormNumpad_firstdelay.cs</DependentUpon>

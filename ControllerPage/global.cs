@@ -149,6 +149,102 @@ namespace ControllerPage
             get { return _globalVar22; }
             set { _globalVar22 = value; }
         }
+        private static float m_0 = 0;
+        public static float m0
+        {
+            get { return m_0; }
+            set { m_0 = value; }
+        }
+
+        private static float m_1 = 0;
+        public static float m1
+        {
+            get { return m_1; }
+            set { m_1 = value; }
+        }
+
+        private static float m_2 = 0;
+        public static float m2
+        {
+            get { return m_2; }
+            set { m_2 = value; }
+        }
+
+        private static float m_3 = 0;
+        public static float m3
+        {
+            get { return m_3; }
+            set { m_3 = value; }
+        }
+
+        private static int _numpcs = 100;
+        // private static int _numpcs = 10;
+        public static int numpcs
+        {
+            get { return _numpcs; }
+            set { _numpcs = value; }
+        }
+        private static int _waitinginterval = 180000;
+        // private static int _waitinginterval = 30000;
+        public static int waitinginterval
+        {
+            get { return _waitinginterval; }
+            set { _waitinginterval = value; }
+        }
+        private static int _numofinterval = 3;
+        // private static int _numofinterval = 1;
+        public static int numofinterval
+        {
+            get { return _numofinterval; }
+            set { _numofinterval = value; }
+        }
+        private static int _count = 1;
+        public static int count
+        {
+            get { return _count; }
+            set { _count = value; }
+        }
+
+        private static float _lowinterval = 0;
+        public static float lowinterval
+        {
+            get { return _lowinterval; }
+            set { _lowinterval = value; }
+        }
+
+        private static float _lowpcs = 0;
+        public static float lowpcs
+        {
+            get { return _lowpcs; }
+            set { _lowpcs = value; }
+        }
+
+        private static float _mediuminterval = 0;
+        public static float mediuminterval
+        {
+            get { return _mediuminterval; }
+            set { _mediuminterval = value; }
+        }
+        private static float _mediumpcs = 0;
+        public static float mediumpcs
+        {
+            get { return _mediumpcs; }
+            set { _mediumpcs = value; }
+        }
+
+        private static float _highinterval = 0;
+        public static float highinterval
+        {
+            get { return _highinterval; }
+            set { _highinterval = value; }
+        }
+        private static float _highpcs = 0;
+        public static float highpcs
+        {
+            get { return _highpcs; }
+            set { _highpcs = value; }
+        }
+
 
     }
 }
