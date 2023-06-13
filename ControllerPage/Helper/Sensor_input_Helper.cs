@@ -677,6 +677,84 @@ namespace ControllerPage.Helper
 
         }
 
+        public static List<SQL_Data_Setting> MySql_Get_DataSetting(string IP_Address_varinput)
+        {
+            //MySqlConnection connection;
+            //string server = "localhost";
+            //string server = "192.168.0.4";
+            //string server = "192.168.0.6";
+
+            string database = "sensor_database";
+            string user = "root";
+            //string password = "admin";
+            string password = "raspberry";
+            string port = "3306";
+            string sslM = "none";
+            string connectionString;
+            connectionString = String.Format("server={0};port={1};user id={2}; password={3}; database={4}; SslMode={5}", IP_Address_varinput, port, user, password, database, sslM);
+
+            //Sql_Measure_Batch query_batch = new Sql_Measure_Batch();
+
+            List<SQL_Data_Setting> List_Data_Config = new List<SQL_Data_Setting> { };
+
+
+            using (var connection = new MySqlConnection(connectionString))
+            {
+                MySqlCommand command = new MySqlCommand("Get_Setting", connection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.Add(new MySqlParameter("Parameter_var", "0"));
+                command.Connection.Open();
+                using (MySqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+
+                        SQL_Data_Setting data_Config = new SQL_Data_Setting("1", "1");
+                        data_Config.Config_Param = reader["setting"].ToString();
+                        data_Config.Config_Value = reader["value"].ToString();
+
+                        List_Data_Config.Add(data_Config);
+                    }
+
+                }
+                command.Connection.Close();
+
+
+
+            }
+
+            return List_Data_Config;
+        }
+
+        public static void Update_DataSetting(string IP_Address_varinput, string parameter, string value)
+        {
+            string database = "sensor_database";
+            string user = "root";
+            //string password = "admin";
+            string password = "raspberry";
+            string port = "3306";
+            string sslM = "none";
+            string connectionString;
+            connectionString = String.Format("server={0};port={1};user id={2}; password={3}; database={4}; SslMode={5}", IP_Address_varinput, port, user, password, database, sslM);
+
+            //Sql_Measure_Batch query_batch = new Sql_Measure_Batch();
+
+            List<SQL_Data_Config> List_Data_Config = new List<SQL_Data_Config> { };
+
+
+            using (var connection = new MySqlConnection(connectionString))
+            {
+                MySqlCommand command = new MySqlCommand("Update_Setting", connection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.Add(new MySqlParameter("Parameter_var", parameter));
+                command.Parameters.Add(new MySqlParameter("Value_var", value));
+
+                command.Connection.Open();
+                command.ExecuteReader();
+
+            }
+
+        }
 
         public static void Update_ErrorCode(string IP_Address_varinput, int Batch_ID, string Error_Code)
         {
