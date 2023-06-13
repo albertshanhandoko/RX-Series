@@ -60,8 +60,8 @@ namespace ControllerPage
                 combobox_selectedItem_number_PerPCS = string.Empty;
             }
 
-           
 
+            Sensor_input_Helper.Update_DataSetting(Sensor_input_Helper.GetLocalIPAddress(), "button9", combobox_selectedItem_number_PerPCS.ToString());
             this.DialogResult = DialogResult.OK;
 
             this.Close();

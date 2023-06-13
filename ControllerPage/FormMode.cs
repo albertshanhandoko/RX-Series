@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ControllerPage.Helper;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,7 @@ namespace ControllerPage
         {
             this.ModeSelection = "Interval";
             this.DialogResult = DialogResult.OK;
+            Sensor_input_Helper.Update_DataSetting(Sensor_input_Helper.GetLocalIPAddress(), "button1", "Interval");
             this.Close();
         }
 
@@ -34,6 +36,7 @@ namespace ControllerPage
         {
             this.ModeSelection = "Fixed Time";
             this.DialogResult = DialogResult.OK;
+            Sensor_input_Helper.Update_DataSetting(Sensor_input_Helper.GetLocalIPAddress(), "button1", "Fixed Time");
             this.Close();
         }
 
@@ -41,6 +44,7 @@ namespace ControllerPage
         {
             this.ModeSelection = "Fixed Pieces";
             this.DialogResult = DialogResult.OK;
+            Sensor_input_Helper.Update_DataSetting(Sensor_input_Helper.GetLocalIPAddress(), "button1", "Fixed Pieces");
             this.Close();
         }
 
@@ -65,6 +69,7 @@ namespace ControllerPage
         {
             this.ModeSelection = "Fixed Pieces";
             this.DialogResult = DialogResult.OK;
+            Sensor_input_Helper.Update_DataSetting(Sensor_input_Helper.GetLocalIPAddress(), "button1", "Fixed Pieces");
             this.Close();
         }
     }

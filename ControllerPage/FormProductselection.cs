@@ -184,6 +184,7 @@ namespace ControllerPage
         {
             //this.Productselection = "Paddy";
             this.Productselection = button2.Text.Replace(" ", "_");
+            Sensor_input_Helper.Update_DataSetting(Sensor_input_Helper.GetLocalIPAddress(), "button7", button2.Text.Replace(" ", "_"));
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
@@ -192,6 +193,7 @@ namespace ControllerPage
         {
             //this.Productselection = "Corn_High";
             this.Productselection = button3.Text.Replace(" ", "_");
+            Sensor_input_Helper.Update_DataSetting(Sensor_input_Helper.GetLocalIPAddress(), "button7", button3.Text.Replace(" ", "_"));
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
@@ -201,6 +203,7 @@ namespace ControllerPage
 
             //this.Productselection = "Corn_Medium";
             this.Productselection = button4.Text.Replace(" ", "_");
+            Sensor_input_Helper.Update_DataSetting(Sensor_input_Helper.GetLocalIPAddress(), "button7", button4.Text.Replace(" ", "_"));
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
@@ -209,6 +212,7 @@ namespace ControllerPage
         {
             //this.Productselection = "Barley";
             this.Productselection = button5.Text.Replace(" ", "_");
+            Sensor_input_Helper.Update_DataSetting(Sensor_input_Helper.GetLocalIPAddress(), "button7", button5.Text.Replace(" ", "_"));
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
@@ -217,6 +221,7 @@ namespace ControllerPage
         {
             //this.Productselection = "Soy";
             this.Productselection = button6.Text.Replace(" ", "_");
+            Sensor_input_Helper.Update_DataSetting(Sensor_input_Helper.GetLocalIPAddress(), "button7", button6.Text.Replace(" ", "_"));
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
@@ -225,6 +230,7 @@ namespace ControllerPage
         {
             //this.Productselection = "Corn_Low";
             this.Productselection = button7.Text.Replace(" ", "_");
+            Sensor_input_Helper.Update_DataSetting(Sensor_input_Helper.GetLocalIPAddress(), "button7", button7.Text.Replace(" ", "_"));
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
@@ -235,6 +241,7 @@ namespace ControllerPage
             //this.Productselection = button1.Text.Replace(" ", "_");
 
             this.DialogResult = DialogResult.OK;
+            Sensor_input_Helper.Update_DataSetting(Sensor_input_Helper.GetLocalIPAddress(), "button7", "Corn");
             this.Close();
         }
 
@@ -243,13 +250,14 @@ namespace ControllerPage
             this.Productselection = button8.Text.Replace(" ", "_");
 
             this.DialogResult = DialogResult.OK;
+            Sensor_input_Helper.Update_DataSetting(Sensor_input_Helper.GetLocalIPAddress(), "button7", button8.Text.Replace(" ", "_"));
             this.Close();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
             this.Productselection = button9.Text.Replace(" ", "_");
-
+            Sensor_input_Helper.Update_DataSetting(Sensor_input_Helper.GetLocalIPAddress(), "button7", button9.Text.Replace(" ", "_"));
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
@@ -262,7 +270,7 @@ namespace ControllerPage
         private void button10_Click(object sender, EventArgs e)
         {
             this.Productselection = button10.Text.Replace(" ", "_");
-
+            Sensor_input_Helper.Update_DataSetting(Sensor_input_Helper.GetLocalIPAddress(), "button7", button10.Text.Replace(" ", "_"));
             this.DialogResult = DialogResult.OK;
             this.Close();
         }

@@ -209,7 +209,7 @@ namespace ControllerPage
             }
             data_initiation_input();
             ButtonProduct.Enabled = true;
-
+            getsetting();
         }
 
         #region Button_Other
@@ -3389,7 +3389,32 @@ namespace ControllerPage
             ButtonOption.Enabled = true;
             ButtonNumInterval.Enabled = true;
         }
+        private void getsetting()
+        {
+            List<SQL_Data_Setting> current_config = Sensor_input_Helper.MySql_Get_DataSetting(Sensor_input_Helper.GetLocalIPAddress());
 
+            var button1 = current_config.Where(config => config.Config_Param == "button1");
+            var button2 = current_config.Where(config => config.Config_Param == "button2");
+            var button3 = current_config.Where(config => config.Config_Param == "button3");
+            var button4 = current_config.Where(config => config.Config_Param == "button4");
+            var button5 = current_config.Where(config => config.Config_Param == "button5");
+            var button6 = current_config.Where(config => config.Config_Param == "button6");
+            var button7 = current_config.Where(config => config.Config_Param == "button7");
+            var button8 = current_config.Where(config => config.Config_Param == "button8");
+            var button9 = current_config.Where(config => config.Config_Param == "button9");
+            var button10 = current_config.Where(config => config.Config_Param == "button10");
+            Button_Mode.Text = (button1.Select(p => p.Config_Value).ToArray()).First();
+            //ButtonTargetMoisture.Text = (button2.Select(p => p.Config_Value).ToArray()).First();
+            //ButtonCooldownTimer.Text = (button3.Select(p => p.Config_Value).ToArray()).First();
+            //button_thereshold_minvalue.Text = (button4.Select(p => p.Config_Value).ToArray()).First();
+            //button_thereshold_maxvalue.Text = (button5.Select(p => p.Config_Value).ToArray()).First();
+            //button_1stdelay.Text = (button6.Select(p => p.Config_Value).ToArray()).First();
+            ButtonProduct.Text = (button7.Select(p => p.Config_Value).ToArray()).First();
+            ButtonNumInterval.Text = (button8.Select(p => p.Config_Value).ToArray()).First();
+            ButtonNumPcs.Text = (button9.Select(p => p.Config_Value).ToArray()).First();
+            ButtonWaitingTime.Text = (button10.Select(p => p.Config_Value).ToArray()).First();
+
+        }
         private void buttondelaystart_Click(object sender, EventArgs e)
         {
             using (var form = new Formdelaystart())

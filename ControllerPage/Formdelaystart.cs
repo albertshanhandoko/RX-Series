@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ControllerPage.Helper;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,6 +33,7 @@ namespace ControllerPage
             {
                 Global.GlobalVar22 = true;
             }
+            Sensor_input_Helper.Update_DataSetting(Sensor_input_Helper.GetLocalIPAddress(), "button2", delay_start);
             this.Close();
         }
 

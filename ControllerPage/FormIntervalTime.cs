@@ -45,6 +45,7 @@ namespace ControllerPage
                 combobox_selectedItem_WaitingTime = string.Empty;
             }
             this.DialogResult = DialogResult.OK;
+            Sensor_input_Helper.Update_DataSetting(Sensor_input_Helper.GetLocalIPAddress(), "button10", combobox_selectedItem_WaitingTime.ToString());
             this.Close();
 
         }

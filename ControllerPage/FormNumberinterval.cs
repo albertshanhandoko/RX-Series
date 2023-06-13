@@ -50,6 +50,7 @@ namespace ControllerPage
             }
 
             this.DialogResult = DialogResult.OK;
+            Sensor_input_Helper.Update_DataSetting(Sensor_input_Helper.GetLocalIPAddress(), "button8", combobox_selectedItem_number_Interval.ToString());
             this.Close();
 
         }

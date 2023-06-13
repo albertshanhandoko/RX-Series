@@ -268,6 +268,7 @@
     <Compile Include="Library\data_measure_2.cs" />
     <Compile Include="Library\Data_Parameter.cs" />
     <Compile Include="Library\Data_PDFHistory.cs" />
+    <Compile Include="Library\SQL_Data_Setting.cs" />
     <Compile Include="Library\SQL_Data_Config.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
